@@ -1,0 +1,1341 @@
+[
+  {
+    "category": "journal",
+    "authors": [
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Suzuki, Atsunobu",
+          "ja": "鈴木, 敦命"
+        }
+      },
+      {
+        "name": {
+          "en": "Hautasaari, Ari",
+          "ja": "ハウタサーリ, アリ"
+        }
+      }
+    ],
+    "title": {
+      "en": "Exploring the Effects of Japanese Font Designs on Impression Formation and Decision-Making in Text-Based Communication",
+      "ja": "Exploring the Effects of Japanese Font Designs on Impression Formation and Decision-Making in Text-Based Communication"
+    },
+    "journal": "IEICE Transactions on Information and Systems",
+    "year": "2024",
+    "volume": "E107.D",
+    "number": "3",
+    "doi": "https://doi.org/10.1587/transinf.2023HCP0009",
+    "award": null,
+    "links": [],
+    "lang": "en"
+  },
+  {
+    "category": "intl-full",
+    "authors": [
+      {
+        "name": {
+          "en": "Aoki, Toshiki",
+          "ja": "青木, 俊樹"
+        },
+        "equal": true
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        },
+        "equal": true
+      },
+      {
+        "name": {
+          "en": "Matsui, Katsufumi",
+          "ja": "松井, 克文"
+        }
+      },
+      {
+        "name": {
+          "en": "Choi, Saemi",
+          "ja": "Choi, Saemi"
+        }
+      },
+      {
+        "name": {
+          "en": "Hautasaari, Ari",
+          "ja": "ハウタサーリ, アリ"
+        }
+      }
+    ],
+    "title": {
+      "en": "EmoBalloon - Conveying Emotional Arousal in Text Chats with Speech Balloons",
+      "ja": "EmoBalloon - Conveying Emotional Arousal in Text Chats with Speech Balloons"
+    },
+    "booktitle": "CHI Conference on Human Factors in Computing Systems (CHI '22)",
+    "publisher": "Association for Computing Machinery",
+    "location": "New York, NY, USA",
+    "articleno": "527",
+    "pages": "1-16",
+    "year": "2022",
+    "doi": "https://doi.org/10.1145/3491102.3501920",
+    "award": {
+      "en": "Best Paper Award, top 1%",
+      "ja": "Best Paper Award, 上位1%"
+    },
+    "links": [],
+    "lang": "en"
+  },
+  {
+    "category": "intl-reviewed",
+    "authors": [
+      {
+        "name": {
+          "en": "Yahagi, Yuchi",
+          "ja": "矢作, 優知"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Harada, Yuga",
+          "ja": "原田, 悠我"
+        }
+      },
+      {
+        "name": {
+          "en": "Han, Changyo",
+          "ja": "韓, 燦教"
+        }
+      },
+      {
+        "name": {
+          "en": "Sugiyama, Kohei",
+          "ja": "杉山, 昂平"
+        }
+      },
+      {
+        "name": {
+          "en": "Naemura, Takeshi",
+          "ja": "苗村, 健"
+        }
+      }
+    ],
+    "title": {
+      "en": "Temporal Perspectives on Exploring PaperWave: a Document-to-Audio Adaptation System powered by LLMs",
+      "ja": "Temporal Perspectives on Exploring PaperWave: a Document-to-Audio Adaptation System powered by LLMs"
+    },
+    "booktitle": "Research Products and Time: When, For How Long, And Then What? Workshop in CHI 2025",
+    "location": "Yokohama, Japan",
+    "year": "2025",
+    "month": "4",
+    "links": [],
+    "lang": "en"
+  },
+  {
+    "category": "intl-reviewed",
+    "authors": [
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Takagi, Ayumi",
+          "ja": "髙木, 歩実"
+        }
+      },
+      {
+        "name": {
+          "en": "Naoi, Shun",
+          "ja": "直井, 駿"
+        }
+      },
+      {
+        "name": {
+          "en": "Nakamura, Reika",
+          "ja": "中村, 玲香"
+        }
+      },
+      {
+        "name": {
+          "en": "Yahagi, Yuchi",
+          "ja": "矢作, 優知"
+        }
+      },
+      {
+        "name": {
+          "en": "Matsui, Katsufumi",
+          "ja": "松井, 克文"
+        }
+      },
+      {
+        "name": {
+          "en": "Seong, Young ah",
+          "ja": "ソン, ヨンア"
+        }
+      }
+    ],
+    "title": {
+      "en": "Wearing AI-Powered Gadgets: Exploring Privacy, Ethics, and Design Challenges of First-Person AI Devices",
+      "ja": "Wearing AI-Powered Gadgets: Exploring Privacy, Ethics, and Design Challenges of First-Person AI Devices"
+    },
+    "booktitle": "Research Products and Time: When, For How Long, And Then What? Workshop in CHI 2025",
+    "location": "Yokohama, Japan",
+    "year": "2025",
+    "month": "4",
+    "links": [],
+    "lang": "en"
+  },
+  {
+    "category": "intl-reviewed",
+    "authors": [
+      {
+        "name": {
+          "en": "Yahagi, Yuchi",
+          "ja": "矢作, 優知"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Harada, Yuga",
+          "ja": "原田, 悠我"
+        }
+      },
+      {
+        "name": {
+          "en": "Han, Changyo",
+          "ja": "韓, 燦教"
+        }
+      },
+      {
+        "name": {
+          "en": "Sugiyama, Kohei",
+          "ja": "杉山, 昂平"
+        }
+      },
+      {
+        "name": {
+          "en": "Naemura, Takeshi",
+          "ja": "苗村, 健"
+        }
+      }
+    ],
+    "title": {
+      "en": "PaperWave: Listening to Research Papers as Conversational Podcasts Scripted by LLM",
+      "ja": "PaperWave: Listening to Research Papers as Conversational Podcasts Scripted by LLM"
+    },
+    "booktitle": "Extended Abstracts of the CHI Conference on Human Factors in Computing Systems (CHI EA '25)",
+    "location": "Yokohama, Japan",
+    "year": "2025",
+    "month": "4",
+    "acceptance_rate": "23.7%",
+    "links": [
+      {
+        "label": "Demo",
+        "url": ""
+      },
+      {
+        "label": "YouTube",
+        "url": ""
+      },
+      {
+        "label": "Slide (CHI2025)",
+        "url": ""
+      },
+      {
+        "label": "GitHub (CLI)",
+        "url": ""
+      },
+      {
+        "label": "GitHub (Web)",
+        "url": ""
+      }
+    ],
+    "lang": "en"
+  },
+  {
+    "category": "intl-reviewed",
+    "authors": [
+      {
+        "name": {
+          "en": "Hautasaari, Ari",
+          "ja": "ハウタサーリ, アリ"
+        }
+      },
+      {
+        "name": {
+          "en": "Aramaki, Minami",
+          "ja": "Aramaki, Minami"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Naemura, Takeshi",
+          "ja": "苗村, 健"
+        }
+      }
+    ],
+    "title": {
+      "en": "EmoScribe Camera: A Virtual Camera System to Enliven Online Conferencing with Automatically Generated Emotional Text Captions",
+      "ja": "EmoScribe Camera: A Virtual Camera System to Enliven Online Conferencing with Automatically Generated Emotional Text Captions"
+    },
+    "booktitle": "ACM CHI EA'24",
+    "year": "2024",
+    "month": "5",
+    "links": [],
+    "lang": "en"
+  },
+  {
+    "category": "intl-reviewed",
+    "authors": [
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        },
+        "equal": true
+      },
+      {
+        "name": {
+          "en": "Matsui, Katsufumi",
+          "ja": "松井, 克文"
+        },
+        "equal": true
+      },
+      {
+        "name": {
+          "en": "Sugiyama, Kohei",
+          "ja": "杉山, 昂平"
+        }
+      }
+    ],
+    "title": {
+      "en": "Developing a Generative AI-Driven Program to Enhance Ideation in Entrepreneurship Education",
+      "ja": "Developing a Generative AI-Driven Program to Enhance Ideation in Entrepreneurship Education"
+    },
+    "booktitle": "The 2nd International Symposium on Entrepreneurship Education in Asia",
+    "year": "2024",
+    "month": "9",
+    "links": [],
+    "lang": "en"
+  },
+  {
+    "category": "intl-reviewed",
+    "authors": [
+      {
+        "name": {
+          "en": "Yoshida, Lui",
+          "ja": "吉田, 塁"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      }
+    ],
+    "title": {
+      "en": "Development and evaluation of LearnWiz One, a web system to facilitate online exchange and aggregation of opinions",
+      "ja": "Development and evaluation of LearnWiz One, a web system to facilitate online exchange and aggregation of opinions"
+    },
+    "booktitle": "4th Asia-Pacific Conference on Education, Teaching & Technology",
+    "year": "2022",
+    "month": "7",
+    "links": [],
+    "lang": "en"
+  },
+  {
+    "category": "domestic",
+    "authors": [
+      {
+        "name": {
+          "en": "Tanaka, Serina",
+          "ja": "田中, 芹奈"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Yahagi, Yuchi",
+          "ja": "矢作, 優知"
+        }
+      },
+      {
+        "name": {
+          "en": "Seong, Young ah",
+          "ja": "ソン, ヨンア"
+        }
+      }
+    ],
+    "title": {
+      "en": "The Effect of Eye Stickers and Discount Stickers on Vegetables on Impression Formation and Purchase Intent",
+      "ja": "野菜に付与された目玉シールと割引シールが印象形成及び購買意図に与える影響"
+    },
+    "booktitle": {
+      "en": "The 20th Spring Annual Meeting of Japan Society of Kansei Engineering",
+      "ja": "日本感性工学会第20回春季大会"
+    },
+    "year": "2025",
+    "month": "3",
+    "links": [],
+    "lang": "ja"
+  },
+  {
+    "category": "domestic",
+    "authors": [
+      {
+        "name": {
+          "en": "Naoi, Shun",
+          "ja": "直井, 駿"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Nakahashi, Yuri",
+          "ja": "中橋, 侑里"
+        }
+      },
+      {
+        "name": {
+          "en": "Yahagi, Yuchi",
+          "ja": "矢作, 優知"
+        }
+      },
+      {
+        "name": {
+          "en": "Seong, Young ah",
+          "ja": "ソン, ヨンア"
+        }
+      }
+    ],
+    "title": {
+      "en": "MuseBuddy: A Wearable Device to Encourage Divers' Underwater Exploration",
+      "ja": "MuseBuddy：ダイバーの水中探索を促すウェアラブルデバイスの提案"
+    },
+    "booktitle": "Interaction 2025",
+    "paper_id": "3B49",
+    "year": "2025",
+    "month": "3",
+    "links": [],
+    "lang": "ja"
+  },
+  {
+    "category": "domestic",
+    "authors": [
+      {
+        "name": {
+          "en": "Nakanishi, Yukina",
+          "ja": "中西, ゆき菜"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Yahagi, Yuchi",
+          "ja": "矢作, 優知"
+        }
+      },
+      {
+        "name": {
+          "en": "Seong, Young ah",
+          "ja": "ソン, ヨンア"
+        }
+      }
+    ],
+    "title": {
+      "en": "MoyaMoyaMusic: A System for Generating Positive Music Reflecting Listeners' Concerns",
+      "ja": "MoyaMoyaMusic：リスナーの悩みを反映したポジティブな音楽生成システム"
+    },
+    "booktitle": "Interaction 2025",
+    "paper_id": "1B40",
+    "year": "2025",
+    "month": "3",
+    "award": {
+      "en": "Premium Presentation (Top 19.6%)",
+      "ja": "プレミアム発表 (上位19.6%)"
+    },
+    "links": [],
+    "lang": "ja"
+  },
+  {
+    "category": "domestic",
+    "authors": [
+      {
+        "name": {
+          "en": "Yahagi, Yuchi",
+          "ja": "矢作, 優知"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Harada, Yuga",
+          "ja": "原田, 悠我"
+        }
+      },
+      {
+        "name": {
+          "en": "Han, Changyo",
+          "ja": "韓, 燦教"
+        }
+      },
+      {
+        "name": {
+          "en": "Sugiyama, Kohei",
+          "ja": "杉山, 昂平"
+        }
+      },
+      {
+        "name": {
+          "en": "Naemura, Takeshi",
+          "ja": "苗村, 健"
+        }
+      }
+    ],
+    "title": {
+      "en": "Development of PaperWave: A System for Converting Research Papers into Conversational Podcasts Using LLMs",
+      "ja": "LLMを用いた研究論文の対話形式ポッドキャストへの変換システムPaperWaveの開発"
+    },
+    "booktitle": {
+      "en": "HCG Symposium 2024",
+      "ja": "HCGシンポジウム2024"
+    },
+    "paper_id": "C-1-6",
+    "year": "2024",
+    "month": "12",
+    "award": {
+      "en": "Best Presentation Award, top 5%",
+      "ja": "優秀インタラクティブ発表賞, 上位5%"
+    },
+    "links": [],
+    "lang": "ja"
+  },
+  {
+    "category": "domestic",
+    "authors": [
+      {
+        "name": {
+          "en": "Noguchi, Gaku",
+          "ja": "野口, 岳"
+        }
+      },
+      {
+        "name": {
+          "en": "Asada, Kanna",
+          "ja": "浅田, かんな"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Matsuo, Shuta",
+          "ja": "松尾, 周汰"
+        }
+      },
+      {
+        "name": {
+          "en": "Ung, Kuan Yee",
+          "ja": "ウン, クアン イー"
+        }
+      },
+      {
+        "name": {
+          "en": "Sasaki, Honami",
+          "ja": "佐々木, 帆南"
+        }
+      },
+      {
+        "name": {
+          "en": "Shimada, Keishi",
+          "ja": "島田, 敬士"
+        }
+      }
+    ],
+    "title": {
+      "en": "Development and Demonstration of an On-Campus Job Platform to Promote Students' Practical Learning",
+      "ja": "学生の実践的学びを促進するためのオンキャンパスジョブプラットフォームの開発と実証"
+    },
+    "booktitle": {
+      "en": "AXIES Annual Conference 2024",
+      "ja": "大学ICT推進協議会2024年度年次大会"
+    },
+    "year": "2024",
+    "month": "12",
+    "links": [],
+    "lang": "ja"
+  },
+  {
+    "category": "domestic",
+    "authors": [
+      {
+        "name": {
+          "en": "Yahagi, Yuchi",
+          "ja": "矢作, 優知"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Matsui, Katsufumi",
+          "ja": "松井, 克文"
+        }
+      },
+      {
+        "name": {
+          "en": "Seong, Young ah",
+          "ja": "ソン, ヨンア"
+        }
+      }
+    ],
+    "title": {
+      "en": "Development of a Workshop and Toolkit for Ontologically Reexamining Smart Devices through Making",
+      "ja": "作ることを通じてスマートデバイスを存在論的に捉え直すワークショップとツールキットの開発"
+    },
+    "booktitle": {
+      "en": "JSET 2024 Autumn National Conference",
+      "ja": "日本教育工学会 2024年秋季全国大会 講演論文集"
+    },
+    "paper_id": "3-L609-014",
+    "year": "2024",
+    "month": "9",
+    "links": [],
+    "lang": "ja"
+  },
+  {
+    "category": "domestic",
+    "authors": [
+      {
+        "name": {
+          "en": "Takagi, Ayumi",
+          "ja": "髙木, 歩実"
+        }
+      },
+      {
+        "name": {
+          "en": "Naoi, Shun",
+          "ja": "直井, 駿"
+        }
+      },
+      {
+        "name": {
+          "en": "Nakamura, Reika",
+          "ja": "中村, 玲香"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Yahagi, Yuchi",
+          "ja": "矢作, 優知"
+        }
+      },
+      {
+        "name": {
+          "en": "Matsui, Katsufumi",
+          "ja": "松井, 克文"
+        }
+      },
+      {
+        "name": {
+          "en": "Seong, Young ah",
+          "ja": "ソン, ヨンア"
+        }
+      }
+    ],
+    "title": {
+      "en": "Copter: Examining Design Requirements for Autonomous Objects that Act Together with Humans",
+      "ja": "コプター: 人間と共に行動しながら自律的に動作するモノにおけるデザイン要件の検討"
+    },
+    "booktitle": {
+      "en": "Proceedings of the 29th Virtual Reality Society of Japan Annual Conference",
+      "ja": "第29回日本バーチャルリアリティ学会大会論文集"
+    },
+    "paper_id": "2G-09",
+    "year": "2024",
+    "month": "9",
+    "links": [],
+    "lang": "ja"
+  },
+  {
+    "category": "domestic",
+    "authors": [
+      {
+        "name": {
+          "en": "Hatori, Haru",
+          "ja": "羽鳥, はる"
+        }
+      },
+      {
+        "name": {
+          "en": "Tanaka, Serina",
+          "ja": "田中, 芹奈"
+        }
+      },
+      {
+        "name": {
+          "en": "Wang, Yukun",
+          "ja": "王, 煜堃"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Yahagi, Yuchi",
+          "ja": "矢作, 優知"
+        }
+      },
+      {
+        "name": {
+          "en": "Matsui, Katsufumi",
+          "ja": "松井, 克文"
+        }
+      },
+      {
+        "name": {
+          "en": "Seong, Young ah",
+          "ja": "ソン, ヨンア"
+        }
+      }
+    ],
+    "title": {
+      "en": "Proposal of Motion-Focused Interaction to Suppress Aggressive Utterances toward Smart Speakers",
+      "ja": "スマートスピーカーに対する攻撃的な発話を抑制する動きに着目したインタラクションの提案"
+    },
+    "booktitle": {
+      "en": "Proceedings of the 29th Virtual Reality Society of Japan Annual Conference",
+      "ja": "第29回日本バーチャルリアリティ学会大会論文集"
+    },
+    "paper_id": "2A1-10",
+    "year": "2024",
+    "month": "9",
+    "links": [],
+    "lang": "ja"
+  },
+  {
+    "category": "domestic",
+    "authors": [
+      {
+        "name": {
+          "en": "Ohira, Sakurako",
+          "ja": "大平, 桜子"
+        }
+      },
+      {
+        "name": {
+          "en": "Nakanishi, Yukina",
+          "ja": "中西, ゆき菜"
+        }
+      },
+      {
+        "name": {
+          "en": "Matsuura, Kanato",
+          "ja": "松浦, 奏都"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Yahagi, Yuchi",
+          "ja": "矢作, 優知"
+        }
+      },
+      {
+        "name": {
+          "en": "Matsui, Katsufumi",
+          "ja": "松井, 克文"
+        }
+      },
+      {
+        "name": {
+          "en": "Seong, Young ah",
+          "ja": "ソン, ヨンア"
+        }
+      }
+    ],
+    "title": {
+      "en": "Calomon: A Playful Reflection Method Using Writing Instruments that Move According to Life Logs",
+      "ja": "生活ログに合わせて動く筆記用具を用いたプレイフルなリフレクション手法「カロモン」の提案"
+    },
+    "booktitle": {
+      "en": "Proceedings of the 29th Virtual Reality Society of Japan Annual Conference",
+      "ja": "第29回日本バーチャルリアリティ学会大会論文集"
+    },
+    "paper_id": "1E2-05",
+    "year": "2024",
+    "month": "9",
+    "links": [],
+    "lang": "ja"
+  },
+  {
+    "category": "domestic",
+    "authors": [
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Hautasaari, Ari",
+          "ja": "ハウタサーリ, アリ"
+        }
+      },
+      {
+        "name": {
+          "en": "Suzuki, Atsunobu",
+          "ja": "鈴木, 敦命"
+        }
+      },
+      {
+        "name": {
+          "en": "Naemura, Takeshi",
+          "ja": "苗村, 健"
+        }
+      }
+    ],
+    "title": {
+      "en": "A Preliminary Study on the Effects of Font Design on Impressions of Trustworthiness and Dominance in Text Chat",
+      "ja": "テキストチャットにおけるフォントデザインが信頼性と支配性の印象に与える影響の基礎検討"
+    },
+    "booktitle": {
+      "en": "IEICE Technical Report",
+      "ja": "信学技報"
+    },
+    "volume": "124",
+    "number": "161",
+    "paper_id": "HCS2024-49",
+    "pages": "85-89",
+    "year": "2024",
+    "month": "8",
+    "links": [],
+    "lang": "ja"
+  },
+  {
+    "category": "domestic",
+    "authors": [
+      {
+        "name": {
+          "en": "Ranki, Tatsuya",
+          "ja": "欄木, 達也"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Hautasaari, Ari",
+          "ja": "ハウタサーリ, アリ"
+        }
+      },
+      {
+        "name": {
+          "en": "Naemura, Takeshi",
+          "ja": "苗村, 健"
+        }
+      }
+    ],
+    "title": {
+      "en": "A Survey on Impressions of Product Descriptions Generated by ChatGPT Considering the Reader's Age",
+      "ja": "ChatGPTが読み手の年齢を考慮して生成した商品説明文から受ける印象の調査"
+    },
+    "booktitle": {
+      "en": "IEICE Technical Report",
+      "ja": "信学技報"
+    },
+    "series": "MVE",
+    "year": "2024",
+    "month": "3",
+    "links": [],
+    "lang": "ja"
+  },
+  {
+    "category": "domestic",
+    "authors": [
+      {
+        "name": {
+          "en": "Fujiwara, Miyuki",
+          "ja": "藤原, 未雪"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Hautasaari, Ari",
+          "ja": "ハウタサーリ, アリ"
+        }
+      }
+    ],
+    "title": {
+      "en": "Effects of Presenting Desired Communication Styles on Price Negotiation in Flea Market Apps",
+      "ja": "相手に求めるコミュニケーションスタイルの提示がフリマアプリにおける価格交渉のやり取りに与える影響"
+    },
+    "booktitle": {
+      "en": "HCG Symposium 2023",
+      "ja": "HCGシンポジウム2023"
+    },
+    "year": "2023",
+    "month": "12",
+    "award": {
+      "en": "Best Presentation Award, top 5%",
+      "ja": "優秀インタラクティブ発表賞, 上位5%"
+    },
+    "links": [],
+    "lang": "ja"
+  },
+  {
+    "category": "domestic",
+    "authors": [
+      {
+        "name": {
+          "en": "Sakamoto, Yuki",
+          "ja": "坂本, 祐輝"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Hautasaari, Ari",
+          "ja": "ハウタサーリ, アリ"
+        }
+      },
+      {
+        "name": {
+          "en": "Naemura, Takeshi",
+          "ja": "苗村, 健"
+        }
+      }
+    ],
+    "title": {
+      "en": "Effects of Emotional Fonts on Message Recipient Impressions: A Comparison between Japanese and English Native Speakers",
+      "ja": "感情的フォントがメッセージ受信者の印象に与える影響 〜日本語母語話者と英語母語話者の比較〜"
+    },
+    "booktitle": {
+      "en": "IEICE Technical Report",
+      "ja": "信学技報"
+    },
+    "volume": "123",
+    "number": "242",
+    "paper_id": "HCS2023-79",
+    "pages": "56-61",
+    "year": "2023",
+    "month": "11",
+    "links": [],
+    "lang": "ja"
+  },
+  {
+    "category": "domestic",
+    "authors": [
+      {
+        "name": {
+          "en": "Yoshida, Lui",
+          "ja": "吉田, 塁"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      }
+    ],
+    "title": {
+      "en": "Development and Evaluation of LearnWiz One, a Web System to Facilitate Online Exchange and Aggregation of Opinions",
+      "ja": "オンラインにおける意見交換及び集約を促すWebシステム「LearnWiz One」の開発と評価"
+    },
+    "booktitle": {
+      "en": "JSET 2022 Autumn National Conference",
+      "ja": "日本教育工学会 2022年秋季全国大会（第41回）講演論文集"
+    },
+    "year": "2022",
+    "month": "9",
+    "pages": "175-176",
+    "links": [],
+    "lang": "ja"
+  },
+  {
+    "category": "domestic",
+    "authors": [
+      {
+        "name": {
+          "en": "Yoshida, Lui",
+          "ja": "吉田, 塁"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Oki, Nahoko",
+          "ja": "沖, 奈保子"
+        }
+      }
+    ],
+    "title": {
+      "en": "EdTech \"LearnWiz One\" Practice Report",
+      "ja": "EdTech「LearnWiz One」実践発表"
+    },
+    "booktitle": {
+      "en": "The 6th National Conference of Japan Active Learning Association",
+      "ja": "日本アクティブ・ラーニング学会第6回全国大会"
+    },
+    "year": "2022",
+    "month": "3",
+    "links": [],
+    "lang": "ja"
+  },
+  {
+    "category": "domestic",
+    "authors": [
+      {
+        "name": {
+          "en": "Aoki, Toshiki",
+          "ja": "青木, 俊樹"
+        }
+      },
+      {
+        "name": {
+          "en": "Kawamura, Kei",
+          "ja": "川村, 慧"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Choi, Saemi",
+          "ja": "Choi, Saemi"
+        }
+      },
+      {
+        "name": {
+          "en": "Matsui, Katsufumi",
+          "ja": "松井, 克文"
+        }
+      },
+      {
+        "name": {
+          "en": "Hautasaari, Ari",
+          "ja": "ハウタサーリ, アリ"
+        }
+      }
+    ],
+    "title": {
+      "en": "A System for Automatic Speech Balloon Shape Selection Based on Vocal Intensity in Voice-Input Text Chat",
+      "ja": "音声入力テキストチャットにおける発話強度に基づいた吹き出し形状自動選択システムの提案"
+    },
+    "booktitle": {
+      "en": "Interaction 2020",
+      "ja": "インタラクション2020論文集 (プレミアム発表)"
+    },
+    "paper_id": "2B-30",
+    "pages": "607-610",
+    "year": "2020",
+    "month": "3",
+    "links": [],
+    "lang": "ja"
+  },
+  {
+    "category": "preprint",
+    "authors": [
+      {
+        "name": {
+          "en": "Yahagi, Yuchi",
+          "ja": "矢作, 優知"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Harada, Yuga",
+          "ja": "原田, 悠我"
+        }
+      },
+      {
+        "name": {
+          "en": "Han, Changyo",
+          "ja": "韓, 燦教"
+        }
+      },
+      {
+        "name": {
+          "en": "Sugiyama, Kohei",
+          "ja": "杉山, 昂平"
+        }
+      },
+      {
+        "name": {
+          "en": "Naemura, Takeshi",
+          "ja": "苗村, 健"
+        }
+      }
+    ],
+    "title": {
+      "en": "PaperWave: Listening to Research Papers as Conversational Podcasts Scripted by LLM",
+      "ja": "PaperWave: Listening to Research Papers as Conversational Podcasts Scripted by LLM"
+    },
+    "eprint": "2410.15023",
+    "year": "2024",
+    "month": "10",
+    "links": [],
+    "lang": "en"
+  },
+  {
+    "category": "exhibition",
+    "authors": [
+      {
+        "name": {
+          "en": "Kuboki, Hitomi",
+          "ja": "久保木, 仁美"
+        }
+      },
+      {
+        "name": {
+          "en": "Morii, Hiroshi",
+          "ja": "森井, 裕史"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Shiozuka, Taiki",
+          "ja": "塩塚, 大気"
+        }
+      },
+      {
+        "name": {
+          "en": "Hirajo, Hirotaka",
+          "ja": "平城, 裕隆"
+        }
+      },
+      {
+        "name": {
+          "en": "Ito, Sei",
+          "ja": "伊東, 星"
+        }
+      },
+      {
+        "name": {
+          "en": "Ebihara, Rena",
+          "ja": "海老原, 礼菜"
+        }
+      },
+      {
+        "name": {
+          "en": "Yoshikawa, Yoshimori",
+          "ja": "吉川, 義盛"
+        }
+      }
+    ],
+    "title": {
+      "en": "Chikuseki-ki",
+      "ja": "蓄跡機"
+    },
+    "booktitle": {
+      "en": "The University of Tokyo Production Exhibition 2020",
+      "ja": "東京大学制作展 2020"
+    },
+    "year": "2020",
+    "month": "11",
+    "links": [],
+    "lang": "ja"
+  },
+  {
+    "category": "exhibition",
+    "authors": [
+      {
+        "name": {
+          "en": "Sugimoto, Takuro",
+          "ja": "杉本, 拓郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Muto, Kotone",
+          "ja": "武藤, 琴音"
+        }
+      },
+      {
+        "name": {
+          "en": "Morii, Hiroshi",
+          "ja": "森井, 裕史"
+        }
+      },
+      {
+        "name": {
+          "en": "Hirajo, Hirotaka",
+          "ja": "平城, 裕隆"
+        }
+      }
+    ],
+    "title": {
+      "en": "Mapping of Emotions",
+      "ja": "感情の写像"
+    },
+    "booktitle": {
+      "en": "The University of Tokyo Production Exhibition Extra 2020",
+      "ja": "東京大学制作展Extra 2020"
+    },
+    "year": "2020",
+    "month": "7",
+    "links": [],
+    "lang": "ja"
+  },
+  {
+    "category": "article",
+    "authors": [
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      }
+    ],
+    "title": {
+      "en": "Petagogy: An Attempt to Implement Educational Technology Research through Faculty-Student Collaboration - Through the Commercialization of the EdTech Service \"LearnWiz One\"",
+      "ja": "ぺた語義: 教員と学生の協働による教育工学研究の社会実装の試み-EdTechサービス「LearnWiz One」の事業化を通じて"
+    },
+    "journal": {
+      "en": "Information Processing",
+      "ja": "情報処理"
+    },
+    "volume": "64",
+    "number": "12",
+    "pages": "666-670",
+    "year": "2023",
+    "links": [],
+    "lang": "ja"
+  },
+  {
+    "category": "article",
+    "authors": [
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      }
+    ],
+    "title": {
+      "en": "Interaction 2020",
+      "ja": "インタラクション 2020"
+    },
+    "journal": {
+      "en": "Journal of the Virtual Reality Society of Japan",
+      "ja": "日本バーチャルリアリティ学会誌"
+    },
+    "volume": "25",
+    "number": "2",
+    "pages": "44-45",
+    "year": "2020",
+    "links": [],
+    "lang": "ja"
+  }
+]

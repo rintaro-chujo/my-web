@@ -1,0 +1,56 @@
+[
+  {
+    "degree": {
+      "en": "Ph.D. program",
+      "ja": "博士課程"
+    },
+    "period": {
+      "en": "Apr. 2025 - Present",
+      "ja": "2025年4月 - 現在"
+    },
+    "institution": {
+      "en": "Graduate School of Interdisciplinary Information Studies, The University of Tokyo.",
+      "ja": "東京大学大学院学際情報学府"
+    },
+    "adviser": {
+      "en": "Adviser: Dr. Takeshi Naemura",
+      "ja": "指導教員: 苗村 健 教授"
+    }
+  },
+  {
+    "degree": {
+      "en": "Master of Arts and Sciences (Information Studies)",
+      "ja": "修士（学際情報学）"
+    },
+    "period": {
+      "en": "Apr. 2023 - Mar. 2025",
+      "ja": "2023年4月 - 2025年3月"
+    },
+    "institution": {
+      "en": "Graduate School of Interdisciplinary Information Studies, The University of Tokyo.",
+      "ja": "東京大学大学院学際情報学府"
+    },
+    "adviser": {
+      "en": "Adviser: Dr. Takeshi Naemura and Dr. Atsunobu Suzuki",
+      "ja": "指導教員: 苗村 健 教授、鈴木 敦命 准教授"
+    }
+  },
+  {
+    "degree": {
+      "en": "Bachelor of Arts in Psychology",
+      "ja": "学士（文学）"
+    },
+    "period": {
+      "en": "Apr. 2019 - Mar. 2023",
+      "ja": "2019年4月 - 2023年3月"
+    },
+    "institution": {
+      "en": "Department of Psychology, Faculty of Letters, The University of Tokyo.",
+      "ja": "東京大学文学部心理学専修"
+    },
+    "adviser": {
+      "en": "Adviser: Dr. Atsunobu Suzuki",
+      "ja": "指導教員: 鈴木 敦命 准教授"
+    }
+  }
+]

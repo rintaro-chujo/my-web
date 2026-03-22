@@ -1,0 +1,9 @@
+[
+  {"id": "journal", "en": "Journal Paper", "ja": "学術雑誌論文", "sort": 1},
+  {"id": "intl-full", "en": "International Conference (Full paper, reviewed)", "ja": "国際会議 (フルペーパー、査読あり)", "sort": 2},
+  {"id": "intl-reviewed", "en": "International Conference (reviewed)", "ja": "国際会議 (査読あり)", "sort": 3},
+  {"id": "domestic", "en": "Domestic Conference, workshop, and meeting", "ja": "国内会議・ワークショップ・研究会", "sort": 4},
+  {"id": "preprint", "en": "Preprint", "ja": "プレプリント", "sort": 5},
+  {"id": "exhibition", "en": "Art Exhibition", "ja": "展示", "sort": 6},
+  {"id": "article", "en": "Introduction Article", "ja": "解説記事", "sort": 7}
+]

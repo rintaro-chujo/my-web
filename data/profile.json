@@ -1,0 +1,16 @@
+{
+  "name": {
+    "en": "Rintaro Chujo",
+    "ja": "中條 麟太郎"
+  },
+  "photo": "assets/profile.jpg",
+  "bio": {
+    "en": "Rintaro Chujo is a Ph.D. student at the Graduate School of Interdisciplinary Information Studies at the University of Tokyo.\nHe received his B.A. in Psychology (2023) and M.A.S. in Information Studies (2025) from the University of Tokyo, Japan.\nHis main research area is Human-Computer Interaction and Computer-Supported Cooperative Work based on experimental psychology. He is also interested in Research through Design, Design Anthropology, and ethnographic methods.",
+    "ja": "東京大学 大学院学際情報学府 博士課程在籍。日本学術振興会特別研究員 DC1。2022年度未踏アドバンスト事業 イノベーター。修士（学際情報学, 東京大学）、学士（文学, 東京大学）。\n人間と計算機のより良い関係性を模索する学問「ヒューマンコンピューターインタラクション（Human-Computer Interaction: HCI）」を専門として活動。"
+  },
+  "contact": {
+    "email_private": "rintaro.chujo [at] gmail.com",
+    "email_research": "chujo [at] hc.ic.i.u-tokyo.ac.jp",
+    "twitter": "https://twitter.com/rintaro_chujo"
+  }
+}
