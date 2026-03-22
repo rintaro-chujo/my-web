@@ -1948,7 +1948,7 @@
       "ja": "蓄跡機"
     },
     "booktitle": {
-      "en": "The University of Tokyo Production Exhibition 2020",
+      "en": "III Exhibition 2020",
       "ja": "東京大学制作展 2020"
     },
     "year": "2020",
@@ -1995,7 +1995,7 @@
       "ja": "感情の写像"
     },
     "booktitle": {
-      "en": "The University of Tokyo Production Exhibition Extra 2020",
+      "en": "III Exhibition Extra 2020",
       "ja": "東京大学制作展Extra 2020"
     },
     "year": "2020",
@@ -2628,5 +2628,109 @@
     "month": "11",
     "links": [],
     "lang": "ja"
+  },
+  {
+    "category": "exhibition",
+    "authors": [
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Akiyama, Mitsuaki",
+          "ja": "秋山, 満昭"
+        }
+      },
+      {
+        "name": {
+          "en": "Jamieson, Jack",
+          "ja": "ジェミソン, ジャック"
+        }
+      },
+      {
+        "name": {
+          "en": "Watanabe, Junji",
+          "ja": "渡邊, 淳司"
+        }
+      },
+      {
+        "name": {
+          "en": "Hautasaari, Ari",
+          "ja": "ハウタサーリ, アリ"
+        }
+      },
+      {
+        "name": {
+          "en": "Naemura, Takeshi",
+          "ja": "苗村, 健"
+        }
+      }
+    ],
+    "title": {
+      "en": "EmoJammer",
+      "ja": "EmoJammer"
+    },
+    "booktitle": {
+      "en": "Sustainable Well-being Exhibition: From More-than-Human Perspectives",
+      "ja": "サステナブル ウェルビーイング展 More-than-Humanの視点から"
+    },
+    "year": "2026",
+    "month": "3",
+    "links": [],
+    "lang": "ja"
+  },
+  {
+    "category": "intl-reviewed",
+    "authors": [
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Akiyama, Mitsuaki",
+          "ja": "秋山, 満昭"
+        }
+      },
+      {
+        "name": {
+          "en": "Jamieson, Jack",
+          "ja": "ジェミソン, ジャック"
+        }
+      },
+      {
+        "name": {
+          "en": "Watanabe, Junji",
+          "ja": "渡邊, 淳司"
+        }
+      },
+      {
+        "name": {
+          "en": "Hautasaari, Ari",
+          "ja": "ハウタサーリ, アリ"
+        }
+      },
+      {
+        "name": {
+          "en": "Naemura, Takeshi",
+          "ja": "苗村, 健"
+        }
+      }
+    ],
+    "title": {
+      "en": "Exploring the Effects of Typeface Legibility Modulation for Emotionally Manipulative Social Media Content Consumption",
+      "ja": "Exploring the Effects of Typeface Legibility Modulation for Emotionally Manipulative Social Media Content Consumption"
+    },
+    "booktitle": "Extended Abstracts of the CHI Conference on Human Factors in Computing Systems (CHI EA '26)",
+    "location": "Barcelona, Spain",
+    "year": "2026",
+    "month": "4",
+    "links": [],
+    "lang": "en"
   }
 ]
