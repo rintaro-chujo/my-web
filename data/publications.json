@@ -4,6 +4,61 @@
     "authors": [
       {
         "name": {
+          "en": "Yahagi, Yuchi",
+          "ja": "矢作, 優知"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Harada, Yuga",
+          "ja": "原田, 悠我"
+        }
+      },
+      {
+        "name": {
+          "en": "Han, Changyo",
+          "ja": "韓, 燦教"
+        }
+      },
+      {
+        "name": {
+          "en": "Sugiyama, Kohei",
+          "ja": "杉山, 昂平"
+        }
+      },
+      {
+        "name": {
+          "en": "Naemura, Takeshi",
+          "ja": "苗村, 健"
+        }
+      }
+    ],
+    "title": {
+      "en": "Autobiographical Design of PaperWave: A System for Listening to Research Papers as Conversational Podcasts",
+      "ja": "PaperWave: 研究論文を会話形式ポッドキャストとして聞くシステムの自伝的デザイン"
+    },
+    "journal": {
+      "en": "Journal of Human Interface Society",
+      "ja": "ヒューマンインタフェース学会論文誌"
+    },
+    "volume": "27",
+    "number": "4",
+    "pages": "281-300",
+    "year": "2025",
+    "links": [],
+    "lang": "ja"
+  },
+  {
+    "category": "journal",
+    "authors": [
+      {
+        "name": {
           "en": "Chujo, Rintaro",
           "ja": "中條, 麟太郎"
         }
@@ -312,6 +367,38 @@
     "authors": [
       {
         "name": {
+          "en": "Matsui, Katsufumi",
+          "ja": "松井, 克文"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Sugiyama, Kohei",
+          "ja": "杉山, 昂平"
+        }
+      }
+    ],
+    "title": {
+      "en": "Developing a Generative AI-Driven Approach to Enhance Idea Generation in Entrepreneurship Education",
+      "ja": "Developing a Generative AI-Driven Approach to Enhance Idea Generation in Entrepreneurship Education"
+    },
+    "booktitle": "USASBE 2025",
+    "year": "2025",
+    "month": "2",
+    "links": [],
+    "lang": "en"
+  },
+  {
+    "category": "intl-reviewed",
+    "authors": [
+      {
+        "name": {
           "en": "Chujo, Rintaro",
           "ja": "中條, 麟太郎"
         },
@@ -366,6 +453,193 @@
     "month": "7",
     "links": [],
     "lang": "en"
+  },
+  {
+    "category": "domestic",
+    "authors": [
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Hautasaari, Ari",
+          "ja": "ハウタサーリ, アリ"
+        }
+      },
+      {
+        "name": {
+          "en": "Naemura, Takeshi",
+          "ja": "苗村, 健"
+        }
+      }
+    ],
+    "title": {
+      "en": "Design and Evaluation of an LLM Agent Mediating Multilingual and Intercultural C2C Transaction Communication",
+      "ja": "多言語・異文化間のC2C取引コミュニケーションを仲介するLLMエージェントの設計と評価"
+    },
+    "booktitle": {
+      "en": "Human Interface Symposium 2025",
+      "ja": "ヒューマンインタフェースシンポジウム2025"
+    },
+    "year": "2025",
+    "month": "9",
+    "award": {
+      "en": "Academic Encouragement Award",
+      "ja": "学術奨励賞"
+    },
+    "links": [],
+    "lang": "ja"
+  },
+  {
+    "category": "domestic",
+    "authors": [
+      {
+        "name": {
+          "en": "Matsuura, Kanato",
+          "ja": "松浦, 奏都"
+        }
+      },
+      {
+        "name": {
+          "en": "Nakahashi, Yuri",
+          "ja": "中橋, 侑里"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Seong, Young ah",
+          "ja": "ソン, ヨンア"
+        }
+      }
+    ],
+    "title": {
+      "en": "Re:Tagged Threads — A Preliminary Study on Experience Design for Gifting Secondhand Clothing through Narratives",
+      "ja": "Re:Tagged Threads — 服にまつわる物語を用いて古着をギフトにする体験デザインの基礎検討"
+    },
+    "booktitle": "Interaction 2025",
+    "paper_id": "3P72",
+    "year": "2025",
+    "month": "3",
+    "links": [],
+    "lang": "ja"
+  },
+  {
+    "category": "domestic",
+    "authors": [
+      {
+        "name": {
+          "en": "Fujiwara, Miyuki",
+          "ja": "藤原, 未雪"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Hautasaari, Ari",
+          "ja": "ハウタサーリ, アリ"
+        }
+      }
+    ],
+    "title": {
+      "en": "Effects of AI-Assisted Product Descriptions on Buyer Preferences in Secondhand Marketplaces",
+      "ja": "フリマアプリにおけるAIとの協働で作成した商品説明文が購買者の商品嗜好に与える影響"
+    },
+    "booktitle": "Interaction 2025",
+    "year": "2025",
+    "month": "3",
+    "award": {
+      "en": "Interactive Presentation Award",
+      "ja": "インタラクティブ発表賞"
+    },
+    "links": [],
+    "lang": "ja"
+  },
+  {
+    "category": "domestic",
+    "authors": [
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Matsui, Katsufumi",
+          "ja": "松井, 克文"
+        }
+      },
+      {
+        "name": {
+          "en": "Sugiyama, Kohei",
+          "ja": "杉山, 昂平"
+        }
+      },
+      {
+        "name": {
+          "en": "Naemura, Takeshi",
+          "ja": "苗村, 健"
+        }
+      }
+    ],
+    "title": {
+      "en": "Workshop Design Using LLM Dialogue to Facilitate Critical Discussion during Ideation",
+      "ja": "LLM対話を用いたアイディエーション時の批判的議論を促進するワークショップデザイン"
+    },
+    "booktitle": "Interaction 2025",
+    "year": "2025",
+    "month": "3",
+    "links": [],
+    "lang": "ja"
+  },
+  {
+    "category": "domestic",
+    "authors": [
+      {
+        "name": {
+          "en": "Fujiwara, Miyuki",
+          "ja": "藤原, 未雪"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Hautasaari, Ari",
+          "ja": "ハウタサーリ, アリ"
+        }
+      }
+    ],
+    "title": {
+      "en": "Effects of Requested Communication Styles on Price Negotiation Interactions in Flea Market Apps",
+      "ja": "フリマアプリにおいて要望するコミュニケーションスタイルが値引き交渉のインタラクションに与える影響"
+    },
+    "booktitle": {
+      "en": "HCG Symposium 2023",
+      "ja": "HCGシンポジウム2023"
+    },
+    "year": "2023",
+    "month": "12",
+    "links": [],
+    "lang": "ja"
   },
   {
     "category": "domestic",
@@ -1125,6 +1399,44 @@
     "month": "3",
     "links": [],
     "lang": "ja"
+  },
+  {
+    "category": "preprint",
+    "authors": [
+      {
+        "name": {
+          "en": "Aoyama, Shutaro",
+          "ja": "青山, 秀太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Hautasaari, Ari",
+          "ja": "ハウタサーリ, アリ"
+        }
+      },
+      {
+        "name": {
+          "en": "Naemura, Takeshi",
+          "ja": "苗村, 健"
+        }
+      }
+    ],
+    "title": {
+      "en": "Intersubjective Model of AI-mediated Communication: Augmenting Human-Human Text Chat through LLM-based Adaptive Agent Pair",
+      "ja": "Intersubjective Model of AI-mediated Communication: Augmenting Human-Human Text Chat through LLM-based Adaptive Agent Pair"
+    },
+    "eprint": "2502.18201",
+    "year": "2025",
+    "month": "2",
+    "links": [],
+    "lang": "en"
   },
   {
     "category": "preprint",
