@@ -11,10 +11,6 @@
     "period": {
       "en": "Apr. 2025 - Present",
       "ja": "2025年4月 - 現在"
-    },
-    "description": {
-      "en": "Working under the supervision of Dr. Takeshi Naemura.",
-      "ja": "苗村 健 教授の指導のもと研究に従事。"
     }
   },
   {
@@ -29,10 +25,6 @@
     "period": {
       "en": "Apr. 2023 - Present",
       "ja": "2023年4月 - 現在"
-    },
-    "description": {
-      "en": "Working under the supervision of Dr. Ari Hautasaari.",
-      "ja": "Ari Hautasaari 特任准教授の指導のもと研究に従事。"
     }
   },
   {
@@ -47,16 +39,12 @@
     "period": {
       "en": "Dec. 2024 - Mar. 2025, May 2025 - Present",
       "ja": "2024年12月 - 2025年3月、2025年5月 - 現在"
-    },
-    "description": {
-      "en": "Working under the supervision of Dr. Seong Young ah.",
-      "ja": "ソンヨンア 教授の指導のもと研究に従事。"
     }
   },
   {
     "title": {
       "en": "Chief Executive Officer",
-      "ja": "代表取締役"
+      "ja": "代表取締役CEO"
     },
     "organization": {
       "en": "LearnWiz inc.",

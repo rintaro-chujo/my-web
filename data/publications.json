@@ -4,6 +4,49 @@
     "authors": [
       {
         "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Suzuki, Atsunobu",
+          "ja": "鈴木, 敦命"
+        }
+      },
+      {
+        "name": {
+          "en": "Hautasaari, Ari",
+          "ja": "ハウタサーリ, アリ"
+        }
+      },
+      {
+        "name": {
+          "en": "Naemura, Takeshi",
+          "ja": "苗村, 健"
+        }
+      }
+    ],
+    "title": {
+      "en": "Effects of Typeface on Impressions of Trustworthiness and Dominance and Decision-Making in Text Communication",
+      "ja": "テキストコミュニケーションにおける書体が信頼性・支配性の印象と意思決定に与える影響"
+    },
+    "journal": {
+      "en": "IEICE Transactions on Fundamentals of Electronics, Communications and Computer Sciences",
+      "ja": "信学論A"
+    },
+    "volume": "J109-A",
+    "number": "4",
+    "year": "2026",
+    "month": "4",
+    "links": [],
+    "lang": "ja"
+  },
+  {
+    "category": "journal",
+    "authors": [
+      {
+        "name": {
           "en": "Yahagi, Yuchi",
           "ja": "矢作, 優知"
         }
@@ -40,11 +83,11 @@
       }
     ],
     "title": {
-      "en": "Autobiographical Design of PaperWave: A System for Listening to Research Papers as Conversational Podcasts",
+      "en": "PaperWave: Autobiographical Design of a System to Listen to Research Papers as Conversational Podcasts",
       "ja": "PaperWave: 研究論文を会話形式ポッドキャストとして聞くシステムの自伝的デザイン"
     },
     "journal": {
-      "en": "Journal of Human Interface Society",
+      "en": "Transactions of Human Interface Society",
       "ja": "ヒューマンインタフェース学会論文誌"
     },
     "volume": "27",
@@ -329,6 +372,40 @@
     "authors": [
       {
         "name": {
+          "en": "Fujiwara, Miyuki",
+          "ja": "藤原, 未雪"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Hautasaari, Ari",
+          "ja": "ハウタサーリ, アリ"
+        }
+      }
+    ],
+    "title": {
+      "en": "Exploring Human-AI Collaborative Writing of Product Descriptions on Online Flea Market Apps from the Sellers' and Buyers' Perspectives",
+      "ja": "Exploring Human-AI Collaborative Writing of Product Descriptions on Online Flea Market Apps from the Sellers' and Buyers' Perspectives"
+    },
+    "booktitle": "Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems Extended Abstracts (CHI'25 EA)",
+    "articleno": "246",
+    "year": "2025",
+    "month": "4",
+    "doi": "https://doi.org/10.1145/3706599.3719718",
+    "links": [],
+    "lang": "en"
+  },
+  {
+    "category": "intl-reviewed",
+    "authors": [
+      {
+        "name": {
           "en": "Hautasaari, Ari",
           "ja": "ハウタサーリ, アリ"
         }
@@ -359,6 +436,114 @@
     "booktitle": "ACM CHI EA'24",
     "year": "2024",
     "month": "5",
+    "links": [],
+    "lang": "en"
+  },
+  {
+    "category": "intl-reviewed",
+    "authors": [
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        },
+        "equal": true
+      },
+      {
+        "name": {
+          "en": "Yahagi, Yuchi",
+          "ja": "矢作, 優知"
+        },
+        "equal": true
+      },
+      {
+        "name": {
+          "en": "Wu, Kuan-Ju",
+          "ja": "Wu, Kuan-Ju"
+        },
+        "equal": true
+      },
+      {
+        "name": {
+          "en": "Fujita, Yuiko",
+          "ja": "藤田, 結子"
+        }
+      }
+    ],
+    "title": {
+      "en": "To Play or Not to Play: Ethnographic Insights into Designers' Role Negotiations in Co-Creation Processes at an Adventure Playground",
+      "ja": "To Play or Not to Play: Ethnographic Insights into Designers' Role Negotiations in Co-Creation Processes at an Adventure Playground"
+    },
+    "booktitle": "IASDR 2025",
+    "location": "Taipei, Taiwan",
+    "year": "2025",
+    "month": "12",
+    "links": [],
+    "lang": "en"
+  },
+  {
+    "category": "intl-reviewed",
+    "authors": [
+      {
+        "name": {
+          "en": "Matsui, Katsufumi",
+          "ja": "松井, 克文"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Sugiyama, Kohei",
+          "ja": "杉山, 昂平"
+        }
+      }
+    ],
+    "title": {
+      "en": "Your Hobby, Your Venture: Generative AI Vibe-Coding to Build & Validate Prototypes",
+      "ja": "Your Hobby, Your Venture: Generative AI Vibe-Coding to Build & Validate Prototypes"
+    },
+    "booktitle": "2026 Annual USASBE Conference",
+    "year": "2026",
+    "month": "2",
+    "links": [],
+    "lang": "en"
+  },
+  {
+    "category": "intl-reviewed",
+    "authors": [
+      {
+        "name": {
+          "en": "Matsui, Katsufumi",
+          "ja": "松井, 克文"
+        },
+        "equal": true
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        },
+        "equal": true
+      },
+      {
+        "name": {
+          "en": "Naemura, Takeshi",
+          "ja": "苗村, 健"
+        }
+      }
+    ],
+    "title": {
+      "en": "Future-me, On Air: Personalized Podcast Role-Play for Entrepreneurial Mindsets",
+      "ja": "Future-me, On Air: Personalized Podcast Role-Play for Entrepreneurial Mindsets"
+    },
+    "booktitle": "2026 Annual USASBE Conference",
+    "year": "2026",
+    "month": "2",
     "links": [],
     "lang": "en"
   },
@@ -498,6 +683,252 @@
     "authors": [
       {
         "name": {
+          "en": "Kibayashi, Yuta",
+          "ja": "木林, 佑太"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Hatada, Yuji",
+          "ja": "畑田, 裕二"
+        }
+      },
+      {
+        "name": {
+          "en": "Hautasaari, Ari",
+          "ja": "ハウタサーリ, アリ"
+        }
+      },
+      {
+        "name": {
+          "en": "Naemura, Takeshi",
+          "ja": "苗村, 健"
+        }
+      }
+    ],
+    "title": {
+      "en": "Improvement and Evaluation of Butlerliezer: An AI Reply System that Moderately Evades Depending on the Conversation Partner",
+      "ja": "会話相手に応じて適度にごまかすAI返信システム「Butlerliezer」の改良と評価"
+    },
+    "booktitle": "Interaction 2026",
+    "paper_id": "3B46",
+    "year": "2026",
+    "month": "3",
+    "links": [],
+    "lang": "ja"
+  },
+  {
+    "category": "domestic",
+    "authors": [
+      {
+        "name": {
+          "en": "Ranki, Tatsuya",
+          "ja": "欄木, 達也"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Hautasaari, Ari",
+          "ja": "ハウタサーリ, アリ"
+        }
+      },
+      {
+        "name": {
+          "en": "Baba, Yukino",
+          "ja": "馬場, 雪乃"
+        }
+      },
+      {
+        "name": {
+          "en": "Naemura, Takeshi",
+          "ja": "苗村, 健"
+        }
+      }
+    ],
+    "title": {
+      "en": "Evaluation of 'Tweet-Oriented LLM' in Product Description Editing",
+      "ja": "「つぶやき操作指向LLM」の商品説明文編集における評価"
+    },
+    "booktitle": {
+      "en": "HCG Symposium 2025",
+      "ja": "HCGシンポジウム2025"
+    },
+    "paper_id": "A4-4, P2-17",
+    "year": "2025",
+    "month": "12",
+    "links": [],
+    "lang": "ja"
+  },
+  {
+    "category": "domestic",
+    "authors": [
+      {
+        "name": {
+          "en": "Tsuzuki, Ai",
+          "ja": "都築, あい"
+        }
+      },
+      {
+        "name": {
+          "en": "Yahagi, Yuchi",
+          "ja": "矢作, 優知"
+        }
+      },
+      {
+        "name": {
+          "en": "Hatada, Yuji",
+          "ja": "畑田, 裕二"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Hautasaari, Ari",
+          "ja": "ハウタサーリ, アリ"
+        }
+      },
+      {
+        "name": {
+          "en": "Naemura, Takeshi",
+          "ja": "苗村, 健"
+        }
+      }
+    ],
+    "title": {
+      "en": "Co-Lamp: A Lamp for Collectively Sharing Room Lights among Close Friends",
+      "ja": "Co-Lamp: 仲間内で部屋の明かりを集合的に共有するランプ"
+    },
+    "booktitle": {
+      "en": "HCG Symposium 2025",
+      "ja": "HCGシンポジウム2025"
+    },
+    "paper_id": "A1-5, P1-5",
+    "year": "2025",
+    "month": "12",
+    "links": [],
+    "lang": "ja"
+  },
+  {
+    "category": "domestic",
+    "authors": [
+      {
+        "name": {
+          "en": "Kibayashi, Yuta",
+          "ja": "木林, 佑太"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Hatada, Yuji",
+          "ja": "畑田, 裕二"
+        }
+      },
+      {
+        "name": {
+          "en": "Hautasaari, Ari",
+          "ja": "ハウタサーリ, アリ"
+        }
+      },
+      {
+        "name": {
+          "en": "Naemura, Takeshi",
+          "ja": "苗村, 健"
+        }
+      }
+    ],
+    "title": {
+      "en": "Butlerliezer: Proposal of AI Reply Messages that Moderately Evade Depending on the Sender",
+      "ja": "Butlerliezer: 送信者に応じて適度にごまかすAI返信メッセージの提案"
+    },
+    "booktitle": {
+      "en": "IEICE Technical Report",
+      "ja": "信学技報"
+    },
+    "volume": "125",
+    "number": "194",
+    "paper_id": "MVE2025-21",
+    "pages": "16-21",
+    "year": "2025",
+    "month": "10",
+    "links": [],
+    "lang": "ja"
+  },
+  {
+    "category": "domestic",
+    "authors": [
+      {
+        "name": {
+          "en": "Ranki, Tatsuya",
+          "ja": "欄木, 達也"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Hautasaari, Ari",
+          "ja": "ハウタサーリ, アリ"
+        }
+      },
+      {
+        "name": {
+          "en": "Baba, Yukino",
+          "ja": "馬場, 雪乃"
+        }
+      },
+      {
+        "name": {
+          "en": "Naemura, Takeshi",
+          "ja": "苗村, 健"
+        }
+      }
+    ],
+    "title": {
+      "en": "Proposal of 'Think-Aloud Prompting' for Product Description Editing Using LLM",
+      "ja": "LLMを用いた商品説明文編集における「思考発話プロンプティング」の提案"
+    },
+    "booktitle": {
+      "en": "Human Interface Symposium 2025",
+      "ja": "ヒューマンインタフェースシンポジウム2025"
+    },
+    "paper_id": "2B1-4",
+    "year": "2025",
+    "month": "9",
+    "links": [],
+    "lang": "ja"
+  },
+  {
+    "category": "domestic",
+    "authors": [
+      {
+        "name": {
           "en": "Matsuura, Kanato",
           "ja": "松浦, 奏都"
         }
@@ -597,12 +1028,17 @@
       }
     ],
     "title": {
-      "en": "Workshop Design Using LLM Dialogue to Facilitate Critical Discussion during Ideation",
-      "ja": "LLM対話を用いたアイディエーション時の批判的議論を促進するワークショップデザイン"
+      "en": "Design of a Workshop Using Dialogue between LLMs as a Catalyst to Facilitate Critical Discussion in Ideation",
+      "ja": "アイディエーションにおける批評的な議論を促すためのLLM同士の対話を触媒としたワークショップの設計"
     },
     "booktitle": "Interaction 2025",
+    "paper_id": "3B21",
     "year": "2025",
     "month": "3",
+    "award": {
+      "en": "Premium Presentation",
+      "ja": "プレミアム発表選出"
+    },
     "links": [],
     "lang": "ja"
   },
@@ -1159,7 +1595,7 @@
     "authors": [
       {
         "name": {
-          "en": "Ranki, Tatsuya",
+          "en": "Maseki, Tatsuya",
           "ja": "欄木, 達也"
         }
       },
@@ -1230,7 +1666,7 @@
     "month": "12",
     "award": {
       "en": "Best Presentation Award, top 5%",
-      "ja": "優秀インタラクティブ発表賞, 上位5%"
+      "ja": "最優秀インタラクティブ発表賞, 上位5%"
     },
     "links": [],
     "lang": "ja"

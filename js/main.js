@@ -39,7 +39,7 @@ function renderProfile(data) {
 
   const contact = document.getElementById('profile-contact');
   contact.innerHTML = `
-    <p>Email (private): ${data.contact.email_private}</p>
+    <p>Email (work): ${data.contact.email_work}</p>
     <p>Email (research): ${data.contact.email_research}</p>
     <p>Twitter: <a href="${data.contact.twitter}" target="_blank">${data.contact.twitter}</a></p>
   `;
@@ -62,20 +62,28 @@ function renderEducation(data) {
 function renderExperience(data) {
   const el = document.getElementById('experience-list');
   el.className = 'list-section';
-  el.innerHTML = '<ul>' + data.map(item => `
-    <li>
+  el.innerHTML = '<ul>' + data.map(item => {
+    const desc = item.description && t(item.description)
+      ? `<ul><li>${t(item.description)}</li></ul>` : '';
+    return `<li>
       <span class="item-degree">${t(item.title)},</span> ${t(item.organization)}, ${t(item.period)}
-      <ul>
-        <li>${t(item.description)}</li>
-      </ul>
-    </li>
-  `).join('') + '</ul>';
+      ${desc}
+    </li>`;
+  }).join('') + '</ul>';
+}
+
+function sortByDate(data) {
+  return data.slice().sort((a, b) => {
+    const ya = parseInt(b.year || '0') - parseInt(a.year || '0');
+    if (ya !== 0) return ya;
+    return parseInt(b.month || '0') - parseInt(a.month || '0');
+  });
 }
 
 function renderGrants(data) {
   const el = document.getElementById('grants-list');
   el.className = 'grants-section';
-  el.innerHTML = '<ul>' + data.map(item => {
+  el.innerHTML = '<ul>' + sortByDate(data).map(item => {
     const desc = item.description ? `<br>${t(item.description)}` : '';
     return `<li><span class="grant-title-text">${t(item.title)}</span>, ${t(item.date)}${desc}</li>`;
   }).join('') + '</ul>';
@@ -120,9 +128,15 @@ function renderPublications(publications, categories) {
   el.innerHTML = catOrder.map(cat => {
     const entries = grouped[cat.id];
     if (!entries || entries.length === 0) return '';
+    entries.sort((a, b) => {
+      const ya = parseInt(b.year || '0') - parseInt(a.year || '0');
+      if (ya !== 0) return ya;
+      return parseInt(b.month || '0') - parseInt(a.month || '0');
+    });
+
 
     const entriesHTML = entries.map(entry => {
-      const entryLang = entry.lang || null;
+      const entryLang = entry.lang === 'en' ? 'en' : null;
       const authors = formatAuthors(entry.authors, entryLang);
       const title = t(entry.title, entryLang);
       const venue = formatVenue(entry, entryLang);
@@ -151,7 +165,7 @@ function renderPublications(publications, categories) {
 
 function renderTalks(data) {
   const el = document.getElementById('talks-list');
-  el.innerHTML = data.map(item => `
+  el.innerHTML = sortByDate(data).map(item => `
     <div class="talk-item">
       ${formatAuthors(item.authors)}. "${t(item.title)}," ${t(item.venue)}
     </div>

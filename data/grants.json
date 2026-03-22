@@ -1,13 +1,139 @@
 [
   {
     "title": {
+      "en": "Human Interface Society Academic Encouragement Award",
+      "ja": "ヒューマンインタフェース学会 学術奨励賞"
+    },
+    "date": {
+      "en": "Mar. 2026",
+      "ja": "2026年3月"
+    },
+    "description": {
+      "en": "Awarded for \"Design and Evaluation of an LLM Agent Mediating Multilingual and Intercultural C2C Transaction Communication\" at Human Interface Symposium 2025.",
+      "ja": "ヒューマンインタフェースシンポジウム2025での「多言語・異文化間のC2C取引コミュニケーションを仲介するLLMエージェントの設計と評価」に対して授与。"
+    },
+    "year": "2026",
+    "month": "3"
+  },
+  {
+    "title": {
+      "en": "IEICE Human Communication Award (HC Award), HCG Symposium 2025",
+      "ja": "電子情報通信学会 ヒューマンコミュニケーション賞（HC賞）, HCGシンポジウム2025"
+    },
+    "date": {
+      "en": "Dec. 2025",
+      "ja": "2025年12月"
+    },
+    "description": {
+      "en": "The most prestigious award of the IEICE Human Communication Group (HCG). Awarded for \"A Preliminary Study on Human-AI Collaboration in Creating Product Descriptions for Flea Market Apps.\"",
+      "ja": "電子情報通信学会ヒューマンコミュニケーショングループ（HCG）が授与する賞の中で最も権威の高い賞。「フリマアプリでの商品説明文の作成における人・AI協働の基礎検討」に対して授与。"
+    },
+    "year": "2025",
+    "month": "12"
+  },
+  {
+    "title": {
+      "en": "Telecommunications Advancement Foundation Award, Grand Prize (Telecom Interdisciplinary Research Student Award)",
+      "ja": "電気通信普及財団賞 最優秀賞（テレコム学際研究学生賞）"
+    },
+    "date": {
+      "en": "Apr. 2025",
+      "ja": "2025年4月"
+    },
+    "description": {
+      "en": "Awarded for the research on \"EmoBalloon - Conveying Emotional Arousal in Text Chats with Speech Balloons.\"",
+      "ja": "「EmoBalloon - テキストチャットにおける吹き出しを用いた感情的覚醒の伝達」の研究に対して授与。"
+    },
+    "year": "2025",
+    "month": "4"
+  },
+  {
+    "title": {
+      "en": "Interaction 2025 Interactive Presentation Award",
+      "ja": "インタラクション2025 インタラクティブ発表賞"
+    },
+    "date": {
+      "en": "Mar. 2025",
+      "ja": "2025年3月"
+    },
+    "description": {
+      "en": "Awarded for \"Effects of AI-Assisted Product Descriptions on Buyer Preferences in Secondhand Marketplaces.\"",
+      "ja": "「フリマアプリにおけるAIとの協働で作成した商品説明文が購買者の商品嗜好に与える影響」に対して授与。"
+    },
+    "year": "2025",
+    "month": "3"
+  },
+  {
+    "title": {
+      "en": "Course Director's Award, Advanced Expression and Information Science",
+      "ja": "先端表現情報学コース長賞"
+    },
+    "date": {
+      "en": "Mar. 2025",
+      "ja": "2025年3月"
+    },
+    "year": "2025",
+    "month": "3"
+  },
+  {
+    "title": {
+      "en": "MVE Award, IEICE Media Experience and Virtual Environment Research Group",
+      "ja": "MVE賞, 電子情報通信学会 メディアエクスペリエンス・バーチャル環境基礎研究会"
+    },
+    "date": {
+      "en": "Jan. 2025",
+      "ja": "2025年1月"
+    },
+    "description": {
+      "en": "Awarded for \"A Preliminary Study on Human-AI Collaboration in Creating Product Descriptions for Flea Market Apps.\"",
+      "ja": "「フリマアプリでの商品説明文の作成における人・AI協働の基礎検討」に対して授与。"
+    },
+    "year": "2025",
+    "month": "1"
+  },
+  {
+    "title": {
+      "en": "HCG Symposium 2024 Best Interactive Presentation Award",
+      "ja": "HCGシンポジウム2024 最優秀インタラクティブ発表賞"
+    },
+    "date": {
+      "en": "Dec. 2024",
+      "ja": "2024年12月"
+    },
+    "description": {
+      "en": "Awarded for \"PaperWave: Developing a System for Adapting Research Papers into Conversational Podcasts with LLMs.\"",
+      "ja": "「LLMを用いた研究論文の会話形式ポッドキャストへの変換システムPaperWaveの開発」に対して授与。"
+    },
+    "year": "2024",
+    "month": "12"
+  },
+  {
+    "title": {
+      "en": "HCG Symposium 2023 Best Interactive Presentation Award",
+      "ja": "HCGシンポジウム2023 最優秀インタラクティブ発表賞"
+    },
+    "date": {
+      "en": "Dec. 2023",
+      "ja": "2023年12月"
+    },
+    "description": {
+      "en": "Awarded for research on \"Effects of Requested Communication Styles on Price Negotiation in Flea Market Apps.\"",
+      "ja": "「フリマアプリにおいて要望するコミュニケーションスタイルが値引き交渉のインタラクションに与える影響」に対して授与。"
+    },
+    "year": "2023",
+    "month": "12"
+  },
+  {
+    "title": {
       "en": "GOOD DESIGN NEW HOPE AWARD 2022, Honorable Mention",
       "ja": "GOOD DESIGN NEW HOPE AWARD 2022 入選"
     },
     "date": {
       "en": "Sep. 2022",
       "ja": "2022年9月"
-    }
+    },
+    "year": "2022",
+    "month": "9"
   },
   {
     "title": {
@@ -21,7 +147,9 @@
     "description": {
       "en": "Adopted by the IPA MITOU Advanced Program operated by The Ministry of Economy, Trade and Industry (METI), 73,500USD.",
       "ja": "経済産業省所管のIPA未踏アドバンスト事業に採択。1000万円。"
-    }
+    },
+    "year": "2022",
+    "month": "7"
   },
   {
     "title": {
@@ -35,7 +163,9 @@
     "description": {
       "en": "Given to the top 1% of all the submitted full papers in ACM CHI2022.",
       "ja": "ACM CHI2022に投稿された全フルペーパーの上位1%に授与。"
-    }
+    },
+    "year": "2022",
+    "month": "4"
   },
   {
     "title": {
@@ -49,7 +179,9 @@
     "description": {
       "en": "Selected as top 2 students out of approx. 27,000 students at the University of Tokyo.",
       "ja": "東京大学の約27,000人の学生の中から上位2名に選出。"
-    }
+    },
+    "year": "2022",
+    "month": "3"
   },
   {
     "title": {
@@ -63,6 +195,8 @@
     "description": {
       "en": "Awarded for the development of an opinion-gathering platform called \"LearnWiz One\".",
       "ja": "意見集約プラットフォーム「LearnWiz One」の開発に対して授与。"
-    }
+    },
+    "year": "2022",
+    "month": "1"
   }
 ]
