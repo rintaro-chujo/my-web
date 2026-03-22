@@ -165,12 +165,12 @@ a:hover {
 }
 
 /* Grants */
-.grants-section > ul {
-  list-style: disc;
+.grants-section > ol {
+  list-style: decimal;
   padding-left: 24px;
 }
 
-.grants-section > ul > li {
+.grants-section > ol > li {
   margin-bottom: 8px;
   font-size: 0.9rem;
 }
@@ -189,6 +189,11 @@ a:hover {
   font-weight: 700;
   margin-bottom: 10px;
   text-decoration: underline;
+}
+
+.pub-list {
+  list-style: decimal;
+  padding-left: 24px;
 }
 
 .pub-entry {
@@ -230,6 +235,11 @@ a:hover {
 }
 
 /* Talks */
+.talks-list {
+  list-style: decimal;
+  padding-left: 24px;
+}
+
 .talk-item {
   margin-bottom: 12px;
   font-size: 0.9rem;

@@ -1,6 +1,20 @@
 [
   {
     "title": {
+      "en": "Researcher and Designer, AI Engineering Team for the AI Curriculum Analyzer project",
+      "ja": "Researcher and Designer, AI Curriculum Analyzer プロジェクト AIエンジニアリングチーム"
+    },
+    "organization": {
+      "en": "Future of Education and Skills 2040, OECD",
+      "ja": "OECD 教育・スキルの未来2040"
+    },
+    "period": {
+      "en": "Oct. 2025 - Present",
+      "ja": "2025年10月 - 現在"
+    }
+  },
+  {
+    "title": {
       "en": "Research Fellowships for Young Scientists (DC1)",
       "ja": "特別研究員 (DC1)"
     },
@@ -33,12 +47,40 @@
       "ja": "リサーチアシスタント"
     },
     "organization": {
+      "en": "UTokyo×NTT Sustainable Well-being Social Collaboration Initiative",
+      "ja": "東京大学×NTT サステナブルウェルビーイング社会連携講座"
+    },
+    "period": {
+      "en": "Jan. 2026 - Present",
+      "ja": "2026年1月 - 現在"
+    }
+  },
+  {
+    "title": {
+      "en": "Research Assistant",
+      "ja": "リサーチアシスタント"
+    },
+    "organization": {
       "en": "Faculty of Engineering and Design, Hosei University",
       "ja": "法政大学 デザイン工学部"
     },
     "period": {
       "en": "Dec. 2024 - Mar. 2025, May 2025 - Present",
       "ja": "2024年12月 - 2025年3月、2025年5月 - 現在"
+    }
+  },
+  {
+    "title": {
+      "en": "Innovator, MITOU Advanced Program",
+      "ja": "未踏アドバンスト事業 イノベータ"
+    },
+    "organization": {
+      "en": "Information-technology Promotion Agency, Japan (IPA)",
+      "ja": "独立行政法人情報処理推進機構 (IPA)"
+    },
+    "period": {
+      "en": "Jul. 2022 - Feb. 2023",
+      "ja": "2022年7月 - 2023年2月"
     }
   },
   {

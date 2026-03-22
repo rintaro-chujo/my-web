@@ -8,10 +8,6 @@
       "en": "Mar. 2026",
       "ja": "2026年3月"
     },
-    "description": {
-      "en": "Awarded for \"Design and Evaluation of an LLM Agent Mediating Multilingual and Intercultural C2C Transaction Communication\" at Human Interface Symposium 2025.",
-      "ja": "ヒューマンインタフェースシンポジウム2025での「多言語・異文化間のC2C取引コミュニケーションを仲介するLLMエージェントの設計と評価」に対して授与。"
-    },
     "year": "2026",
     "month": "3"
   },
@@ -24,17 +20,13 @@
       "en": "Dec. 2025",
       "ja": "2025年12月"
     },
-    "description": {
-      "en": "The most prestigious award of the IEICE Human Communication Group (HCG). Awarded for \"A Preliminary Study on Human-AI Collaboration in Creating Product Descriptions for Flea Market Apps.\"",
-      "ja": "電子情報通信学会ヒューマンコミュニケーショングループ（HCG）が授与する賞の中で最も権威の高い賞。「フリマアプリでの商品説明文の作成における人・AI協働の基礎検討」に対して授与。"
-    },
     "year": "2025",
     "month": "12"
   },
   {
     "title": {
-      "en": "Telecommunications Advancement Foundation Award, Grand Prize (Telecom Interdisciplinary Research Student Award)",
-      "ja": "電気通信普及財団賞 最優秀賞（テレコム学際研究学生賞）"
+      "en": "Grand Prize, Telecom Interdisciplinary Research Student Award, Telecommunications Advancement Foundation",
+      "ja": "電気通信普及財団 テレコム学際研究学生賞 最優秀賞"
     },
     "date": {
       "en": "Apr. 2025",
@@ -56,17 +48,13 @@
       "en": "Mar. 2025",
       "ja": "2025年3月"
     },
-    "description": {
-      "en": "Awarded for \"Effects of AI-Assisted Product Descriptions on Buyer Preferences in Secondhand Marketplaces.\"",
-      "ja": "「フリマアプリにおけるAIとの協働で作成した商品説明文が購買者の商品嗜好に与える影響」に対して授与。"
-    },
     "year": "2025",
     "month": "3"
   },
   {
     "title": {
-      "en": "Course Director's Award, Advanced Expression and Information Science",
-      "ja": "先端表現情報学コース長賞"
+      "en": "Emerging Design and Informatics Course Director's Award, Graduate School of Interdisciplinary Information Studies, The University of Tokyo",
+      "ja": "先端表現情報学コース長賞, 東京大学大学院学際情報学府"
     },
     "date": {
       "en": "Mar. 2025",
@@ -84,10 +72,6 @@
       "en": "Jan. 2025",
       "ja": "2025年1月"
     },
-    "description": {
-      "en": "Awarded for \"A Preliminary Study on Human-AI Collaboration in Creating Product Descriptions for Flea Market Apps.\"",
-      "ja": "「フリマアプリでの商品説明文の作成における人・AI協働の基礎検討」に対して授与。"
-    },
     "year": "2025",
     "month": "1"
   },
@@ -100,10 +84,6 @@
       "en": "Dec. 2024",
       "ja": "2024年12月"
     },
-    "description": {
-      "en": "Awarded for \"PaperWave: Developing a System for Adapting Research Papers into Conversational Podcasts with LLMs.\"",
-      "ja": "「LLMを用いた研究論文の会話形式ポッドキャストへの変換システムPaperWaveの開発」に対して授与。"
-    },
     "year": "2024",
     "month": "12"
   },
@@ -115,10 +95,6 @@
     "date": {
       "en": "Dec. 2023",
       "ja": "2023年12月"
-    },
-    "description": {
-      "en": "Awarded for research on \"Effects of Requested Communication Styles on Price Negotiation in Flea Market Apps.\"",
-      "ja": "「フリマアプリにおいて要望するコミュニケーションスタイルが値引き交渉のインタラクションに与える影響」に対して授与。"
     },
     "year": "2023",
     "month": "12"
@@ -192,11 +168,43 @@
       "en": "Jan. 2022",
       "ja": "2022年1月"
     },
-    "description": {
-      "en": "Awarded for the development of an opinion-gathering platform called \"LearnWiz One\".",
-      "ja": "意見集約プラットフォーム「LearnWiz One」の開発に対して授与。"
-    },
     "year": "2022",
     "month": "1"
+  },
+  {
+    "title": {
+      "en": "Learning Impact Award 2023, Honorable Mention",
+      "ja": "Learning Impact Award 2023, Honorable Mention"
+    },
+    "date": {
+      "en": "Jun. 2023",
+      "ja": "2023年6月"
+    },
+    "year": "2023",
+    "month": "6"
+  },
+  {
+    "title": {
+      "en": "7th IMS Japan Award, Grand Prize (LearnWiz inc.)",
+      "ja": "第7回IMS Japan賞 最優秀賞 (株式会社LearnWiz)"
+    },
+    "date": {
+      "en": "Nov. 2022",
+      "ja": "2022年11月"
+    },
+    "year": "2022",
+    "month": "11"
+  },
+  {
+    "title": {
+      "en": "19th Japan e-Learning Award, ICT CONNECT 21 President's Award (LearnWiz inc.)",
+      "ja": "第19回日本e-Learning大賞 ICT CONNECT 21会長賞 (株式会社LearnWiz)"
+    },
+    "date": {
+      "en": "Nov. 2022",
+      "ja": "2022年11月"
+    },
+    "year": "2022",
+    "month": "11"
   }
 ]

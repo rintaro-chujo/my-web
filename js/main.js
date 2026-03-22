@@ -83,10 +83,10 @@ function sortByDate(data) {
 function renderGrants(data) {
   const el = document.getElementById('grants-list');
   el.className = 'grants-section';
-  el.innerHTML = '<ul>' + sortByDate(data).map(item => {
+  el.innerHTML = '<ol>' + sortByDate(data).map(item => {
     const desc = item.description ? `<br>${t(item.description)}` : '';
     return `<li><span class="grant-title-text">${t(item.title)}</span>, ${t(item.date)}${desc}</li>`;
-  }).join('') + '</ul>';
+  }).join('') + '</ol>';
 }
 
 function formatVenue(entry, lang) {
@@ -148,28 +148,19 @@ function renderPublications(publications, categories) {
         : '';
 
       return `
-        <div class="pub-entry">
+        <li class="pub-entry">
           ${authors}. "${title}," ${venue}${doi}${award}${equalNote}${links}
-        </div>
+        </li>
       `;
     }).join('');
 
     return `
       <div class="pub-category">
         <h3>${t(cat)}</h3>
-        ${entriesHTML}
+        <ol class="pub-list">${entriesHTML}</ol>
       </div>
     `;
   }).join('');
-}
-
-function renderTalks(data) {
-  const el = document.getElementById('talks-list');
-  el.innerHTML = sortByDate(data).map(item => `
-    <div class="talk-item">
-      ${formatAuthors(item.authors)}. "${t(item.title)}," ${t(item.venue)}
-    </div>
-  `).join('');
 }
 
 function renderService(data) {
@@ -196,19 +187,18 @@ function updateNavLabels() {
 let allData = {};
 
 async function init() {
-  const [profile, education, experience, grants, categories, publications, talks, service, media] = await Promise.all([
+  const [profile, education, experience, grants, categories, publications, service, media] = await Promise.all([
     loadJSON('data/profile.json'),
     loadJSON('data/education.json'),
     loadJSON('data/experience.json'),
     loadJSON('data/grants.json'),
     loadJSON('data/categories.json'),
     loadJSON('data/publications.json'),
-    loadJSON('data/talks.json'),
     loadJSON('data/service.json'),
     loadJSON('data/media.json'),
   ]);
 
-  allData = { profile, education, experience, grants, categories, publications, talks, service, media };
+  allData = { profile, education, experience, grants, categories, publications, service, media };
   renderAll();
 }
 
@@ -218,7 +208,6 @@ function renderAll() {
   renderExperience(allData.experience);
   renderGrants(allData.grants);
   renderPublications(allData.publications, allData.categories);
-  renderTalks(allData.talks);
   renderService(allData.service);
   renderMedia(allData.media);
   updateNavLabels();

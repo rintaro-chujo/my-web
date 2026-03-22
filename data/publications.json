@@ -554,13 +554,15 @@
         "name": {
           "en": "Matsui, Katsufumi",
           "ja": "松井, 克文"
-        }
+        },
+        "equal": true
       },
       {
         "name": {
           "en": "Chujo, Rintaro",
           "ja": "中條, 麟太郎"
-        }
+        },
+        "equal": true
       },
       {
         "name": {
@@ -728,7 +730,7 @@
     "authors": [
       {
         "name": {
-          "en": "Ranki, Tatsuya",
+          "en": "Maseki, Tatsuya",
           "ja": "欄木, 達也"
         }
       },
@@ -881,7 +883,7 @@
     "authors": [
       {
         "name": {
-          "en": "Ranki, Tatsuya",
+          "en": "Maseki, Tatsuya",
           "ja": "欄木, 達也"
         }
       },
@@ -993,8 +995,8 @@
     "year": "2025",
     "month": "3",
     "award": {
-      "en": "Interactive Presentation Award",
-      "ja": "インタラクティブ発表賞"
+      "en": "Premium Presentation / Interactive Presentation Award",
+      "ja": "プレミアム発表選出 / インタラクティブ発表賞"
     },
     "links": [],
     "lang": "ja"
@@ -1039,41 +1041,6 @@
       "en": "Premium Presentation",
       "ja": "プレミアム発表選出"
     },
-    "links": [],
-    "lang": "ja"
-  },
-  {
-    "category": "domestic",
-    "authors": [
-      {
-        "name": {
-          "en": "Fujiwara, Miyuki",
-          "ja": "藤原, 未雪"
-        }
-      },
-      {
-        "name": {
-          "en": "Chujo, Rintaro",
-          "ja": "中條, 麟太郎"
-        }
-      },
-      {
-        "name": {
-          "en": "Hautasaari, Ari",
-          "ja": "ハウタサーリ, アリ"
-        }
-      }
-    ],
-    "title": {
-      "en": "Effects of Requested Communication Styles on Price Negotiation Interactions in Flea Market Apps",
-      "ja": "フリマアプリにおいて要望するコミュニケーションスタイルが値引き交渉のインタラクションに与える影響"
-    },
-    "booktitle": {
-      "en": "HCG Symposium 2023",
-      "ja": "HCGシンポジウム2023"
-    },
-    "year": "2023",
-    "month": "12",
     "links": [],
     "lang": "ja"
   },
@@ -1200,8 +1167,8 @@
     "year": "2025",
     "month": "3",
     "award": {
-      "en": "Premium Presentation (Top 19.6%)",
-      "ja": "プレミアム発表 (上位19.6%)"
+      "en": "Premium Presentation (Top 20%)",
+      "ja": "プレミアム発表 (上位20%)"
     },
     "links": [],
     "lang": "ja"
@@ -2083,6 +2050,582 @@
     "number": "2",
     "pages": "44-45",
     "year": "2020",
+    "links": [],
+    "lang": "ja"
+  },
+  {
+    "category": "invited-talk",
+    "authors": [
+      {
+        "name": {
+          "en": "Yoshida, Lui",
+          "ja": "吉田, 塁"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      }
+    ],
+    "title": {
+      "en": "The University of Tokyo Metaverse School of Engineering x UTokyo Attached School 77th Class: \"What is Entrepreneurship?\"",
+      "ja": "東京大学メタバース工学部×東大附属77回生「起業ってなんだろう？」"
+    },
+    "booktitle": {
+      "en": "The University of Tokyo Faculty of Education Attached Secondary School, Mar. 2023.",
+      "ja": "東京大学教育学部附属中等教育学校, 2023年3月."
+    },
+    "year": "2023",
+    "month": "3",
+    "lang": "ja"
+  },
+  {
+    "category": "invited-talk",
+    "authors": [
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Yoshida, Lui",
+          "ja": "吉田, 塁"
+        }
+      }
+    ],
+    "title": {
+      "en": "The Trajectory of the LearnWiz Project to Realize Better Learning Environments @ Virtual Yasuda Auditorium",
+      "ja": "より良い学習環境を実現するLearnWizプロジェクトの軌跡 @ バーチャル安田講堂"
+    },
+    "booktitle": {
+      "en": "The University of Tokyo Open Campus 2022 for High School Students, Aug. 2022.",
+      "ja": "高校生のための東京大学オープンキャンパス2022, 2022年8月."
+    },
+    "year": "2022",
+    "month": "8",
+    "lang": "ja"
+  },
+  {
+    "category": "invited-talk",
+    "authors": [
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Yoshida, Lui",
+          "ja": "吉田, 塁"
+        }
+      }
+    ],
+    "title": {
+      "en": "Development and Practice of the Opinion Aggregation Tool \"LearnWiz One\"",
+      "ja": "意見集約ツール「LearnWiz One」の開発と実践"
+    },
+    "booktitle": {
+      "en": "National Institute of Informatics, Cyber Symposium on Education DX (51st), Jul. 2022.",
+      "ja": "国立情報学研究所 大学等におけるオンライン教育とデジタル変革に関するサイバーシンポジウム「教育機関DXシンポ」（第51回）, 2022年7月."
+    },
+    "year": "2022",
+    "month": "7",
+    "lang": "ja"
+  },
+  {
+    "category": "invited-talk",
+    "authors": [
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      }
+    ],
+    "title": {
+      "en": "How to Create a Society of \"Living Together\" - Social Innovation through Design",
+      "ja": "「ともにいきる」社会の作り方 デザインがもたらす社会イノベーション"
+    },
+    "booktitle": {
+      "en": "Tsukuba University Komaba Senior High School, May 2022.",
+      "ja": "筑波大学附属駒場高等学校, 2022年5月."
+    },
+    "year": "2022",
+    "month": "5",
+    "lang": "ja"
+  },
+  {
+    "category": "invited-talk",
+    "authors": [
+      {
+        "name": {
+          "en": "Kagami, Ayano",
+          "ja": "加々美, 綾乃"
+        }
+      },
+      {
+        "name": {
+          "en": "Yoshida, Lui",
+          "ja": "吉田, 塁"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      }
+    ],
+    "title": {
+      "en": "About Scheme D \"University Pitch and Conference\"",
+      "ja": "スキームD \"University Pitch and Conference\"について"
+    },
+    "booktitle": {
+      "en": "National Institute of Informatics, Cyber Symposium on Education DX (42nd), Oct. 2021.",
+      "ja": "国立情報学研究所 大学等におけるオンライン教育とデジタル変革に関するサイバーシンポジウム「教育機関DXシンポ」（第42回）, 2021年10月."
+    },
+    "year": "2021",
+    "month": "10",
+    "lang": "ja"
+  },
+  {
+    "category": "invited-talk",
+    "authors": [
+      {
+        "name": {
+          "en": "Takeuchi, Akira",
+          "ja": "竹内, 朗"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      }
+    ],
+    "title": {
+      "en": "Expansion and Challenges of On-Campus Jobs Related to Online Classes",
+      "ja": "オンライン授業に関するOn-Campus Jobの拡大とその課題"
+    },
+    "booktitle": {
+      "en": "National Institute of Informatics, Cyber Symposium on Education DX (28th), Mar. 2021.",
+      "ja": "国立情報学研究所 大学等におけるオンライン教育とデジタル変革に関するサイバーシンポジウム「教育機関DXシンポ」（第28回）, 2021年3月."
+    },
+    "year": "2021",
+    "month": "3",
+    "lang": "ja"
+  },
+  {
+    "category": "invited-talk",
+    "authors": [
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      }
+    ],
+    "title": {
+      "en": "Technology for \"Living Together\"",
+      "ja": "「ともにいきる」ためのテクノロジー"
+    },
+    "booktitle": {
+      "en": "Tsukuba University Komaba Senior High School, May 2021.",
+      "ja": "筑波大学附属駒場高等学校, 2021年5月."
+    },
+    "year": "2021",
+    "month": "5",
+    "lang": "ja"
+  },
+  {
+    "category": "invited-talk",
+    "authors": [
+      {
+        "name": {
+          "en": "Noguchi, Gaku",
+          "ja": "野口, 岳"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Tomita, Rina",
+          "ja": "冨田, 里奈"
+        }
+      },
+      {
+        "name": {
+          "en": "Shindo, Kaze",
+          "ja": "新堂, 風"
+        }
+      },
+      {
+        "name": {
+          "en": "Tokunaga, Sae",
+          "ja": "德永, 紗英"
+        }
+      }
+    ],
+    "title": {
+      "en": "Digital Native Students Supporting University Online Classes - Cases from Kyushu University and The University of Tokyo",
+      "ja": "デジタルネイティブ世代の学生が大学のオンライン授業をサポートする 〜九州大学と東京大学の事例から〜"
+    },
+    "booktitle": {
+      "en": "National Institute of Informatics, Cyber Symposium on Education DX (19th), Oct. 2020.",
+      "ja": "国立情報学研究所 大学等におけるオンライン教育とデジタル変革に関するサイバーシンポジウム「教育機関DXシンポ」（第19回）, 2020年10月."
+    },
+    "year": "2020",
+    "month": "10",
+    "lang": "ja"
+  },
+  {
+    "category": "invited-talk",
+    "authors": [
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Kaneko, Ryotai",
+          "ja": "金子, 亮大"
+        }
+      },
+      {
+        "name": {
+          "en": "Komatsu, Hiroya",
+          "ja": "小松, 寛弥"
+        }
+      },
+      {
+        "name": {
+          "en": "Takeuchi, Akira",
+          "ja": "竹内, 朗"
+        }
+      },
+      {
+        "name": {
+          "en": "Yamada, Nodoka",
+          "ja": "山田, 和佳"
+        }
+      }
+    ],
+    "title": {
+      "en": "Operation of Student-Run Online Class Support Chat",
+      "ja": "学生によるオンライン授業サポートチャットの運用"
+    },
+    "booktitle": {
+      "en": "National Institute of Informatics, Cyber Symposium on Education DX (13th), Jul. 2020.",
+      "ja": "国立情報学研究所 大学等におけるオンライン教育とデジタル変革に関するサイバーシンポジウム「教育機関DXシンポ」（第13回）, 2020年7月."
+    },
+    "year": "2020",
+    "month": "7",
+    "lang": "ja"
+  },
+  {
+    "category": "intl-reviewed",
+    "authors": [
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Yoshida, Lui",
+          "ja": "吉田, 塁"
+        }
+      }
+    ],
+    "title": {
+      "en": "LearnWiz One: Completely New Opinion-Gathering Platform that Motivates and Aids in Online Learning",
+      "ja": "LearnWiz One: Completely New Opinion-Gathering Platform that Motivates and Aids in Online Learning"
+    },
+    "booktitle": "Learning Impact 2023 Conference",
+    "year": "2023",
+    "month": "6",
+    "award": {
+      "en": "Honorable Mentions",
+      "ja": "Honorable Mentions"
+    },
+    "links": [],
+    "lang": "en"
+  },
+  {
+    "category": "domestic",
+    "authors": [
+      {
+        "name": {
+          "en": "Fujiwara, Miyuki",
+          "ja": "藤原, 未雪"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Hautasaari, Ari",
+          "ja": "ハウタサーリ, アリ"
+        }
+      }
+    ],
+    "title": {
+      "en": "A Preliminary Study on Human-AI Collaboration in Creating Product Descriptions for Flea Market Apps",
+      "ja": "フリマアプリでの商品説明文の作成における人・AI協働の基礎検討"
+    },
+    "booktitle": {
+      "en": "IEICE Technical Report",
+      "ja": "信学技報"
+    },
+    "series": "MVE",
+    "year": "2024",
+    "month": "1",
+    "award": {
+      "en": "MVE Award",
+      "ja": "MVE賞"
+    },
+    "links": [],
+    "lang": "ja"
+  },
+  {
+    "category": "exhibition",
+    "authors": [
+      {
+        "name": {
+          "en": "Fujiwara, Miyuki",
+          "ja": "藤原, 未雪"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Hautasaari, Ari",
+          "ja": "ハウタサーリ, アリ"
+        }
+      },
+      {
+        "name": {
+          "en": "et al",
+          "ja": "他複数名"
+        }
+      }
+    ],
+    "title": {
+      "en": "Circulate, Connect, Expand: An Adventure into Unknown Value",
+      "ja": "めぐる・つながる・ひろがる～未知なる価値への冒険～"
+    },
+    "booktitle": {
+      "en": "Science Agora 2024",
+      "ja": "サイエンスアゴラ 2024"
+    },
+    "year": "2024",
+    "month": "11",
+    "links": [],
+    "lang": "ja"
+  },
+  {
+    "category": "exhibition",
+    "authors": [
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Hautasaari, Ari",
+          "ja": "ハウタサーリ, アリ"
+        }
+      },
+      {
+        "name": {
+          "en": "et al",
+          "ja": "他複数名"
+        }
+      }
+    ],
+    "title": {
+      "en": "Let's Touch! An Adventure into Unknown Value",
+      "ja": "ふれてみよう！未知なる価値への冒険"
+    },
+    "booktitle": {
+      "en": "Science Agora 2023",
+      "ja": "サイエンスアゴラ 2023"
+    },
+    "year": "2023",
+    "month": "11",
+    "links": [],
+    "lang": "ja"
+  },
+  {
+    "category": "domestic",
+    "authors": [
+      {
+        "name": {
+          "en": "Ozaki, Masahiro",
+          "ja": "尾崎, 真大"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Matsuo, Shuta",
+          "ja": "松尾, 周汰"
+        }
+      },
+      {
+        "name": {
+          "en": "Ng, Kuan Yi",
+          "ja": "ウン, クアンイー"
+        }
+      },
+      {
+        "name": {
+          "en": "Okubo, Fumiya",
+          "ja": "大久保, 文哉"
+        }
+      },
+      {
+        "name": {
+          "en": "Shimada, Atsushi",
+          "ja": "島田, 敬士"
+        }
+      }
+    ],
+    "title": {
+      "en": "Skill Extraction and Evaluation from Course and Extracurricular Activity Content",
+      "ja": "科目および課外活動内容からのスキル抽出と評価"
+    },
+    "booktitle": {
+      "en": "AXIES Annual Conference 2025",
+      "ja": "大学ICT推進協議会2025年度年次大会"
+    },
+    "paper_id": "1PM2C-3",
+    "year": "2025",
+    "month": "12",
+    "links": [],
+    "lang": "ja"
+  },
+  {
+    "category": "domestic",
+    "authors": [
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Matsuo, Shuta",
+          "ja": "松尾, 周汰"
+        }
+      },
+      {
+        "name": {
+          "en": "Ng, Kuan Yi",
+          "ja": "ウン, クアンイー"
+        }
+      },
+      {
+        "name": {
+          "en": "Ozaki, Masahiro",
+          "ja": "尾崎, 真大"
+        }
+      },
+      {
+        "name": {
+          "en": "Shimada, Atsushi",
+          "ja": "島田, 敬士"
+        }
+      }
+    ],
+    "title": {
+      "en": "A Preliminary Study on an Integrated LA System for Course and Work Experience Data: Qualitative Analysis of University Students'  Usage Intentions and Design Challenges",
+      "ja": "授業データと実務経験データを統合したLAシステムの基礎検討: 大学生の利用意図と設計課題の質的分析"
+    },
+    "booktitle": {
+      "en": "AXIES Annual Conference 2025",
+      "ja": "大学ICT推進協議会2025年度年次大会"
+    },
+    "year": "2025",
+    "month": "12",
+    "links": [],
+    "lang": "ja"
+  },
+  {
+    "category": "domestic",
+    "authors": [
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Matsuo, Shuta",
+          "ja": "松尾, 周汰"
+        }
+      },
+      {
+        "name": {
+          "en": "Ng, Kuan Yi",
+          "ja": "ウン, クアンイー"
+        }
+      },
+      {
+        "name": {
+          "en": "Ozaki, Masahiro",
+          "ja": "尾崎, 真大"
+        }
+      },
+      {
+        "name": {
+          "en": "Shimada, Atsushi",
+          "ja": "島田, 敬士"
+        }
+      }
+    ],
+    "title": {
+      "en": "A Preliminary Study on Learner-Centered Learning Analytics Using Large Language Models",
+      "ja": "大規模言語モデルを活用した学習者中心ラーニングアナリティクスの基礎検討"
+    },
+    "booktitle": {
+      "en": "The 225th Human Interface Society Research Meeting (SIG-UXSD-22)",
+      "ja": "第225回ヒューマンインタフェース学会研究会 (SIG-UXSD-22)"
+    },
+    "year": "2025",
+    "month": "11",
     "links": [],
     "lang": "ja"
   }
