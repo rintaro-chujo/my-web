@@ -781,8 +781,86 @@
     "authors": [
       {
         "name": {
+          "en": "Wang, Xingye",
+          "ja": "王, 星也"
+        }
+      },
+      {
+        "name": {
+          "en": "Konishi, Yutaro",
+          "ja": "小西, 優多郎"
+        }
+      },
+      {
+        "name": {
           "en": "Chujo, Rintaro",
           "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Hatada, Yuji",
+          "ja": "畑田, 裕二"
+        }
+      },
+      {
+        "name": {
+          "en": "Hautasaari, Ari",
+          "ja": "ハウタサーリ, アリ"
+        }
+      },
+      {
+        "name": {
+          "en": "Naemura, Takeshi",
+          "ja": "苗村, 健"
+        }
+      }
+    ],
+    "title": {
+      "en": "Focus Launcher: Development of a Work Environment that Selectively Displays Applications Based on Decomposition of Work Objectives",
+      "ja": "Focus Launcher：作業目的の分解に基づきアプリを選択表示する作業環境の開発"
+    },
+    "booktitle": {
+      "en": "IEICE Technical Report",
+      "ja": "信学技報"
+    },
+    "paper_id": "MVE2026",
+    "year": "2026",
+    "month": "6",
+    "links": [],
+    "lang": "ja"
+  },
+  {
+    "category": "domestic",
+    "authors": [
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Iwabe, Masakazu",
+          "ja": "岩部, 真和"
+        }
+      },
+      {
+        "name": {
+          "en": "Ma, Yushan",
+          "ja": "馬, 玉珊"
+        }
+      },
+      {
+        "name": {
+          "en": "Barnes, Jamie",
+          "ja": "ジェイミー バーンズ"
+        }
+      },
+      {
+        "name": {
+          "en": "Fujiwara, Miyuki",
+          "ja": "藤原, 未雪"
         }
       },
       {
@@ -806,12 +884,49 @@
       "en": "Human Interface Symposium 2025",
       "ja": "ヒューマンインタフェースシンポジウム2025"
     },
+    "paper_id": "2B1-2",
     "year": "2025",
     "month": "9",
     "award": {
       "en": "Academic Encouragement Award",
       "ja": "学術奨励賞"
     },
+    "links": [],
+    "lang": "ja"
+  },
+  {
+    "category": "domestic",
+    "authors": [
+      {
+        "name": {
+          "en": "Fujiwara, Miyuki",
+          "ja": "藤原, 未雪"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Hautasaari, Ari",
+          "ja": "ハウタサーリ, アリ"
+        }
+      }
+    ],
+    "title": {
+      "en": "Effects of Human Involvement in Human-AI Collaborative Product Description Writing on Pricing and Self-Perception as a Seller",
+      "ja": "人・AI協働の商品説明文作成において人の関与量が価格設定と出品者としての自己印象に与える影響"
+    },
+    "booktitle": {
+      "en": "Human Interface Symposium 2025",
+      "ja": "ヒューマンインタフェースシンポジウム2025"
+    },
+    "paper_id": "2B1-3",
+    "year": "2025",
+    "month": "9",
     "links": [],
     "lang": "ja"
   },
@@ -853,7 +968,10 @@
       "en": "Improvement and Evaluation of Butlerliezer: An AI Reply System that Moderately Evades Depending on the Conversation Partner",
       "ja": "会話相手に応じて適度にごまかすAI返信システム「Butlerliezer」の改良と評価"
     },
-    "booktitle": "Interaction 2026",
+    "booktitle": {
+      "en": "Interaction 2026",
+      "ja": "インタラクション2026"
+    },
     "paper_id": "3B46",
     "year": "2026",
     "month": "3",
@@ -1093,7 +1211,10 @@
       "en": "Re:Tagged Threads — A Preliminary Study on Experience Design for Gifting Secondhand Clothing through Narratives",
       "ja": "Re:Tagged Threads — 服にまつわる物語を用いて古着をギフトにする体験デザインの基礎検討"
     },
-    "booktitle": "Interaction 2025",
+    "booktitle": {
+      "en": "Interaction 2025",
+      "ja": "インタラクション2025"
+    },
     "paper_id": "3P72",
     "year": "2025",
     "month": "3",
@@ -1126,7 +1247,10 @@
       "en": "Effects of AI-Assisted Product Descriptions on Buyer Preferences in Secondhand Marketplaces",
       "ja": "フリマアプリにおけるAIとの協働で作成した商品説明文が購買者の商品嗜好に与える影響"
     },
-    "booktitle": "Interaction 2025",
+    "booktitle": {
+      "en": "Interaction 2025",
+      "ja": "インタラクション2025"
+    },
     "year": "2025",
     "month": "3",
     "award": {
@@ -1168,7 +1292,10 @@
       "en": "Design of a Workshop Using Dialogue between LLMs as a Catalyst to Facilitate Critical Discussion in Ideation",
       "ja": "アイディエーションにおける批評的な議論を促すためのLLM同士の対話を触媒としたワークショップの設計"
     },
-    "booktitle": "Interaction 2025",
+    "booktitle": {
+      "en": "Interaction 2025",
+      "ja": "インタラクション2025"
+    },
     "paper_id": "3B21",
     "year": "2025",
     "month": "3",
@@ -1258,7 +1385,10 @@
       "en": "MuseBuddy: A Wearable Device to Encourage Divers' Underwater Exploration",
       "ja": "MuseBuddy：ダイバーの水中探索を促すウェアラブルデバイスの提案"
     },
-    "booktitle": "Interaction 2025",
+    "booktitle": {
+      "en": "Interaction 2025",
+      "ja": "インタラクション2025"
+    },
     "paper_id": "3B49",
     "year": "2025",
     "month": "3",
@@ -1297,7 +1427,10 @@
       "en": "MoyaMoyaMusic: A System for Generating Positive Music Reflecting Listeners' Concerns",
       "ja": "MoyaMoyaMusic：リスナーの悩みを反映したポジティブな音楽生成システム"
     },
-    "booktitle": "Interaction 2025",
+    "booktitle": {
+      "en": "Interaction 2025",
+      "ja": "インタラクション2025"
+    },
     "paper_id": "1B40",
     "year": "2025",
     "month": "3",
