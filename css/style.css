@@ -261,6 +261,10 @@ a:hover {
   font-size: 0.9rem;
 }
 
+/* Bilingual show/hide */
+html[lang="en"] [lang="ja"] { display: none; }
+html[lang="ja"] [lang="en"] { display: none; }
+
 /* Responsive */
 @media (max-width: 640px) {
   .top-bar {

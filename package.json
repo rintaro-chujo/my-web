@@ -1,0 +1,7 @@
+{
+  "name": "chujo-me",
+  "private": true,
+  "scripts": {
+    "build": "node build.js"
+  }
+}

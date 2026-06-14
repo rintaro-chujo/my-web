@@ -137,6 +137,141 @@
     "authors": [
       {
         "name": {
+          "en": "Hata, Koken",
+          "ja": "Hata, Koken"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Takamatsu, Reina",
+          "ja": "Takamatsu, Reina"
+        }
+      },
+      {
+        "name": {
+          "en": "Xu, Wenzhen",
+          "ja": "Xu, Wenzhen"
+        }
+      },
+      {
+        "name": {
+          "en": "Baba, Yukino",
+          "ja": "馬場, 雪乃"
+        }
+      }
+    ],
+    "title": {
+      "en": "GroupEnvoy: A Conversational Agent Speaking for the Outgroup to Foster Intergroup Relations",
+      "ja": "GroupEnvoy: A Conversational Agent Speaking for the Outgroup to Foster Intergroup Relations"
+    },
+    "booktitle": "ACM Conversational User Interfaces 2026 (CUI '26, TBD)",
+    "location": "Bremen, Germany",
+    "year": "2026",
+    "month": "7",
+    "links": [],
+    "lang": "en"
+  },
+  {
+    "category": "intl-full",
+    "authors": [
+      {
+        "name": {
+          "en": "Ban, Reigo",
+          "ja": "Ban, Reigo"
+        }
+      },
+      {
+        "name": {
+          "en": "Hatada, Yuji",
+          "ja": "畑田, 裕二"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Ito, Motohiro",
+          "ja": "Ito, Motohiro"
+        }
+      },
+      {
+        "name": {
+          "en": "Narumi, Takuji",
+          "ja": "Narumi, Takuji"
+        }
+      }
+    ],
+    "title": {
+      "en": "Timelines and Topographies: Harnessing Attentional Control in Interface Design",
+      "ja": "Timelines and Topographies: Harnessing Attentional Control in Interface Design"
+    },
+    "booktitle": "ACM Designing Interactive Systems Conference 2026 (DIS '26)",
+    "location": "Singapore",
+    "year": "2026",
+    "month": "6",
+    "links": [],
+    "lang": "en"
+  },
+  {
+    "category": "intl-full",
+    "authors": [
+      {
+        "name": {
+          "en": "Hautasaari, Ari",
+          "ja": "ハウタサーリ, アリ"
+        }
+      },
+      {
+        "name": {
+          "en": "Kibayashi, Yuta",
+          "ja": "木林, 佑太"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Hatada, Yuji",
+          "ja": "畑田, 裕二"
+        }
+      },
+      {
+        "name": {
+          "en": "Naemura, Takeshi",
+          "ja": "苗村, 健"
+        }
+      }
+    ],
+    "title": {
+      "en": "Butlerliezer: Context- and Receiver-Aware Appropriately Deceptive Auto-Reply System based on Egocentric Video",
+      "ja": "Butlerliezer: Context- and Receiver-Aware Appropriately Deceptive Auto-Reply System based on Egocentric Video"
+    },
+    "booktitle": "ACM Conversational User Interfaces 2026 (CUI '26, TBD)",
+    "location": "Bremen, Germany",
+    "year": "2026",
+    "month": "7",
+    "links": [],
+    "lang": "en"
+  },
+  {
+    "category": "intl-full",
+    "authors": [
+      {
+        "name": {
           "en": "Aoki, Toshiki",
           "ja": "青木, 俊樹"
         },
