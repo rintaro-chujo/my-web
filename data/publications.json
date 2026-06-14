@@ -92,8 +92,9 @@
     },
     "volume": "27",
     "number": "4",
-    "pages": "281-300",
+    "pages": "281--300",
     "year": "2025",
+    "month": "11",
     "links": [],
     "lang": "ja"
   },
@@ -318,6 +319,38 @@
       "en": "Best Paper Award, top 1%",
       "ja": "Best Paper Award, 上位1%"
     },
+    "links": [],
+    "lang": "en"
+  },
+  {
+    "category": "intl-reviewed",
+    "authors": [
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Matsui, Katsufumi",
+          "ja": "松井, 克文"
+        }
+      },
+      {
+        "name": {
+          "en": "Naemura, Takeshi",
+          "ja": "苗村, 健"
+        }
+      }
+    ],
+    "title": {
+      "en": "Civic Futures through Entrepreneurship Education: Generative AI for Inclusive Community Engagement and Co-Creation",
+      "ja": "Civic Futures through Entrepreneurship Education: Generative AI for Inclusive Community Engagement and Co-Creation"
+    },
+    "booktitle": "The 3rd International Symposium on Entrepreneurship Education in Asia",
+    "year": "2025",
+    "month": "9",
     "links": [],
     "lang": "en"
   },
