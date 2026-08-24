@@ -2716,6 +2716,34 @@
     "authors": [
       {
         "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      }
+    ],
+    "title": {
+      "en": "EdTech 'LearnWiz One' for Active Discussion: From Basic Usage to Application Cases",
+      "ja": "活発な意見交換を実現するEdTech『LearnWiz One』～基本的な使い方から応用事例まで～"
+    },
+    "booktitle": {
+      "en": "Online Learning Forum 2022, Japan Online Education Industry Association",
+      "ja": "オンラインラーニングフォーラム2022, 一般社団法人日本オンライン教育産業協会"
+    },
+    "year": "2022",
+    "month": "11",
+    "links": [
+      {
+        "label": "Web",
+        "url": "https://biz-study.com/speakers/%E4%B8%AD%E6%A2%9D%E9%BA%9F%E5%A4%AA%E9%83%8E/"
+      }
+    ],
+    "lang": "ja"
+  },
+  {
+    "category": "invited-talk",
+    "authors": [
+      {
+        "name": {
           "en": "Aoyama, Shutaro",
           "ja": "青山, 秀太郎"
         }
