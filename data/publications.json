@@ -868,6 +868,361 @@
     "authors": [
       {
         "name": {
+          "en": "Hata, Koken",
+          "ja": "秦, 恒軒"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Baba, Yukino",
+          "ja": "馬場, 雪乃"
+        }
+      }
+    ],
+    "title": {
+      "en": "Effects of Contact with a Different Group through an AI Spokesperson on Intergroup Relations",
+      "ja": "AI代弁者を介した異なる集団との接触が集団間関係にもたらす影響"
+    },
+    "booktitle": {
+      "en": "Proceedings of the 40th Annual Conference of the Japanese Society for Artificial Intelligence",
+      "ja": "第40回人工知能学会全国大会"
+    },
+    "paper_id": "4F1-OS-29a-02",
+    "year": "2026",
+    "month": "6",
+    "doi": "https://doi.org/10.11517/pjsai.JSAI2026.0_4F1OS29a02",
+    "links": [],
+    "lang": "ja"
+  },
+  {
+    "category": "domestic",
+    "authors": [
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Fujiwara, Miyuki",
+          "ja": "藤原, 未雪"
+        }
+      },
+      {
+        "name": {
+          "en": "Iwabe, Masakazu",
+          "ja": "岩部, 真和"
+        }
+      },
+      {
+        "name": {
+          "en": "Hautasaari, Ari",
+          "ja": "ハウタサーリ, アリ"
+        }
+      },
+      {
+        "name": {
+          "en": "Naemura, Takeshi",
+          "ja": "苗村, 健"
+        }
+      }
+    ],
+    "title": {
+      "en": "A Preliminary Study on the Transparency of AI Message Revision in Intercultural Communication in C2C Transactions",
+      "ja": "C2C取引での異文化コミュニケーションにおけるAIメッセージ修正の透明性に関する基礎検討"
+    },
+    "booktitle": {
+      "en": "Human Interface Symposium 2026",
+      "ja": "ヒューマンインタフェースシンポジウム2026"
+    },
+    "paper_id": "2E1-3",
+    "year": "2026",
+    "month": "9",
+    "links": [],
+    "lang": "ja"
+  },
+  {
+    "category": "domestic",
+    "authors": [
+      {
+        "name": {
+          "en": "Shen, Lan",
+          "ja": "沈, 瀾"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Hatada, Yuji",
+          "ja": "畑田, 裕二"
+        }
+      },
+      {
+        "name": {
+          "en": "Hautasaari, Ari",
+          "ja": "ハウタサーリ, アリ"
+        }
+      },
+      {
+        "name": {
+          "en": "Naemura, Takeshi",
+          "ja": "苗村, 健"
+        }
+      }
+    ],
+    "title": {
+      "en": "InsideMates: Proposal of Multiple AI Agents Based on the Multivocality of the Self",
+      "ja": "InsideMates: 自己の多声性に基づいたマルチAIエージェントの提案"
+    },
+    "booktitle": {
+      "en": "Human Interface Symposium 2026",
+      "ja": "ヒューマンインタフェースシンポジウム2026"
+    },
+    "paper_id": "1B1-4",
+    "year": "2026",
+    "month": "9",
+    "links": [],
+    "lang": "ja"
+  },
+  {
+    "category": "domestic",
+    "authors": [
+      {
+        "name": {
+          "en": "Ban, Reigo",
+          "ja": "伴, 玲吾"
+        }
+      },
+      {
+        "name": {
+          "en": "Hatada, Yuji",
+          "ja": "畑田, 裕二"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Ito, Motohiro",
+          "ja": "伊藤, 資浩"
+        }
+      },
+      {
+        "name": {
+          "en": "Narumi, Takuji",
+          "ja": "鳴海, 拓志"
+        }
+      }
+    ],
+    "title": {
+      "en": "Timelines and Topographies: Interface Design Harnessing Attentional Control and Its Practice",
+      "ja": "タイムラインとトポグラフィ：注意制御を活かすインタフェースデザインとその実践"
+    },
+    "booktitle": {
+      "en": "Human Interface Symposium 2026",
+      "ja": "ヒューマンインタフェースシンポジウム2026"
+    },
+    "paper_id": "3D1-3",
+    "year": "2026",
+    "month": "9",
+    "links": [],
+    "lang": "ja"
+  },
+  {
+    "category": "domestic",
+    "authors": [
+      {
+        "name": {
+          "en": "Nakamura, Yudai",
+          "ja": "中村, 祐大"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Hatada, Yuji",
+          "ja": "畑田, 裕二"
+        }
+      },
+      {
+        "name": {
+          "en": "Hautasaari, Ari",
+          "ja": "ハウタサーリ, アリ"
+        }
+      },
+      {
+        "name": {
+          "en": "Naemura, Takeshi",
+          "ja": "苗村, 健"
+        }
+      }
+    ],
+    "title": {
+      "en": "ApertuReader: Proposal of a Reading Support System Enabling Users to Adjust Multi-Level Summarization and Elaboration",
+      "ja": "ApertuReader: 多段階的な要約・詳細化をユーザが調整できる読解支援システムの提案"
+    },
+    "booktitle": {
+      "en": "Human Interface Symposium 2026",
+      "ja": "ヒューマンインタフェースシンポジウム2026"
+    },
+    "paper_id": "3C2-3",
+    "year": "2026",
+    "month": "9",
+    "links": [],
+    "lang": "ja"
+  },
+  {
+    "category": "domestic",
+    "authors": [
+      {
+        "name": {
+          "en": "Hino, Rei",
+          "ja": "日野, 玲"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Takagi, Ken",
+          "ja": "高木, 健"
+        }
+      },
+      {
+        "name": {
+          "en": "Suzuki, Misa",
+          "ja": "鈴木, 美彩"
+        }
+      },
+      {
+        "name": {
+          "en": "Ando, Asuka",
+          "ja": "安東, 明珠花"
+        }
+      },
+      {
+        "name": {
+          "en": "Ogawa, Akihiro",
+          "ja": "小川, 陽大"
+        }
+      },
+      {
+        "name": {
+          "en": "Tanaka, Tasuku",
+          "ja": "田中, 祐玖"
+        }
+      },
+      {
+        "name": {
+          "en": "Kuramoto, Daisuke",
+          "ja": "倉本, 大資"
+        }
+      },
+      {
+        "name": {
+          "en": "Kawahara, Yoshihiro",
+          "ja": "川原, 圭博"
+        }
+      },
+      {
+        "name": {
+          "en": "Naemura, Takeshi",
+          "ja": "苗村, 健"
+        }
+      }
+    ],
+    "title": {
+      "en": "SignWarriors: Game Design to Enhance Sign Language Production Skills of Hearing Parents",
+      "ja": "SignWarriors: 聴親の手話表出能力を高めるゲームデザイン"
+    },
+    "booktitle": {
+      "en": "Human Interface Symposium 2026",
+      "ja": "ヒューマンインタフェースシンポジウム2026"
+    },
+    "paper_id": "3E2-1",
+    "year": "2026",
+    "month": "9",
+    "links": [],
+    "lang": "ja"
+  },
+  {
+    "category": "domestic",
+    "authors": [
+      {
+        "name": {
+          "en": "Ban, Reigo",
+          "ja": "伴, 玲吾"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Yokoi, Sotaro",
+          "ja": "横井, 総太朗"
+        }
+      },
+      {
+        "name": {
+          "en": "Hatada, Yuji",
+          "ja": "畑田, 裕二"
+        }
+      },
+      {
+        "name": {
+          "en": "Narumi, Takuji",
+          "ja": "鳴海, 拓志"
+        }
+      }
+    ],
+    "title": {
+      "en": "Mayfesvibe: Creating a Festive Online Space through Geographic Mapping of Social Media Posts",
+      "ja": "Mayfesvibe: ソーシャルメディア投稿の地理的マッピングによる祝祭化されたオンライン空間の創出"
+    },
+    "booktitle": {
+      "en": "The 31st Annual Conference of the Virtual Reality Society of Japan",
+      "ja": "日本バーチャルリアリティ学会第31回大会"
+    },
+    "paper_id": "2F1-01",
+    "year": "2026",
+    "month": "9",
+    "links": [],
+    "lang": "ja"
+  },
+  {
+    "category": "domestic",
+    "authors": [
+      {
+        "name": {
           "en": "Chujo, Rintaro",
           "ja": "中條, 麟太郎"
         }
@@ -1586,8 +1941,10 @@
       "en": "AXIES Annual Conference 2024",
       "ja": "大学ICT推進協議会2024年度年次大会"
     },
+    "pages": "279-285",
     "year": "2024",
     "month": "12",
+    "doi": "https://doi.org/10.24669/axies.2024.0_279",
     "links": [],
     "lang": "ja"
   },
