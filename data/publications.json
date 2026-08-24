@@ -2716,6 +2716,52 @@
     "authors": [
       {
         "name": {
+          "en": "Aoyama, Shutaro",
+          "ja": "青山, 秀太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Baba, Yukino",
+          "ja": "馬場, 雪乃"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Chen, Dominique",
+          "ja": "チェン, ドミニク"
+        }
+      }
+    ],
+    "title": {
+      "en": "Beyond Mutual Incomprehension: Frontiers of AI-Mediated Communication and Consensus-Building Technology",
+      "ja": "分かり合えなさの先へ ── AI媒介コミュニケーションと合意形成技術のフロンティア"
+    },
+    "booktitle": {
+      "en": "Digital Democracy Summit 2026, Mita Campus, Keio University",
+      "ja": "Digital Democracy Summit 2026, 慶應義塾大学三田キャンパス"
+    },
+    "year": "2026",
+    "month": "8",
+    "links": [
+      {
+        "label": "Web",
+        "url": "https://summit.dd2030.org/sessions/beyond-mutual-incomprehension/"
+      }
+    ],
+    "lang": "ja"
+  },
+  {
+    "category": "invited-talk",
+    "authors": [
+      {
+        "name": {
           "en": "Yoshida, Lui",
           "ja": "吉田, 塁"
         }
@@ -2788,11 +2834,11 @@
       "ja": "意見集約ツール「LearnWiz One」の開発と実践"
     },
     "booktitle": {
-      "en": "National Institute of Informatics, Cyber Symposium on Education DX (51st), Jul. 2022.",
-      "ja": "国立情報学研究所 大学等におけるオンライン教育とデジタル変革に関するサイバーシンポジウム「教育機関DXシンポ」（第51回）, 2022年7月."
+      "en": "National Institute of Informatics, Cyber Symposium on Education DX (51st), Jun. 2022.",
+      "ja": "国立情報学研究所 大学等におけるオンライン教育とデジタル変革に関するサイバーシンポジウム「教育機関DXシンポ」（第51回）, 2022年6月."
     },
     "year": "2022",
-    "month": "7",
+    "month": "6",
     "lang": "ja"
   },
   {
