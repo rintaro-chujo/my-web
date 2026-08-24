@@ -3341,6 +3341,96 @@
     "lang": "ja"
   },
   {
+    "category": "exhibition",
+    "authors": [
+      {
+        "name": {
+          "en": "Seong, Young ah",
+          "ja": "ソン, ヨンア"
+        }
+      },
+      {
+        "name": {
+          "en": "Affective Design Lab",
+          "ja": "Affective Design Lab"
+        }
+      }
+    ],
+    "title": {
+      "en": "somehow, my heart is with those things",
+      "ja": "「モノにこころをあずけておりまして」展"
+    },
+    "booktitle": {
+      "en": "Bababa, Takadanobaba, Tokyo",
+      "ja": "Bababa（東京・高田馬場）"
+    },
+    "year": "2026",
+    "month": "7",
+    "links": [
+      {
+        "label": "Web",
+        "url": "https://www.affectivedesignlab.com/ja/news/3c4329bf73a7"
+      }
+    ],
+    "lang": "ja"
+  },
+  {
+    "category": "exhibition",
+    "authors": [
+      {
+        "name": {
+          "en": "Affective Design Lab",
+          "ja": "Affective Design Lab"
+        }
+      }
+    ],
+    "title": {
+      "en": "Circuits Where Emotions Flow",
+      "ja": "おもいが流れる回路展"
+    },
+    "booktitle": {
+      "en": "TIERS GALLERY, Jingumae, Tokyo",
+      "ja": "TIERS GALLERY（東京・神宮前）"
+    },
+    "year": "2025",
+    "month": "12",
+    "links": [
+      {
+        "label": "Web",
+        "url": "https://www.affectivedesignlab.com/ja/news/de041c69ee3a"
+      }
+    ],
+    "lang": "ja"
+  },
+  {
+    "category": "exhibition",
+    "authors": [
+      {
+        "name": {
+          "en": "Affective Design Lab",
+          "ja": "Affective Design Lab"
+        }
+      }
+    ],
+    "title": {
+      "en": "Machines born from the heart",
+      "ja": "こころから生まれたキカイ展"
+    },
+    "booktitle": {
+      "en": "TIERS GALLERY, Omotesando, Tokyo",
+      "ja": "TIERS GALLERY（東京・表参道）"
+    },
+    "year": "2024",
+    "month": "11",
+    "links": [
+      {
+        "label": "Web",
+        "url": "https://www.affectivedesignlab.com/ja/news/fd8cc405ad08"
+      }
+    ],
+    "lang": "ja"
+  },
+  {
     "category": "intl-reviewed",
     "authors": [
       {
