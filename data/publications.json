@@ -4,6 +4,39 @@
     "authors": [
       {
         "name": {
+          "en": "Fujiwara, Miyuki",
+          "ja": "藤原, 未雪"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Hautasaari, Ari",
+          "ja": "ハウタサーリ, アリ"
+        }
+      }
+    ],
+    "title": {
+      "en": "Price, trust, and human touch: Provenance signals in human-AI collaborative product description writing on Japanese online flea market apps",
+      "ja": "Price, trust, and human touch: Provenance signals in human-AI collaborative product description writing on Japanese online flea market apps"
+    },
+    "journal": "Computers in Human Behavior: Artificial Humans",
+    "articleno": "100372",
+    "year": "2026",
+    "doi": "https://doi.org/10.1016/j.chbah.2026.100372",
+    "links": [],
+    "lang": "en"
+  },
+  {
+    "category": "journal",
+    "authors": [
+      {
+        "name": {
           "en": "Chujo, Rintaro",
           "ja": "中條, 麟太郎"
         }
