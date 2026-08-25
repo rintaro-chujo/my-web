@@ -360,6 +360,81 @@
     "authors": [
       {
         "name": {
+          "en": "Yahagi, Yuchi",
+          "ja": "Yahagi, Yuchi"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "Chujo, Rintaro"
+        }
+      },
+      {
+        "name": {
+          "en": "Sugiyama, Kohei",
+          "ja": "Sugiyama, Kohei"
+        }
+      },
+      {
+        "name": {
+          "en": "Masaki, Koji",
+          "ja": "Masaki, Koji"
+        }
+      },
+      {
+        "name": {
+          "en": "Nakahashi, Yuri",
+          "ja": "Nakahashi, Yuri"
+        }
+      },
+      {
+        "name": {
+          "en": "Shoji, Go",
+          "ja": "Shoji, Go"
+        }
+      },
+      {
+        "name": {
+          "en": "Matsui, Katsufumi",
+          "ja": "Matsui, Katsufumi"
+        }
+      },
+      {
+        "name": {
+          "en": "Hatada, Yuji",
+          "ja": "Hatada, Yuji"
+        }
+      },
+      {
+        "name": {
+          "en": "Seong, Young ah",
+          "ja": "Seong, Young ah"
+        }
+      },
+      {
+        "name": {
+          "en": "Naemura, Takeshi",
+          "ja": "Naemura, Takeshi"
+        }
+      }
+    ],
+    "title": {
+      "en": "Autobiographical Design for Ethnography: A Story of Tinkering with AI for DIY Fieldwork Tools",
+      "ja": "Autobiographical Design for Ethnography: A Story of Tinkering with AI for DIY Fieldwork Tools"
+    },
+    "booktitle": "Stories and Artifacts: Exploring Narrative and Material Practices in Design Research Workshop in DIS 2026",
+    "location": "Singapore",
+    "year": "2026",
+    "month": "6",
+    "links": [],
+    "lang": "en"
+  },
+  {
+    "category": "intl-reviewed",
+    "authors": [
+      {
+        "name": {
           "en": "Chujo, Rintaro",
           "ja": "中條, 麟太郎"
         }
@@ -2581,6 +2656,35 @@
     "month": "10",
     "links": [],
     "lang": "en"
+  },
+  {
+    "category": "exhibition",
+    "authors": [
+      {
+        "name": {
+          "en": "Affective Design Lab",
+          "ja": "Affective Design Lab"
+        }
+      }
+    ],
+    "title": {
+      "en": "Research and Exhibition Collaboration (The Ending of Things)",
+      "ja": "研究・展示協力（モノのおわり）"
+    },
+    "booktitle": {
+      "en": "Care for Endings: Death and Memorial of Things, Living Beings, and AI/Robots",
+      "ja": "おわりのケア展 -モノ・いきもの・AI/ロボットの死と供養-"
+    },
+    "location": "Outenin, Osaka",
+    "year": "2025",
+    "month": "11",
+    "links": [
+      {
+        "label": "Web",
+        "url": "https://www.outenin.com/article/article-20470/"
+      }
+    ],
+    "lang": "ja"
   },
   {
     "category": "exhibition",
