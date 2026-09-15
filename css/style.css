@@ -270,6 +270,19 @@ html[lang="ja"] [lang="en"] { display: none; }
     padding: 0 16px;
   }
 
+  /* Long DOI/URLs would otherwise force the whole page to scroll sideways. */
+  .pub-entry a {
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
+
+  /* Keep the CV link and language switch inside a phone-width bar. */
+  .cv-btn,
+  .lang-btn {
+    font-size: 0.72rem;
+    padding: 4px 3px;
+  }
+
   .content {
     padding: 64px 16px 40px;
   }
@@ -282,4 +295,49 @@ html[lang="ja"] [lang="en"] { display: none; }
     width: 100%;
     max-width: 250px;
   }
+}
+
+/* CV download button in the top bar */
+.cv-btn {
+  font-size: 0.8rem;
+  color: #888;
+  text-decoration: none;
+  padding: 4px 6px;
+  white-space: nowrap;
+}
+
+.cv-btn:hover {
+  color: #000;
+}
+
+/* Education (two-column: year range | institution and details) */
+.edu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.edu-item {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+}
+
+.edu-period {
+  flex: 0 0 96px;
+  color: #444;
+}
+
+.edu-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.edu-institution {
+  font-weight: 700;
+}
+
+.edu-meta {
+  color: #333;
 }

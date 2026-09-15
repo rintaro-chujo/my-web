@@ -1,0 +1,224 @@
+/* Print-oriented stylesheet for the generated CV (cv-en.html / cv-ja.html).
+   The same file is used for the on-screen HTML CV and for the headless-Chrome
+   PDF render, so page geometry lives in @page and screen-only chrome is
+   confined to the (max-width) media query below. */
+
+@page {
+  size: A4;
+}
+
+html {
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+body {
+  font-family: Arial, 'Helvetica Neue', 'Hiragino Sans', 'Noto Sans JP', sans-serif;
+  font-size: 9pt;
+  line-height: 1.5;
+  color: #000;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* --- Header --- */
+.cv-header {
+  border-bottom: 1.5pt solid #000;
+  padding-bottom: 6pt;
+  margin-bottom: 10pt;
+}
+
+.cv-name {
+  font-size: 19pt;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.2;
+  margin: 0 0 4pt;
+}
+
+.cv-contact {
+  font-size: 8pt;
+  color: #333;
+  margin: 0;
+}
+
+.cv-contact span + span::before {
+  content: '  ·  ';
+  color: #999;
+}
+
+/* --- Sections --- */
+.cv-section {
+  margin-top: 13pt;
+}
+
+.cv-section > h2 {
+  font-size: 10pt;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-bottom: 0.5pt solid #000;
+  padding-bottom: 2pt;
+  margin: 0 0 6pt;
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+.cv-section h3 {
+  font-size: 9pt;
+  font-weight: 700;
+  margin: 9pt 0 4pt;
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+.cv-section h3:first-of-type {
+  margin-top: 0;
+}
+
+/* --- Generic entry lists --- */
+ul.cv-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.cv-list > li {
+  margin-bottom: 5pt;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.cv-entry-title {
+  font-weight: 700;
+}
+
+.cv-entry-meta {
+  color: #333;
+}
+
+.cv-entry-note {
+  display: block;
+  color: #333;
+  padding-left: 1em;
+}
+
+/* --- Publications --- */
+ol.cv-pub-list {
+  margin: 0;
+  padding-left: 1.9em;
+}
+
+ol.cv-pub-list > li {
+  margin-bottom: 4pt;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.cv-pub-title {
+  font-weight: 700;
+}
+
+.cv-doi {
+  font-size: 7.5pt;
+  color: #555;
+  word-break: break-all;
+}
+
+.cv-links {
+  font-size: 7.5pt;
+  color: #555;
+}
+
+.cv-award {
+  font-weight: 700;
+}
+
+.cv-note {
+  font-size: 7.5pt;
+  color: #555;
+}
+
+/* --- Media --- */
+.cv-media-item {
+  margin-bottom: 3pt;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.cv-media-date {
+  color: #555;
+}
+
+/* --- Screen-only presentation (the HTML CV viewed in a browser) --- */
+@media screen {
+  body {
+    max-width: 190mm;
+    margin: 0 auto;
+    padding: 28px 20px 64px;
+    font-size: 11px;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .cv-print-hint {
+    font-size: 10px;
+    color: #888;
+    text-align: right;
+    margin-bottom: 12px;
+  }
+}
+
+@media print {
+  .cv-print-hint {
+    display: none;
+  }
+}
+
+/* Collapsed category line in the English CV */
+.cv-pub-summary {
+  margin: 0;
+  padding-left: 1.9em;
+  color: #333;
+}
+
+/* --- Education (two-column: year range | institution and details) --- */
+ul.edu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.edu-item {
+  display: flex;
+  gap: 10pt;
+  margin-bottom: 6pt;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.edu-period {
+  flex: 0 0 48pt;
+  color: #333;
+}
+
+.edu-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.edu-institution {
+  font-weight: 700;
+}
+
+.edu-meta {
+  color: #333;
+}

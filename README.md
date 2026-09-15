@@ -9,11 +9,57 @@ python3 -m http.server 8000
 # Open http://localhost:8000
 ```
 
+## Build
+
+```bash
+npm install     # once, for the PDF renderer
+npm run build   # site + CV (HTML and PDF)
+```
+
+| Command | Output |
+| --- | --- |
+| `npm run build:site` | `index.html` + `dist/` |
+| `npm run build:cv` | `cv-{en,ja}.html` and `cv-{en,ja}.pdf` |
+| `npm run build` | both |
+
+Generated files are committed, because GitHub Pages serves the repository root.
+Run `npm run build` before pushing whenever `data/` changes.
+
+### CV / PDF
+
+[build-cv.js](build-cv.js) renders the same `data/*.json` into a print-oriented
+page ([css/cv.css](css/cv.css)) and prints it to PDF through an already-installed
+Chrome (via `puppeteer-core` — no browser binary is downloaded). Set
+`CHROME_PATH` if auto-detection fails:
+
+```bash
+CHROME_PATH="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" npm run build:cv
+```
+
+In the **English** CV, categories that are Japanese-only are collapsed to a single
+count line (e.g. `(38 others in Japanese domestic conferences)`) instead of being
+listed entry by entry. Which categories, and the exact wording, are set in
+`EN_SUMMARY_CATEGORIES` at the top of [build-cv.js](build-cv.js). The Japanese CV
+always lists everything.
+
+The "Last updated" line in the PDF footer comes from the date of the last commit
+that touched `data/`, so rebuilding without content changes produces an
+identical PDF instead of a spurious diff.
+
+Formatting logic shared by the site and the CV lives in [lib/render.js](lib/render.js).
+
 ## Structure
 
 ```
 .
-├── index.html          # Single-page template
+├── index.html          # Generated site (committed; GitHub Pages serves it)
+├── cv-en.html          # Generated CV, English (print-oriented)
+├── cv-ja.html          # Generated CV, Japanese
+├── cv-en.pdf           # Generated CV PDF, English
+├── cv-ja.pdf           # Generated CV PDF, Japanese
+├── build.js            # Site build
+├── build-cv.js         # CV + PDF build
+├── lib/render.js       # Shared data loading & formatting
 ├── css/style.css       # Styles
 ├── js/main.js          # Rendering logic & language switching
 ├── assets/

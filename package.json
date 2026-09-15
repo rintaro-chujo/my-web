@@ -2,6 +2,11 @@
   "name": "chujo-me",
   "private": true,
   "scripts": {
-    "build": "node build.js"
+    "build": "node build.js && node build-cv.js",
+    "build:site": "node build.js",
+    "build:cv": "node build-cv.js"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^25.11.0"
   }
 }

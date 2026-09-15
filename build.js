@@ -1,82 +1,19 @@
 const fs = require('fs');
 const path = require('path');
-
-// --- Data loading ---
-function loadData() {
-  const read = (name) => JSON.parse(fs.readFileSync(path.join('data', name), 'utf8'));
-  return {
-    profile: read('profile.json'),
-    education: read('education.json'),
-    experience: read('experience.json'),
-    grants: read('grants.json'),
-    categories: read('categories.json'),
-    publications: read('publications.json'),
-    service: read('service.json'),
-    media: read('media.json'),
-  };
-}
-
-// --- Helpers (ported from main.js) ---
-function t(obj, lang) {
-  if (obj === null || obj === undefined) return '';
-  if (typeof obj === 'string') return obj;
-  return obj[lang] || obj['en'] || obj['ja'] || '';
-}
-
-function escapeHTML(str) {
-  return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-}
-
-function displayName(nameObj, lang) {
-  const raw = t(nameObj, lang);
-  const parts = raw.split(', ');
-  if (parts.length !== 2) return raw;
-  if (lang === 'ja') return parts[0] + ' ' + parts[1];
-  return parts[1] + ' ' + parts[0];
-}
-
-function formatAuthors(authors, lang) {
-  if (!Array.isArray(authors)) return t(authors, lang);
-  return authors.map(a => {
-    const name = displayName(a.name, lang);
-    return a.equal ? name + '*' : name;
-  }).join(', ');
-}
-
-function hasEqualContribution(authors) {
-  return Array.isArray(authors) && authors.some(a => a.equal);
-}
-
-function sortByDate(data) {
-  return data.slice().sort((a, b) => {
-    const ya = parseInt(b.year || '0') - parseInt(a.year || '0');
-    if (ya !== 0) return ya;
-    return parseInt(b.month || '0') - parseInt(a.month || '0');
-  });
-}
-
-function formatVenue(entry, lang) {
-  const v = (field) => t(entry[field], lang);
-  const parts = [];
-  if (entry.booktitle) parts.push(v('booktitle'));
-  if (entry.journal) parts.push(v('journal'));
-  if (entry.series) parts.push(entry.series);
-  if (entry.volume && entry.number) parts.push(`vol. ${entry.volume}, no. ${entry.number}`);
-  else if (entry.volume) parts.push(`vol. ${entry.volume}`);
-  if (entry.paper_id) parts.push(entry.paper_id);
-  if (entry.publisher) parts.push(entry.publisher);
-  if (entry.location) parts.push(entry.location);
-  if (entry.articleno) parts.push(`Article ${entry.articleno}`);
-  if (entry.pages) parts.push(`pp. ${entry.pages}`);
-  if (entry.eprint) parts.push(`arXiv:${entry.eprint}`);
-  let result = parts.join(', ');
-  if (entry.year) {
-    const date = entry.month ? `${entry.year}.${entry.month}` : entry.year;
-    result += ` (${date})`;
-  }
-  if (entry.acceptance_rate) result += `. Acceptance rate: ${entry.acceptance_rate}`;
-  return result + '.';
-}
+const {
+  ROOT,
+  loadData,
+  t,
+  escapeHTML,
+  periodYears,
+  stripTrailingPeriod,
+  formatAuthors,
+  hasEqualContribution,
+  sortByDate,
+  formatVenue,
+  groupPublications,
+  copyRecursive,
+} = require('./lib/render');
 
 // --- Bilingual helpers ---
 function bilingual(obj) {
@@ -112,15 +49,19 @@ function buildProfile(data) {
 }
 
 function buildEducation(data, lang) {
-  return '<ul>' + data.map(item => `
-    <li>
-      <span class="item-degree">${t(item.degree, lang)}</span>, ${t(item.period, lang)}
-      <ul>
-        <li>${t(item.institution, lang)}</li>
-        <li>${t(item.adviser, lang)}</li>
-      </ul>
-    </li>
-  `).join('') + '</ul>';
+  return '<ul class="edu-list">' + data.map(item => {
+    const meta = [item.degree, item.adviser, item.thesis]
+      .filter(field => field && t(field, lang))
+      .map(field => `<div class="edu-meta">${escapeHTML(t(field, lang))}</div>`)
+      .join('');
+    return `<li class="edu-item">
+      <div class="edu-period">${escapeHTML(periodYears(item.period, lang))}</div>
+      <div class="edu-body">
+        <div class="edu-institution">${escapeHTML(stripTrailingPeriod(t(item.institution, lang)))}</div>
+        ${meta}
+      </div>
+    </li>`;
+  }).join('') + '</ul>';
 }
 
 function buildExperience(data, lang) {
@@ -142,22 +83,7 @@ function buildGrants(data, lang) {
 }
 
 function buildPublications(publications, categories, lang) {
-  const catOrder = categories.slice().sort((a, b) => a.sort - b.sort);
-  const grouped = {};
-  for (const entry of publications) {
-    if (!grouped[entry.category]) grouped[entry.category] = [];
-    grouped[entry.category].push(entry);
-  }
-
-  return catOrder.map(cat => {
-    const entries = grouped[cat.id];
-    if (!entries || entries.length === 0) return '';
-    entries.sort((a, b) => {
-      const ya = parseInt(b.year || '0') - parseInt(a.year || '0');
-      if (ya !== 0) return ya;
-      return parseInt(b.month || '0') - parseInt(a.month || '0');
-    });
-
+  return groupPublications(publications, categories).map(({ category: cat, entries }) => {
     const entriesHTML = entries.map(entry => {
       const entryLang = entry.lang === 'en' ? 'en' : lang;
       const authors = formatAuthors(entry.authors, entryLang);
@@ -217,6 +143,10 @@ function buildHTML(data) {
       <span class="site-name">RINTARO CHUJO</span>
     </div>
     <div class="top-bar-right">
+      <a id="cv-link" class="cv-btn" href="cv-en.pdf" download>
+        <span lang="en">CV (PDF)</span><span lang="ja">履歴書 (PDF)</span>
+      </a>
+      <span class="lang-sep">|</span>
       <button id="lang-en" class="lang-btn active">EN</button>
       <span class="lang-sep">|</span>
       <button id="lang-ja" class="lang-btn">JP</button>
@@ -238,7 +168,7 @@ function buildHTML(data) {
 
     <section id="education" class="section">
       <h2><span lang="en">Education</span><span lang="ja">学歴</span></h2>
-      <div id="education-list" class="list-section">${bilingualBlock(lang => buildEducation(data.education, lang))}</div>
+      <div id="education-list" class="edu-section">${bilingualBlock(lang => buildEducation(data.education, lang))}</div>
     </section>
 
     <section id="experience" class="section">
@@ -273,34 +203,22 @@ function buildHTML(data) {
 }
 
 // --- File operations ---
-function copyRecursive(src, dest) {
-  if (!fs.existsSync(src)) return;
-  const stat = fs.statSync(src);
-  if (stat.isDirectory()) {
-    fs.mkdirSync(dest, { recursive: true });
-    for (const child of fs.readdirSync(src)) {
-      copyRecursive(path.join(src, child), path.join(dest, child));
-    }
-  } else {
-    fs.copyFileSync(src, dest);
-  }
-}
-
 function build() {
+  const r = (...p) => path.join(ROOT, ...p);
   const data = loadData();
   const html = buildHTML(data);
 
-  fs.mkdirSync('dist', { recursive: true });
-  fs.writeFileSync('dist/index.html', html, 'utf8');
-  fs.writeFileSync('index.html', html, 'utf8');
+  fs.mkdirSync(r("dist"), { recursive: true });
+  fs.writeFileSync(r("dist", "index.html"), html, "utf8");
+  fs.writeFileSync(r("index.html"), html, "utf8");
 
-  copyRecursive('css', 'dist/css');
-  copyRecursive('assets', 'dist/assets');
+  copyRecursive(r("css"), r("dist", "css"));
+  copyRecursive(r("assets"), r("dist", "assets"));
 
-  fs.mkdirSync('dist/js', { recursive: true });
-  fs.copyFileSync('js/client.js', 'dist/js/client.js');
+  fs.mkdirSync(r("dist", "js"), { recursive: true });
+  fs.copyFileSync(r("js", "client.js"), r("dist", "js", "client.js"));
 
-  console.log('Build complete: index.html and dist/index.html');
+  console.log("Build complete: index.html and dist/index.html");
 }
 
 build();
