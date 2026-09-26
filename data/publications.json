@@ -922,6 +922,60 @@
     "authors": [
       {
         "name": {
+          "en": "Fujiwara, Koki",
+          "ja": "藤原, 晃来"
+        }
+      },
+      {
+        "name": {
+          "en": "Matsuo, Shuta",
+          "ja": "松尾, 周汰"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Ung, Kuan Yee",
+          "ja": "ウン, クアン イー"
+        }
+      },
+      {
+        "name": {
+          "en": "Okubo, Fumiya",
+          "ja": "大久保, 文哉"
+        }
+      },
+      {
+        "name": {
+          "en": "Shimada, Atsushi",
+          "ja": "島田, 敬士"
+        }
+      }
+    ],
+    "title": {
+      "en": "A Method for Automatically Extracting Practical Skills Using Digital Footprints",
+      "ja": "デジタルフットプリントを用いた実践的スキルの自動抽出手法の提案"
+    },
+    "booktitle": {
+      "en": "JSET 2026 Autumn National Conference",
+      "ja": "日本教育工学会 2026年秋季全国大会 講演論文集"
+    },
+    "paper_id": "8-B16",
+    "year": "2026",
+    "month": "9",
+    "links": [],
+    "lang": "ja"
+  },
+  {
+    "category": "domestic",
+    "authors": [
+      {
+        "name": {
           "en": "Wang, Xingye",
           "ja": "王, 星也"
         }
