@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QREC 2026 — Future-Me, On Air</title>
+  <meta name="deck-export-name" content="QREC2026-slides">
+  <!-- プレゼンツール本体（CSS/JS）は箱 github.com/rintaro-chujo/html-slides（v1.0.0）の deck/。
+     このフォルダには置かず、箱の tools/serve.py が deck/deck.css・deck/deck.js として配信する。 -->
+  <link rel="stylesheet" href="deck/deck.css">
+  <style>
+    /* この発表だけの上書き：アクセント色を USASBE 版デッキの緑に。class="r" は「強調色」として使う */
+    :root {
+      /* 英語の発表なので本文を 48px に上げる（ユーザ了承 2026-09-23：英語は 36px だと小さく見える） */
+      --fs-h2: 64px; --fs-lead: 54px; --fs-body: 48px; --fs-small: 40px; --fs-cap: 32px;
+      --red: #3b7a1f;
+      --red-soft: #eaf3e3;
+      --green-dark: #2a4b17;
+    }
+    .slide.title { background: var(--green-dark); }
+    .slide.title h1 { top: 320px; font-size: 96px; }
+    .slide.title .subtitle { position: absolute; left: 90px; right: 90px; top: 470px; font-size: 48px; line-height: 1.5; color: #333; font-weight: 700; }
+    .slide.title .logos img.kansai { height: 84px; }
+    .slide.title .authors { grid-template-columns: repeat(2, auto); }
+    /* 引用元の小さな表記 */
+    .src { font-size: var(--fs-cap); color: var(--gray); font-weight: 500; white-space: nowrap; }
+    /* カード内の小見出し */
+    .card .k { font-size: var(--fs-cap); color: var(--gray); font-weight: 700; letter-spacing: .06em; text-transform: uppercase; margin-bottom: 6px; }
+    .card.hl { background: var(--red-soft); }
+    .card ul { margin-top: 6px; }
+    table.t td.m { color: var(--red); font-weight: 700; white-space: nowrap; }
+    /* デモ動画（Google Drive 埋め込み）は PDF では描画されないので、印刷時は隠して下の文字を見せる */
+    .mode-print .slide iframe { display: none; }
+  </style>
+</head>
+
+<body>
+
+  <div id="deck">
+
+    <!-- ===================================================== タイトル -->
+    <section class="slide title" id="s-title" data-min="0.3">
+      <div class="card-t">
+        <div class="conf">QREC 2026</div>
+        <div class="logos"><img class="kansai" src="assets/logo-kansai.png" alt="Kansai University"><img src="assets/logo-utokyo.png"
+            alt="UTokyo"></div>
+        <h1>Future-Me, On Air</h1>
+        <div class="subtitle">Supporting Entrepreneurial Self-Efficacy through<br>Personalized GenAI Podcast Role-Play</div>
+        <div class="authors">
+          <div>
+            <div class="aff">Kansai University</div>
+            <div class="names"><span>Katsufumi Matsui</span></div>
+          </div>
+          <div>
+            <div class="aff">The University of Tokyo</div>
+            <div class="names"><span>Rintaro Chujo</span><span>Takeshi Naemura</span></div>
+          </div>
+        </div>
+      </div>
+      <aside class="notes">
+        <p>Hello everyone. Today we present "Future-Me, On Air: Supporting Entrepreneurial Self-Efficacy through Personalized GenAI Podcast Role-Play." This is joint work between Kansai University and the University of Tokyo.</p>
+        <p>（訳）皆さん、こんにちは。今日は「Future-Me, On Air：パーソナライズされた生成AIポッドキャスト・ロールプレイによる起業家的自己効力感の支援」について発表します。関西大学と東京大学の共同研究です。</p>
+      </aside>
+    </section>
+<section class="slide" data-min="0.6">
+      <h2>Founder stories are everywhere</h2>
+      <div class="body">
+        <div class="two">
+          <div class="figure"><img class="shot" src="assets/hibt-logo.png" alt="How I Built This (NPR)" style="height:520px;width:auto"></div>
+          <div class="figure"><img class="shot" src="assets/hibt-gebbia.png" alt="How I Built This Summit: Joe Gebbia, co-founder of Airbnb" style="height:420px;width:auto"></div>
+        </div>
+        <p class="foot"><span class="r">How I Built This</span> (NPR, ~800 episodes): <br>founders share their setbacks and doubts</p>
+      </div>
+      <aside class="notes">
+        <p>Let me start with something many of you may know: "How I Built This," a podcast from NPR. In around eight hundred episodes, founders of iconic companies, such as Airbnb, talk about their setbacks and doubts, and how they made it through the hardest moments.</p>
+        <p>Stories like these are everywhere now, and they are exactly the kind of story we bring into entrepreneurship classrooms, through guest lectures, case studies and founder talks.</p>
+        <p>（訳）まず、ご存じの方も多いと思うものから始めます。NPRのポッドキャスト「How I Built This」です。約800回にわたり、Airbnbのような有名企業の創業者が、挫折や迷い、そして一番苦しい時期をどう乗り越えたかを語っています。</p>
+        <p>（訳）こうした物語はいまや至るところにあり、私たちがゲスト講義やケーススタディ、起業家の講演という形で起業家教育の教室に持ち込んでいるのも、まさにこの種のストーリーです。</p>
+      </aside>
+    </section>
+    <section class="slide" data-min="0.8">
+      <h2>“How I Built This” may not lead to “I can build this”</h2>
+      <div class="body">
+        <p>A 7-week course with <span class="r">4 founder guest lectures</span>, vs. a control group <span class="src">(Matsui et al., 2020)</span></p>
+        <ul>
+          <li>No increase in <span class="r">entrepreneurial self-efficacy (ESE)</span> or intention</li>
+          <li>Students with high intention even <span class="r">lowered</span> it</li>
+        </ul>
+        <p class="lead center" style="margin-top:var(--gap-col)"><span class="r">Vicarious exposure alone</span> may not be enough</p>
+        <p class="cap center">Education–intention link is small and depends on pedagogy (Bae et al., 2014; Nabi et al., 2017)</p>
+      </div>
+      <aside class="notes">
+        <p>But does hearing how they built this lead to the belief that "I can build this"? In a previous study by one of us, Matsui and colleagues compared a seven-week university course with four founder guest lectures against a control group.</p>
+        <p>The course did not increase entrepreneurial self-efficacy or intention. Students who started with high intention even lowered it.</p>
+        <p>This does not mean guest lectures are harmful; some students may simply have re-evaluated their fit. But it suggests that vicarious exposure alone may not be enough, and meta-analyses agree that the effect of entrepreneurship education depends on the pedagogy.</p>
+        <p>（訳）しかし、彼らが「どう作ったか」を聞くことで、「自分にも作れる」という信念は育つのでしょうか。共著者の松井らの先行研究では、起業家ゲスト講義4回を含む7週間の大学授業を、コントロール群と比較しました。</p>
+        <p>（訳）その結果、授業によって起業家的自己効力感も起業意思も高まりませんでした。受講前に起業意思が高かった学生は、むしろ意思が下がっていました。</p>
+        <p>（訳）これはゲスト講義が有害だという意味ではありません。自分の適性を現実的に見直した学生もいたはずです。ただ、代理経験だけでは十分でないかもしれないことを示しています。メタ分析でも、起業家教育の効果は教授法によって左右されることが示されています。</p>
+        <p>【メモ】「ゲスト講義は起業意思を下げる」と一般化しない。“vicarious exposure alone does not guarantee…” の言い方を守る。</p>
+      </aside>
+    </section>
+
+    <section class="slide" data-min="0.7">
+      <h2>Self-efficacy grows from more than observation</h2>
+      <div class="body">
+        <div class="figure">
+          <svg viewBox="0 0 1700 630" width="1700" height="630" xmlns="http://www.w3.org/2000/svg"
+            style="font-family:var(--font);font-weight:700">
+            <defs>
+              <marker id="ah1" viewBox="0 0 12 12" markerUnits="userSpaceOnUse" markerWidth="24" markerHeight="24" refX="10" refY="6" orient="auto">
+                <path d="M0,0 L12,6 L0,12 z" fill="#111" />
+              </marker>
+            </defs>
+            <rect x="3" y="3" width="700" height="132" rx="16" fill="#fff" stroke="#3b7a1f" stroke-width="5" stroke-dasharray="16 10" />
+            <text x="353" y="60" text-anchor="middle" font-size="46" font-weight="900">Mastery / enactment</text>
+            <text x="353" y="110" text-anchor="middle" font-size="36" fill="#3b7a1f">“I did it myself”</text>
+
+            <rect x="3" y="168" width="700" height="132" rx="16" fill="#e6e6e6" stroke="#666" stroke-width="5" />
+            <text x="353" y="225" text-anchor="middle" font-size="46" font-weight="900">Vicarious learning</text>
+            <text x="353" y="275" text-anchor="middle" font-size="36" fill="#555">“Someone like them did it”</text>
+
+            <rect x="3" y="333" width="700" height="132" rx="16" fill="#fff" stroke="#3b7a1f" stroke-width="5" stroke-dasharray="16 10" />
+            <text x="353" y="390" text-anchor="middle" font-size="46" font-weight="900">Social persuasion</text>
+            <text x="353" y="440" text-anchor="middle" font-size="36" fill="#3b7a1f">“Others saw me do it”</text>
+
+            <rect x="3" y="498" width="700" height="129" rx="16" fill="#fff" stroke="#3b7a1f" stroke-width="5" stroke-dasharray="16 10" />
+            <text x="353" y="555" text-anchor="middle" font-size="46" font-weight="900">Affective states</text>
+            <text x="353" y="605" text-anchor="middle" font-size="36" fill="#3b7a1f">“It felt manageable”</text>
+
+            <line x1="703" y1="70" x2="955" y2="245" stroke="#111" stroke-width="4" marker-end="url(#ah1)" />
+            <line x1="703" y1="234" x2="955" y2="290" stroke="#111" stroke-width="4" marker-end="url(#ah1)" />
+            <line x1="703" y1="399" x2="955" y2="335" stroke="#111" stroke-width="4" marker-end="url(#ah1)" />
+            <line x1="703" y1="562" x2="955" y2="380" stroke="#111" stroke-width="4" marker-end="url(#ah1)" />
+
+            <rect x="965" y="225" width="400" height="180" rx="18" fill="#eaf3e3" stroke="#3b7a1f" stroke-width="5" />
+            <text x="1165" y="305" text-anchor="middle" font-size="44" font-weight="900" fill="#3b7a1f">Entrepreneurial</text>
+            <text x="1165" y="355" text-anchor="middle" font-size="44" font-weight="900" fill="#3b7a1f">self-efficacy</text>
+            <line x1="1365" y1="315" x2="1440" y2="315" stroke="#111" stroke-width="5" marker-end="url(#ah1)" />
+            <rect x="1450" y="225" width="247" height="180" rx="18" fill="#fff" stroke="#111" stroke-width="5" />
+            <text x="1573" y="330" text-anchor="middle" font-size="42" font-weight="900">Intention</text>
+
+            <rect x="965" y="500" width="52" height="36" rx="6" fill="#e6e6e6" stroke="#666" stroke-width="3" />
+            <text x="1035" y="530" font-size="36" fill="#333">what a guest lecture offers</text>
+            <rect x="965" y="570" width="52" height="36" rx="6" fill="#fff" stroke="#3b7a1f" stroke-width="3" stroke-dasharray="8 5" />
+            <text x="1035" y="600" font-size="36" fill="#3b7a1f">what students also need</text>
+          </svg>
+        </div>
+        <p class="cap center">Bandura, 1997; Newman et al., 2019; Zhao et al., 2005; Taji et al., 2023</p>
+      </div>
+      <aside class="notes">
+        <p>Why would that be? Self-efficacy research gives us an answer. Self-efficacy grows through four main sources: mastery or enactment experience, vicarious learning, social persuasion or feedback, and affective states. And entrepreneurial self-efficacy is a key mechanism behind entrepreneurial intention, also among Japanese university students.</p>
+        <p>A founder guest lecture mainly offers one of these: vicarious learning, the gray box. What students also need are the other three, in green: doing it yourself, being seen by others, and feeling that it is manageable.</p>
+        <p>（訳）なぜでしょうか。自己効力感の研究がその答えを与えてくれます。自己効力感は主に4つの源泉、つまり遂行・達成経験、代理経験、社会的説得やフィードバック、そして感情的な状態から育ちます。そして起業家的自己効力感は、起業意思を支える重要なメカニズムであり、日本の大学生でもそれが確認されています。</p>
+        <p>（訳）起業家のゲスト講義が主に提供するのは、このうちの1つ、灰色で示した代理経験です。学生に足りていないのは緑の残り3つ、つまり自分でやってみること、それを誰かに見てもらうこと、そして「なんとかなりそうだ」と感じることです。</p>
+        <p>【メモ】「ロールプレイはESEの確立した先行要因」とは言わない。ロールプレイは“既知の源泉を活性化するように設計できる”という言い方。</p>
+      </aside>
+    </section>
+
+<section class="slide s-emoji" data-min="0.3">
+      <div class="body">
+        <div class="emoji">🤔</div>
+        <p class="st">What if students could rehearse<br><span class="r">their own</span> entrepreneurial future,<br>instead of listening to someone else’s?</p>
+      </div>
+      <aside class="notes">
+        <p>So we asked: what if students could rehearse their own entrepreneurial future, instead of only listening to someone else's? What if the student were not the audience, but the protagonist?</p>
+        <p>（訳）そこで私たちは考えました。他人の起業ストーリーを聞くだけでなく、学生が「自分自身の」起業家としての未来をリハーサルできたらどうだろうか。学生が聴衆ではなく、主人公になれたらどうだろうか、と。</p>
+      </aside>
+    </section>
+
+    <section class="slide s-emoji" data-min="0.3">
+      <div class="body">
+        <div class="emoji">💡</div>
+        <p class="st">Put students on a founder podcast<br>as <span class="r">their own future self</span>,<br>with a script GenAI writes from their story</p>
+      </div>
+      <aside class="notes">
+        <p>Here is our idea. Put students on a founder podcast, like "How I Built This", but as the guest: their own future entrepreneurial self. And let generative AI write the interview from each student's own past experience.</p>
+        <p>（訳）そこで考えたのがこれです。学生を「How I Built This」のような起業家ポッドキャストに出演させる。ただし聞き手ではなくゲストとして、未来の起業家としての自分自身を演じてもらう。そして、そのインタビューを、生成AIが学生一人ひとりの過去の経験から書き起こす。</p>
+      </aside>
+    </section>
+
+    <section class="slide" data-min="0.6">
+      <h2>Three ingredients to rehearse your own future</h2>
+      <div class="body">
+        <div class="three center">
+          <div><p class="lead r">Podcast</p><p>The format of<br>How I Built This</p></div>
+          <div><p class="lead r">Role-play</p><p>You are the guest,<br>not the listener</p></div>
+          <div><p class="lead r">GenAI</p><p>An interview from<br>your own story</p></div>
+        </div>
+      </div>
+      <aside class="notes">
+        <p>This idea has three ingredients. First, the podcast: the same format as "How I Built This," which records a conversation and lets you hear it back. Second, role-play: but this time, the guest in the studio is the student, not a famous founder. Acting it out gives the mastery and enactment experience we saw was missing. Third, generative AI: it writes each interview from the student's own story. Let me take them one by one.</p>
+        <p>（訳）このアイデアには3つの要素があります。1つ目はポッドキャスト。「How I Built This」と同じ形式で、会話を録音し、聞き直すことができます。2つ目はロールプレイ。ただし今回スタジオのゲスト席に座るのは、有名な起業家ではなく学生自身です。演じることで、先ほど「足りていない」と見た遂行・達成経験が得られます。3つ目は生成AI。一人ひとりのインタビューを、本人自身の経験から書き起こします。順に見ていきます。</p>
+        <p>【メモ】つかみ（How I Built This）→ 同じ形式で、ゲスト席に自分が座る → 台本は自分の経験から、の順。続くスライドは Podcast → Role-play → GenAI の順で、この3列に対応。</p>
+      </aside>
+    </section>
+
+    <section class="slide" data-min="0.6">
+      <h2>Podcast: hear yourself and try again</h2>
+      <div class="body">
+        <div class="two n23">
+          <div class="figure"><img src="assets/podcast-icon.png" alt="Podcast" style="height:260px;width:auto"></div>
+          <ul>
+            <li><span class="r">Speaking</span> externalizes thinking</li>
+            <li><span class="r">Recording</span> leaves evidence</li>
+            <li><span class="r">Replay</span> invites reflection and retry</li>
+          </ul>
+        </div>
+        <p class="cap center" style="margin-top:var(--gap-col)">Podcasts by themselves have limited evidence for learning (Gunderson &amp; Cumming, 2022)</p>
+      </div>
+      <aside class="notes">
+        <p>First, why a podcast? Not because podcasts are trendy, or only because of "How I Built This." Speaking out loud externalizes entrepreneurial thinking. Recording creates evidence you can observe. And replay lets you reflect and try again. Reviews show that podcasts alone have limited evidence for learning gains, so we place the value not in the medium itself, but in the loop: perform, hear, reflect, retry.</p>
+        <p>（訳）まず、なぜポッドキャストか。流行っているから、あるいは「How I Built This」があるから、だけではありません。声に出すことで起業家的な思考が外に出てきます。録音は、後から観察できる証拠になります。そして聞き直すことで、振り返り、もう一度挑戦できます。ポッドキャストそれ自体が学習効果を高めるという証拠はまだ限られているので、私たちは効果の源泉をメディアではなく、「演じる・聞く・振り返る・やり直す」のループに置いています。</p>
+      </aside>
+    </section>
+
+    <section class="slide" data-min="0.9">
+      <h2>Role-play: be the guest, not the listener</h2>
+      <div class="body">
+        <ul>
+          <li><span class="r">Edu-larp</span>: role-play designed for learning <span class="src">(Bowman, 2014)</span></li>
+          <li><span class="r">Bleed</span>: the role spills over into the player <span class="src">(Montola, 2010; Bowman, 2013)</span></li>
+          <li>The role is <span class="r">your own future self</span>, not a famous founder</li>
+        </ul>
+      </div>
+      <aside class="notes">
+        <p>The second ingredient is role-play. Learning by playing a role is not new: edu-larp, live-action role-play designed for learning, is used in schools, business, and health care.</p>
+        <p>Larp researchers describe "bleed": what the character feels can spill over into the player's own thoughts and feelings. So if a student speaks, for a few minutes, as a founder who got through a setback, some of that may carry over into "maybe I could do this." That is our design goal, not yet a finding.</p>
+        <p>And the role is the student's own future self. The student is no longer the listener of "How I Built This", but the guest.</p>
+        <p>（訳）2つ目の要素はロールプレイです。役を演じて学ぶこと自体は新しくありません。学習のために設計されたライブ・アクション・ロールプレイ、edu-larp は、学校、ビジネス、医療などで使われています。</p>
+        <p>（訳）ラープの研究者は「ブリード」という現象を報告しています。キャラクターが感じたことが、プレイヤー自身の考えや感情ににじみ出る現象です。つまり、挫折を乗り越えた起業家として数分間話すと、その一部が「自分にもできるかも」に持ち越されるかもしれない。これは設計上の狙いで、まだ検証した結果ではありません。</p>
+        <p>（訳）そして演じる役は、学生自身の未来の姿です。学生はもはや「How I Built This」の聞き手ではなく、ゲストです。</p>
+        <p>【メモ】「ブリードでESEが上がる」とは言わない。ブリードは否定的に働くこともある（だから未来の自分は「信じられる姿」にし、3日目は振り返りで終える）。デンマークの学校は Østerskov Efterskole。中條自身のラープ運営経験を一言添えてもよい（任意）。未来の自分に関する先行研究は予備スライドにある。</p>
+      </aside>
+    </section>
+
+    <section class="slide" data-min="0.5">
+      <h2>GenAI: a scenario for every student</h2>
+      <div class="body">
+        <ul>
+          <li>One instructor cannot write a custom<br>role-play scenario for every student</li>
+          <li>GenAI makes <span class="r">learner-specific</span> scenarios scalable <span class="src">(Winkler et al., 2023)</span></li>
+          <li>Used as a <span class="r">scaffold</span>, not an answer machine</li>
+        </ul>
+      </div>
+      <aside class="notes">
+        <p>The third ingredient is generative AI. Personalized role-play is not new, but one instructor cannot write a custom scenario for every student. Generative AI makes this personalization scalable. As Winkler and colleagues argue, the real promise of GenAI is to design new learning experiences specific to each learner. We use it as a scaffold, not as a machine that gives the answers.</p>
+        <p>（訳）3つ目の要素は生成AIです。個別化したロールプレイ自体は新しくありませんが、教員一人で学生全員の台本を書くことはできません。生成AIはこの個別化をスケール可能にします。Winklerらが述べるように、生成AIの本当の可能性は、学習者一人ひとりに固有の新しい学習経験を設計できる点にあります。私たちはAIを答えを出す機械ではなく、足場として使います。</p>
+        <p>【メモ】Xie &amp; Wang (2025) に触れる場合は「関連を報告（SEM、346人）」まで。「GenAIがESEを高めると確認された」とは言わない。</p>
+      </aside>
+    </section>
+
+    <section class="slide s-statement" data-min="0.1">
+      <div class="body">
+        <p class="st">Future-Me, On Air</p>
+        <p style="margin-top:36px">Supporting Entrepreneurial Self-Efficacy through<br>Personalized GenAI Podcast Role-Play</p>
+      </div>
+      <aside class="notes">
+        <p>Putting these three together, we built Future-Me, On Air.</p>
+        <p>（訳）この3つを組み合わせて作ったのが、「Future-Me, On Air」です。</p>
+        <p>【メモ】話を切り替える扉。元スライド（USASBE）の提案の扉に対応。ここで一拍おく。</p>
+      </aside>
+    </section>
+
+    <section class="slide" data-min="0.6">
+      <h2>Future-Me, On Air</h2>
+      <div class="body">
+        <p class="lead">From <span class="g">audience</span> to <span class="r">protagonist of your own future</span></p>
+        <ol>
+          <li>Reflect on a <span class="r">past experience</span></li>
+          <li>GenAI turns it into a <span class="r">podcast interview with your future self</span></li>
+          <li>Pairs <span class="r">role-play, record, and listen back</span></li>
+        </ol>
+        <p class="g">Target: upper-division undergrads who know effectuation basics</p>
+      </div>
+      <aside class="notes">
+        <p>Future-Me, On Air is a personalized experiential learning application that moves learners from the audience to the protagonist of their own future.</p>
+        <p>It works in three steps: students reflect on a past experience; GenAI turns it into a podcast interview with their future entrepreneurial self, grounded in effectuation; and pairs role-play, record, and listen back.</p>
+        <p>Our target is upper-division undergraduates who already know the basics of effectuation.</p>
+        <p>（訳）「Future-Me, On Air」は、学習者を「聴衆」から「自分自身の未来の主人公」へと移す、パーソナライズされた体験型学習アプリです。</p>
+        <p>（訳）流れは3ステップです。学生が過去の経験を振り返り、生成AIがそれをエフェクチュエーションに基づく「未来の起業家としての自分へのポッドキャスト・インタビュー」に変換し、ペアで演じ、録音し、聞き直します。</p>
+        <p>（訳）対象は、エフェクチュエーションの基礎を学んだ学部上級生です。</p>
+      </aside>
+    </section>
+
+<section class="slide" data-min="2.4" style="padding:0;background:#000">
+      <div class="body" style="align-items:center"><p class="lead g">▶ Demo video (2 min)</p></div>
+      <iframe src="https://drive.google.com/file/d/1SUFGloxH89zwk_PYGqYtXvsSMm6vnnPN/preview" title="Demo video"
+        style="position:absolute;inset:0;width:100%;height:100%;border:0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      <aside class="notes">
+        <p>Let me show you what this looks like. [Play the two-minute demo video.] Here, a student tells a short story about a past experience. The AI generates the interview script. Then a pair records the podcast.</p>
+        <p>（訳）実際の様子をお見せします。［2分のデモ動画を再生］ここでは、学生が過去の経験を短く話し、AIがインタビュー台本を生成し、ペアでポッドキャストを収録しています。</p>
+        <p>【メモ】動画は Google Drive の埋め込み（要ネット接続）。開いた直後に黒いままなら、ページを再読み込みすると出る（プレビューで一度そうなった）。再生ボタンをクリックするとキー操作が動画側に移るので、終わったらスライドの外側（黒い縁がなければ発表者ビュー）をクリックしてから → で進む。会場のネットが不安なら動画ファイルを assets/ に置いて &lt;video&gt; に差し替える。</p>
+      </aside>
+    </section>
+
+    <section class="slide" data-min="0.5">
+      <h2>Overview: three sessions</h2>
+      <div class="body">
+        <div class="figure">
+          <svg viewBox="0 0 1700 508" width="1700" height="508" xmlns="http://www.w3.org/2000/svg"
+            style="font-family:var(--font);font-weight:700">
+            <g transform="translate(4,4)">
+              <polygon points="0,0 480,0 550,250 480,500 0,500" fill="#fff" stroke="#3b7a1f" stroke-width="6" stroke-linejoin="round" />
+              <text x="40" y="80" font-size="40" fill="#666">DAY 1</text>
+              <text x="40" y="152" font-size="64" font-weight="900">PAST</text>
+              <text x="40" y="240" font-size="42" fill="#333">Narrate a real</text>
+              <text x="40" y="302" font-size="42" fill="#333">past experience;</text>
+              <text x="40" y="364" font-size="42" fill="#333">GenAI turns it into</text>
+              <text x="40" y="426" font-size="42" fill="#333">a future scenario</text>
+            </g>
+            <g transform="translate(575,4)">
+              <polygon points="0,0 480,0 550,250 480,500 0,500" fill="#fff" stroke="#3b7a1f" stroke-width="6" stroke-linejoin="round" />
+              <text x="40" y="80" font-size="40" fill="#666">DAY 2</text>
+              <text x="40" y="152" font-size="64" font-weight="900">FUTURE</text>
+              <text x="40" y="240" font-size="42" fill="#333">Role-play your</text>
+              <text x="40" y="302" font-size="42" fill="#333">future self in an</text>
+              <text x="40" y="364" font-size="42" fill="#333">improvised podcast</text>
+              <text x="40" y="426" font-size="42" fill="#333">and record it</text>
+            </g>
+            <g transform="translate(1146,4)">
+              <polygon points="0,0 480,0 550,250 480,500 0,500" fill="#fff" stroke="#3b7a1f" stroke-width="6" stroke-linejoin="round" />
+              <text x="40" y="80" font-size="40" fill="#666">DAY 3</text>
+              <text x="40" y="152" font-size="64" font-weight="900">REFLECT</text>
+              <text x="40" y="240" font-size="42" fill="#333">Listen to others,</text>
+              <text x="40" y="302" font-size="42" fill="#333">discuss, and link</text>
+              <text x="40" y="364" font-size="42" fill="#333">theory to practice</text>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <aside class="notes">
+        <p>The program runs over three sessions. On Day 1, PAST, students narrate a real personal experience, and GenAI turns it into a future entrepreneurial scenario. On Day 2, FUTURE, students role-play their future self in an improvised podcast, and record it. On Day 3, REFLECT, they listen to other pairs, discuss, and connect the experience to theory.</p>
+        <p>（訳）プログラムは3回の授業で構成されます。1日目「PAST」では、学生が自分の実際の経験を語り、生成AIがそれを未来の起業家シナリオに変換します。2日目「FUTURE」では、未来の自分を即興のポッドキャストで演じ、録音します。3日目「REFLECT」では、他のペアの収録を聞き、議論し、経験を理論と結びつけます。</p>
+      </aside>
+    </section>
+
+    <section class="slide" data-min="0.6">
+      <h2>DAY 1 — PAST: my story as evidence</h2>
+      <div class="body">
+        <ol>
+          <li><span class="r">Mini-lecture</span> (20 min)<br>The five principles of effectuation</li>
+          <li><span class="r">Individual reflection</span> (10 min)<br>Recall a personal experience — clubs, jobs, hobbies</li>
+          <li><span class="r">Pair interview &amp; recording</span> (30 min)<br>Interview each other with a guide</li>
+          <li><span class="r">Submission &amp; pair reflection</span> (30 min)<br>GenAI generates each future-founder script</li>
+        </ol>
+      </div>
+      <aside class="notes">
+        <p>Day 1 starts with a twenty-minute mini-lecture on the five principles of effectuation. Then students recall a personal experience. It does not have to be about business: clubs, research, part-time jobs, and hobbies all count. They interview each other in pairs and record it. From this recording, GenAI generates each student's future-founder script. The key point is that the raw material is the student's own story, not a famous founder's.</p>
+        <p>（訳）1日目は、エフェクチュエーションの5原則についての20分のミニ講義から始まります。次に学生は自分の経験を思い出します。ビジネスの経験である必要はなく、部活動、研究、アルバイト、趣味でも構いません。ペアでお互いにインタビューし、録音します。この録音から、生成AIが学生一人ひとりの未来の起業家インタビュー台本を作ります。ポイントは、素材が有名な起業家の物語ではなく、学生自身の物語だということです。</p>
+      </aside>
+    </section>
+
+    <section class="slide" data-min="0.4">
+      <h2>DAY 2 — FUTURE: becoming my future self on air</h2>
+      <div class="body">
+        <ol>
+          <li><span class="r">Script review</span> (15 min)<br>Read and customize the GenAI script</li>
+          <li><span class="r">Pair rehearsal</span> (10 min)<br>Try the roles once</li>
+          <li><span class="r">Main recording</span> (40 min)<br>Switch host / entrepreneur; improvise</li>
+          <li><span class="r">Editing</span> (25 min)<br>Listen back, cut, and clarify</li>
+        </ol>
+      </div>
+      <aside class="notes">
+        <p>On Day 2, students first review and customize the script, rehearse once, and then record the main episode, switching between host and entrepreneur. The script is a starting point: they are encouraged to improvise. Finally they listen back and edit.</p>
+        <p>（訳）2日目は、まず台本を読んで自分用に直し、一度リハーサルをしてから、ホスト役と起業家役を交代しながら本番を収録します。台本はあくまで出発点で、即興が推奨されます。最後に聞き直して編集します。</p>
+      </aside>
+    </section>
+
+    <section class="slide" data-min="0.6">
+      <h2>A credible future self — not a hero CEO</h2>
+      <div class="body">
+        <p class="quote">“It is 2030. You started a small project based on something you already knew and someone you already knew. The host asks about <span class="r">the moment your original plan stopped working</span>.”</p>
+        <p class="g center" style="margin-top:var(--gap-col)">Example setting for the interview</p>
+      </div>
+      <aside class="notes">
+        <p>One design choice matters here. We do not ask students to play a hugely successful CEO. A hero can feel out of reach. Instead, the future self is credible and close: for example, "It is 2030. You started a small project based on something you already knew and someone you already knew. The host asks about the moment your original plan stopped working." This connects directly to effectuation.</p>
+        <p>（訳）ここで重要な設計上の選択があります。私たちは学生に「大成功したCEO」を演じさせません。手の届かない人物は、自分のこととして感じにくいからです。代わりに、身近で信じられる未来の自分を設定します。たとえば「2030年。あなたは、すでに知っていたこと、すでに知っていた人をもとに小さなプロジェクトを始めました。ホストが、当初の計画がうまくいかなくなった瞬間について尋ねます」。これはエフェクチュエーションに直接つながります。</p>
+        <p>【メモ】USASBE版では「2035年に成功した起業家」設定だった。今回は近未来・不確実性の中の自分に変更した点を強調してよい。</p>
+      </aside>
+    </section>
+
+    <section class="slide" data-min="0.5">
+      <h2>DAY 3 — REFLECT: hearing ourselves and each other</h2>
+      <div class="body">
+        <p><span class="r">Before class:</span> listen to 2–3 other pairs’ podcasts</p>
+        <ol>
+          <li><span class="r">Review reflections</span> (10 min)<br>Share what stood out in others’ episodes</li>
+          <li><span class="r">Group discussion</span> (50 min)<br>Find common patterns; link theory to practice</li>
+          <li><span class="r">Individual reflection</span> (30 min)<br>What can I now do? What would I try next?</li>
+        </ol>
+      </div>
+      <aside class="notes">
+        <p>Before Day 3, students listen to two or three other pairs' podcasts and write a short reflection. In class, they discuss common patterns and connect what they heard to effectuation theory. Hearing peers is also vicarious learning, but from people similar to themselves. The session ends with an individual reflection: what can I now do, and what would I try next?</p>
+        <p>（訳）3日目の前に、学生は他の2〜3ペアのポッドキャストを聞き、短い振り返りを書きます。授業では共通のパターンを話し合い、聞いた内容をエフェクチュエーションの理論と結びつけます。仲間の収録を聞くことも代理経験ですが、それは自分に近い人からの代理経験です。最後に個人で「今の自分に何ができるか、次に何を試すか」を振り返ります。</p>
+      </aside>
+    </section>
+
+    <section class="slide" data-min="0.5">
+      <h2>Expected learning outcomes</h2>
+      <div class="body">
+        <ol>
+          <li><span class="r">Identify and apply effectuation principles</span><br>See them at work in one’s own future startup story</li>
+          <li><span class="r">Build entrepreneurial self-efficacy</span><br>Gain confidence by acting as one’s future self</li>
+        </ol>
+      </div>
+      <aside class="notes">
+        <p>What do we expect students to learn? First, to identify and apply the principles of effectuation, by seeing how they play out in their own simulated startup story. Second, to build entrepreneurial self-efficacy: by playing the entrepreneur, and specifically their own future self, students can gain the confidence to act, and begin to form an entrepreneurial identity.</p>
+        <p>（訳）期待する学習成果は2つです。第一に、エフェクチュエーションの原則を、自分自身の未来の起業ストーリーの中で見つけ、使えるようになること。第二に、起業家的自己効力感を高めることです。起業家、それも自分自身の未来の姿を演じることで、行動する自信を得て、起業家としてのアイデンティティを形づくり始めることができます。</p>
+        <p>【メモ】元スライド（USASBE）の Expected Learning Outcomes に対応。「高まることを確認した」とは言わない（まだ効果データなし）。</p>
+      </aside>
+    </section>
+
+    <section class="slide" data-min="0.9">
+      <h2>Implication 1: from role models to provisional selves</h2>
+      <div class="body">
+        <p>People grow into a new role in three steps <span class="src">(Ibarra, 1999)</span></p>
+        <div style="display:grid;grid-template-columns:auto 1fr;gap:var(--gap-block) 64px;align-items:baseline;margin-top:var(--gap-block)">
+          <div class="r">1. Observe role models</div><div>founder stories, guest lectures</div>
+          <div class="r">2. Try on a provisional self</div><div>role-play your future self</div>
+          <div class="r">3. Evaluate with feedback</div><div>replay, peers’ reactions</div>
+        </div>
+        <p class="lead center" style="margin-top:var(--gap-col)">Guest lectures stop at step 1 —<br>Future-Me is designed for <span class="r">all three</span></p>
+      </div>
+      <aside class="notes">
+        <p>Let me now connect this to prior work. Herminia Ibarra showed that people grow into new roles in three steps: they observe role models; they try on "provisional selves", trial versions of who they might become; and they evaluate those trials against feedback.</p>
+        <p>Seen this way, founder stories and guest lectures give students only step one. Students observe, but never try the role on. Future-Me, On Air is designed for all three: the podcast format provides the role model, role-play lets students try on a future self, and replay and peers provide feedback. The shift we propose is not less inspiration, but completing the cycle that inspiration starts.</p>
+        <p>（訳）ここから先行研究と結びつけて考察します。Herminia Ibarra は、人が新しい役割に適応する過程に3つの段階があることを示しました。ロールモデルを観察する。「暫定的な自己」、つまり自分がなりうる姿の試作版を試しに演じる。そしてその試行をフィードバックに照らして評価する。</p>
+        <p>（訳）この見方に立つと、起業家の物語やゲスト講義が与えているのは第1段階だけです。学生は観察はしても、役を試す機会がありません。Future-Me, On Air は3段階すべてを支えるよう設計しています。ポッドキャストという形式がロールモデルを示し、ロールプレイで未来の自分を試し、聞き直しと仲間がフィードバックになる。私たちが提案しているのは感動を減らすことではなく、感動が始めたサイクルを最後まで回すことです。</p>
+        <p>【メモ】Ibarra (1999) は投資銀行・コンサルの若手専門職の質的研究。学生の起業家教育で検証されたモデルではないので「〜という枠組みで見ると」と言う。“designed for” を守り、「3段階すべてを実現した」とは言わない。</p>
+      </aside>
+    </section>
+
+    <section class="slide" data-min="0.9">
+      <h2>Implication 2: GenAI should make students do more</h2>
+      <div class="body">
+        <ul>
+          <li>An unguided GPT-4 tutor raised practice scores, but students<br><span class="r">did worse once it was removed</span> <span class="src">(Bastani et al., 2025)</span></li>
+          <li>Stories written with AI ideas became <span class="r">more similar</span><br>to each other <span class="src">(Doshi &amp; Hauser, 2024)</span></li>
+        </ul>
+        <p class="lead center" style="margin-top:var(--gap-col)">The AI drafts from <span class="r">your own story</span>;<br><span class="r">you</span> improvise and perform it</p>
+      </div>
+      <aside class="notes">
+        <p>Second, GenAI should be a catalyst, not a shortcut. In a field experiment in high school math, Bastani and colleagues found that an unguided GPT-4 tutor raised practice scores, but students did worse once it was removed; a version giving hints instead of answers largely avoided this.</p>
+        <p>Doshi and Hauser found that stories written with AI ideas were rated more creative, but became more similar to each other.</p>
+        <p>Our design answers both. The script is only a draft; students must improvise and perform it, so the effort stays with them. And each draft starts from the student's own past, which should keep the stories as diverse as the students.</p>
+        <p>（訳）第二に、生成AIは近道ではなく触媒であるべきです。Bastaniらの高校数学のフィールド実験では、制約のないGPT-4チューターは練習の成績を上げましたが、AIを取り上げると学生の成績は下がりました。答えではなくヒントを出す版では、この悪影響はおおむね避けられました。</p>
+        <p>（訳）DoshiとHauserは、AIのアイデアを使って書いた物語は、より創造的と評価された一方で、互いに似通っていったことを示しました。</p>
+        <p>（訳）私たちの設計はこの両方に応えます。台本は下書きにすぎず、学生は自分で即興し演じなければならないので、努力は学習者の側に残ります。そして下書きは本人の過去から始まるので、物語は学生の数だけ多様なままであるはずです。</p>
+        <p>【メモ】Bastani et al. は数学の個別指導、Doshi &amp; Hauser は短編小説の執筆で、どちらも本研究の文脈とは異なる。「多様性が保たれる」は期待・設計意図であって未検証（“should keep”）。</p>
+      </aside>
+    </section>
+
+    <section class="slide" data-min="0.7">
+      <h2>Implication 3: the recording as evidence of “I can”</h2>
+      <div class="body">
+        <ul>
+          <li><span class="r">Self-modeling</span>: watching yourself perform well<br>can improve performance <span class="src">(Dowrick, 1999)</span></li>
+          <li>Podcasts alone show limited learning gains <span class="src">(Gunderson &amp; Cumming, 2022)</span></li>
+        </ul>
+        <p class="lead center" style="margin-top:var(--gap-col)">The podcast is not content to consume —<br>it is <span class="r">a record of myself acting as a founder</span></p>
+      </div>
+      <aside class="notes">
+        <p>Third, the podcast. Podcasts by themselves have limited evidence for learning. What matters is whose voice is on the recording.</p>
+        <p>Research on self-modeling shows that watching yourself perform well can improve performance. In Bandura's terms, a single attempt becomes mastery evidence you can revisit. When students replay their episode, they hear themselves explaining how they started from what they had, and how they handled a plan that failed. That recording is evidence of "I can", in their own voice, and material for the next take.</p>
+        <p>（訳）第三に、ポッドキャストです。ポッドキャストそれ自体の学習効果の証拠は限られています。大事なのは、その録音に誰の声が入っているかです。</p>
+        <p>（訳）セルフ・モデリングの研究は、自分がうまくやっている姿を見ることでパフォーマンスが向上しうることを示しています。バンデューラの言葉で言えば、一度きりの挑戦が、見返せる達成経験の証拠になる。学生は自分の回を聞き直すとき、手持ちのものからどう始め、崩れた計画にどう対処したかを語る自分の声を聞きます。その録音は、自分の声による「自分にもできる」の証拠であり、次のテイクの材料にもなります。</p>
+        <p>【メモ】Dowrick (1999) は主に動画のセルフ・モデリング（身体技能・学業・コミュニケーションなど約150研究）。音声・起業家教育での検証ではないので “can” にとどめる。</p>
+      </aside>
+    </section>
+
+<section class="slide" data-min="0.5">
+      <h2>Future work: run it in class and test it</h2>
+      <div class="body">
+        <ol>
+          <li><span class="r">Run the three sessions</span> in an entrepreneurship course<br>Collect the episodes and students’ reflections</li>
+          <li><span class="r">Measure entrepreneurial self-efficacy</span> before and after<br>Check whether confidence matches performance</li>
+          <li><span class="r">Separate the ingredients</span>: my own story × performing it myself<br>A 2 × 2 comparison once the sample is large enough</li>
+        </ol>
+      </div>
+      <aside class="notes">
+        <p>What comes next. First, we will run the three sessions in an actual entrepreneurship course, and collect the episodes and the students' reflections.</p>
+        <p>Second, we will measure entrepreneurial self-efficacy before and after the sessions. We will also check whether students' confidence matches their actual performance, because higher self-efficacy is not always better.</p>
+        <p>Third, once we have a large enough sample, we plan a two-by-two comparison, crossing a personalized script against a generic founder script, and performing the role against simply reading and reflecting. That tells us whether it is "my own story" or "performing it myself" that moves self-efficacy, or both.</p>
+        <p>（訳）今後の予定です。第一に、実際の起業家教育の授業で3回のセッションを実施し、エピソードと学生のふり返りを集めます。</p>
+        <p>（訳）第二に、セッションの前後で起業家的自己効力感を測定します。自己効力感は高ければよいわけではないので、自信と実際のパフォーマンスが整合しているかも確認します。</p>
+        <p>（訳）第三に、十分なサンプルが集まったら、パーソナライズした台本と一般的な創業者の台本、演じることと読んでふり返ることを掛け合わせた2×2の比較を予定しています。「自分の物語であること」と「自分で演じること」のどちらが、あるいは両方が自己効力感を動かすのかが分かります。</p>
+        <p>【メモ】元スライド（USASBE）の「Next step: Run the exercise in class soon」に対応。予備スライド「separating personalization and enactment」「what we do not claim（calibration）」の内容を本編に前出しした。効果があったとは言わない。</p>
+      </aside>
+    </section>
+
+<section class="slide" data-min="0.6">
+      <h2>Summary</h2>
+      <div class="body">
+        <div style="display:grid;grid-template-columns:auto 1fr;gap:var(--gap-col) 72px;align-items:baseline">
+          <div class="r">Background</div><div>Founder stories are everywhere in the classroom</div>
+          <div class="r">Problem</div><div>Listening alone may not lead to “I can build this”</div>
+          <div class="r">Proposal</div><div>Rehearse your own future in a GenAI podcast role-play</div>
+          <div class="r">Outlook</div><div>Run it in class and test its effect on self-efficacy</div>
+        </div>
+      </div>
+      <aside class="notes">
+        <p>To wrap up. Founder stories are everywhere in entrepreneurship education, but listening alone may not lead to the belief that "I can build this."</p>
+        <p>Future-Me, On Air lets students rehearse their own entrepreneurial future, in a podcast role-play that GenAI personalizes from their own story. Next, we will run it in class and test its effect on self-efficacy.</p>
+        <p>From listening to others' stories, to enacting your own.</p>
+        <p>（訳）まとめます。起業家の物語は起業家教育のいたるところにありますが、聞くだけでは「自分にも作れる」という信念は育たないかもしれません。</p>
+        <p>（訳）Future-Me, On Air は、生成AIが本人の経験からパーソナライズしたポッドキャスト・ロールプレイで、学生が自分自身の起業家としての未来をリハーサルできるようにします。今後は授業で実施し、自己効力感への効果を検証します。</p>
+        <p>（訳）他人の物語を聞くことから、自分の物語を演じることへ。</p>
+        <p>【メモ】展望は「効果を検証する」まで。効果があったとは言わない。比較条件の案は予備スライド（2×2 計画）にある。</p>
+      </aside>
+    </section>
+
+<section class="slide title" id="s-title-end" data-min="0.1">
+      <div class="card-t">
+        <div class="conf">QREC 2026</div>
+        <div class="logos"><img class="kansai" src="assets/logo-kansai.png" alt="Kansai University"><img src="assets/logo-utokyo.png"
+            alt="UTokyo"></div>
+        <h1>Future-Me, On Air</h1>
+        <div class="subtitle">Supporting Entrepreneurial Self-Efficacy through<br>Personalized GenAI Podcast Role-Play</div>
+        <div class="authors">
+          <div>
+            <div class="aff">Kansai University</div>
+            <div class="names"><span>Katsufumi Matsui</span></div>
+          </div>
+          <div>
+            <div class="aff">The University of Tokyo</div>
+            <div class="names"><span>Rintaro Chujo</span><span>Takeshi Naemura</span></div>
+          </div>
+        </div>
+        <div class="ack">This work was supported by JSPS KAKENHI Grant Number JP25K16727.</div>
+      </div>
+      <aside class="notes">
+        <p>Thank you very much. We would be happy to hear your questions and comments, especially from those of you who teach entrepreneurship courses.</p>
+        <p>（訳）ありがとうございました。ご質問・ご意見をお願いします。特に起業家教育の授業を担当されている方からのご意見をいただけると嬉しいです。</p>
+      </aside>
+    </section>
+
+<section class="slide s-divider" data-backup="1">
+      <div class="body">
+        <p class="lab">Backup</p>
+        <p class="st">Q&amp;A slides</p>
+      </div>
+      <aside class="notes">
+        <p>Backup slides for Q&amp;A.</p>
+        <p>（訳）質疑応答用の予備スライドです。</p>
+      </aside>
+    </section>
+
+    <section class="slide" data-backup="1">
+      <h2>Backup: research on the future self</h2>
+      <div class="body">
+        <ul>
+          <li>We hold <span class="r">possible selves</span> <span class="src">(Markus &amp; Nurius, 1986)</span></li>
+          <li>Seeing a vivid future self shifts choices today <span class="src">(Hershfield et al., 2011)</span></li>
+          <li>Talking with an AI-generated future self raised<br>future self-continuity <span class="src">(Pataranutaporn et al., 2024)</span></li>
+        </ul>
+        <p class="lead center" style="margin-top:var(--gap-col)">Here, students do not just meet their future self —<br>they <span class="r">speak as it</span>, out loud</p>
+      </div>
+      <aside class="notes">
+        <p>If asked why the future self: psychologists call these "possible selves": images of who we might become. Research on the future self shows that making it vivid changes decisions now. In Hershfield and colleagues' study, people who saw age-progressed images of themselves put more money into retirement. More recently, a conversation with an AI-generated future self increased people's sense of connection to that future self.</p>
+        <p>In those studies, people look at or talk to their future self. In Future-Me, On Air, students go one step further: they speak as that future self, out loud, in their own voice.</p>
+        <p>（訳）なぜ未来の自分なのかと聞かれたら：心理学ではこれを「可能自己」、つまり自分がなりうる姿のイメージと呼びます。未来の自分に関する研究は、それを鮮明にすると今の意思決定が変わることを示しています。Hershfieldらの研究では、年を取った自分の画像を見た人は、老後のための貯蓄により多くを配分しました。最近では、生成AIで作った未来の自分との会話が、未来の自分とのつながりの感覚を高めたと報告されています。</p>
+        <p>（訳）これらの研究では、人は未来の自分を「見る」か「話しかける」。Future-Me, On Air ではもう一歩進んで、学生がその未来の自分「として」、自分の声で話します。</p>
+        <p>【メモ】Hershfield (2011) は仮想の配分課題。Pataranutaporn et al. (2024) は不安低下と future self-continuity の上昇。起業家的自己効力感への効果ではないので混同しない。</p>
+      </aside>
+    </section>
+
+    
+<section class="slide" data-backup="1">
+      <h2>Backup: hypothesized model</h2>
+      <div class="body">
+        <div class="figure">
+          <svg viewBox="0 0 1680 520" width="1680" height="520" xmlns="http://www.w3.org/2000/svg"
+            style="font-family:var(--font);font-weight:700">
+            <defs>
+              <marker id="ah3" viewBox="0 0 12 12" markerUnits="userSpaceOnUse" markerWidth="22" markerHeight="22" refX="10" refY="6" orient="auto">
+                <path d="M0,0 L12,6 L0,12 z" fill="#111" />
+              </marker>
+            </defs>
+            <g font-size="28">
+              <rect x="10" y="10" width="560" height="100" rx="14" fill="#fff" stroke="#111" stroke-width="4" />
+              <text x="290" y="72" text-anchor="middle">Personalization → self-relevance</text>
+              <rect x="10" y="140" width="560" height="100" rx="14" fill="#fff" stroke="#111" stroke-width="4" />
+              <text x="290" y="202" text-anchor="middle">Enactment → mastery evidence</text>
+              <rect x="10" y="270" width="560" height="100" rx="14" fill="#fff" stroke="#111" stroke-width="4" />
+              <text x="290" y="332" text-anchor="middle">Peer / AI feedback → persuasion</text>
+              <rect x="10" y="400" width="560" height="100" rx="14" fill="#fff" stroke="#111" stroke-width="4" />
+              <text x="290" y="462" text-anchor="middle">Replay &amp; retake → observed gain</text>
+            </g>
+            <line x1="570" y1="60" x2="760" y2="205" stroke="#111" stroke-width="4" marker-end="url(#ah3)" />
+            <line x1="570" y1="190" x2="760" y2="240" stroke="#111" stroke-width="4" marker-end="url(#ah3)" />
+            <line x1="570" y1="320" x2="760" y2="275" stroke="#111" stroke-width="4" marker-end="url(#ah3)" />
+            <line x1="570" y1="450" x2="760" y2="305" stroke="#111" stroke-width="4" marker-end="url(#ah3)" />
+            <rect x="770" y="190" width="260" height="130" rx="18" fill="#eaf3e3" stroke="#3b7a1f" stroke-width="5" />
+            <text x="900" y="270" text-anchor="middle" font-size="40" font-weight="900" fill="#3b7a1f">ESE</text>
+            <line x1="1030" y1="255" x2="1120" y2="255" stroke="#111" stroke-width="5" marker-end="url(#ah3)" />
+            <rect x="1130" y="190" width="240" height="130" rx="18" fill="#fff" stroke="#111" stroke-width="5" />
+            <text x="1250" y="270" text-anchor="middle" font-size="36" font-weight="900">Intention</text>
+            <line x1="1370" y1="255" x2="1440" y2="255" stroke="#111" stroke-width="5" marker-end="url(#ah3)" />
+            <rect x="1450" y="190" width="220" height="130" rx="18" fill="#fff" stroke="#111" stroke-width="5" />
+            <text x="1560" y="248" text-anchor="middle" font-size="32" font-weight="900">Micro-</text>
+            <text x="1560" y="290" text-anchor="middle" font-size="32" font-weight="900">action</text>
+          </svg>
+        </div>
+        <p class="cap center">ESE mediates learning / experience → intention (Zhao et al., 2005). GenAI-supported EE, ESE and intention are
+          positively associated in a cross-sectional SEM (Xie &amp; Wang, 2025, n = 346) — not a causal test</p>
+      </div>
+      <aside class="notes">
+        <p>If asked about the theoretical model: we expect each design element to activate a different source of self-efficacy, with ESE mediating the effect on intention and then on small actions. Zhao and colleagues showed ESE mediation from learning to intention. Xie and Wang reported positive associations for GenAI-supported entrepreneurship education, but this was a cross-sectional SEM, not a randomized intervention.</p>
+        <p>（訳）理論モデルについて聞かれた場合：各設計要素が自己効力感の異なる源泉を活性化し、ESEが起業意思、さらに小さな行動への効果を媒介すると想定しています。Zhaoらは学習から意思への経路をESEが媒介することを示しました。Xie &amp; Wangは生成AIを用いた起業家教育との正の関連を報告していますが、これは横断的なSEMであり、ランダム化介入ではありません。</p>
+      </aside>
+    </section>
+
+<section class="slide" data-backup="1">
+      <h2>Backup: separating personalization and enactment</h2>
+      <div class="body">
+        <table class="t">
+          <tr><th></th><th>Role-play (enact)</th><th>Read &amp; reflect</th></tr>
+          <tr><td><b>Personalized script</b></td><td class="m">Full Future-Me</td><td>Script only</td></tr>
+          <tr><td><b>Generic founder script</b></td><td>Generic role-play</td><td>Founder story</td></tr>
+        </table>
+        <p class="foot">Stage 2 (with enough sample): a 2 × 2 design tells whether <span class="r">“my own story”</span> or <span
+            class="r">“performing it myself”</span> moves ESE</p>
+      </div>
+      <aside class="notes">
+        <p>If asked how we will know which part works: with a larger sample, we plan a two-by-two design, crossing personalization and enactment. This tells us whether it is "my own story" or "performing it myself" that moves self-efficacy, or both.</p>
+        <p>（訳）どの要素が効いているのかをどう確かめるかと聞かれたら：十分なサンプルが得られれば、パーソナライズの有無と演じるかどうかを掛け合わせた2×2の計画を予定しています。これにより「自分の物語であること」と「自分で演じること」のどちらが、あるいは両方が自己効力感を動かすのかが分かります。</p>
+      </aside>
+    </section>
+
+<section class="slide" data-backup="1">
+      <h2>Backup: what we do not claim</h2>
+      <div class="body">
+        <ul>
+          <li>Guest lectures are <span class="r">not</span> harmful — some students re-evaluate their fit more realistically</li>
+          <li>Role-play is <span class="r">not</span> an established antecedent of ESE; it can be <i>designed</i> to activate known sources
+            (mastery, vicarious, persuasion)</li>
+          <li>Podcasts do <span class="r">not</span> improve learning by themselves; the loop does the work</li>
+          <li>Higher ESE is <span class="r">not</span> always better; we also look at calibration between confidence and performance</li>
+        </ul>
+      </div>
+      <aside class="notes">
+        <p>For critical questions, here is what we explicitly do not claim. Guest lectures are not harmful. Role-play is not an established antecedent of self-efficacy; rather, it can be designed to activate known sources. Podcasts do not improve learning on their own. And higher self-efficacy is not always better; we will also look at whether confidence and actual performance are aligned.</p>
+        <p>（訳）批判的な質問に対しては、私たちが明確に「主張しないこと」を示します。ゲスト講義は有害ではありません。ロールプレイはESEの確立した先行要因ではなく、既知の源泉を活性化するように設計できるものです。ポッドキャストそれ自体が学習を向上させるわけではありません。そして自己効力感は高ければ高いほど良いわけではなく、自信と実際のパフォーマンスが整合しているかも見ていきます。</p>
+      </aside>
+    </section>
+
+<section class="slide" data-backup="1">
+      <h2>Backup: a layer between listening and launching</h2>
+      <div class="body">
+        <div class="figure">
+          <svg viewBox="0 0 1680 500" width="1680" height="500" xmlns="http://www.w3.org/2000/svg"
+            style="font-family:var(--font);font-weight:700">
+            <defs>
+              <marker id="ah2" viewBox="0 0 12 12" markerUnits="userSpaceOnUse" markerWidth="22" markerHeight="22" refX="10" refY="6" orient="auto">
+                <path d="M0,0 L12,6 L0,12 z" fill="#9a9a9a" />
+              </marker>
+            </defs>
+            <rect x="10" y="20" width="500" height="300" rx="20" fill="#f4f4f4" stroke="#9a9a9a" stroke-width="4" />
+            <text x="260" y="90" text-anchor="middle" font-size="44" font-weight="900" fill="#666">LISTEN</text>
+            <text x="260" y="150" text-anchor="middle" font-size="30" fill="#333">guest lectures, founder stories</text>
+            <text x="260" y="250" text-anchor="middle" font-size="34" font-weight="900" fill="#666">“Can someone do it?”</text>
+
+            <rect x="590" y="0" width="500" height="340" rx="20" fill="#eaf3e3" stroke="#3b7a1f" stroke-width="6" />
+            <text x="840" y="80" text-anchor="middle" font-size="44" font-weight="900" fill="#3b7a1f">REHEARSE</text>
+            <text x="840" y="140" text-anchor="middle" font-size="30" fill="#333">enact my own future story,</text>
+            <text x="840" y="180" text-anchor="middle" font-size="30" fill="#333">hear it back, try again</text>
+            <text x="840" y="270" text-anchor="middle" font-size="36" font-weight="900" fill="#3b7a1f">“Can I do it?”</text>
+
+            <rect x="1170" y="20" width="500" height="300" rx="20" fill="#fff" stroke="#111" stroke-width="4" />
+            <text x="1420" y="90" text-anchor="middle" font-size="44" font-weight="900">ACT</text>
+            <text x="1420" y="150" text-anchor="middle" font-size="30" fill="#333">real projects and ventures</text>
+            <text x="1420" y="250" text-anchor="middle" font-size="34" font-weight="900">“I am doing it”</text>
+
+            <line x1="60" y1="420" x2="1620" y2="420" stroke="#9a9a9a" stroke-width="5" marker-end="url(#ah2)" />
+            <text x="60" y="475" font-size="28" fill="#666">passive · no cost of failure</text>
+            <text x="840" y="475" text-anchor="middle" font-size="28" fill="#3b7a1f" font-weight="900">safe-to-fail enactment</text>
+            <text x="1620" y="475" text-anchor="end" font-size="28" fill="#666">active · high cost of failure</text>
+          </svg>
+        </div>
+        <p class="cap center">Action-based training raised ESE and later entrepreneurial action (Gielnik et al., 2015, RCT);
+          safe-to-fail learning with reflection (Pittaway &amp; Cope, 2007)</p>
+      </div>
+      <aside class="notes">
+        <p>So we see a gap. On one side, students listen: "Can someone do it?" On the other side, students actually launch a venture, which is powerful but costly and risky. Action-based training, for example the randomized study by Gielnik and colleagues, shows that doing things raises self-efficacy and later action.</p>
+        <p>Between these two, we think there is a missing layer: a safe-to-fail rehearsal, where students can enact entrepreneurial behavior, hear themselves, and try again. The question changes from "Can someone do it?" to "Can I do it?"</p>
+        <p>（訳）ここにギャップがあります。一方には「聞く」があり、問いは「誰かにできるか？」です。もう一方には実際に起業する「行動」があり、効果は大きいもののコストもリスクも高い。Gielnikらのランダム化研究のような行動ベースの教育は、実際にやることが自己効力感とその後の行動を高めることを示しています。</p>
+        <p>（訳）この2つの間に、抜けている層があると私たちは考えます。失敗しても安全なリハーサルの場です。学生が起業家的にふるまい、それを自分で聞き直し、もう一度やり直せる。問いが「誰かにできるか？」から「自分にできるか？」に変わります。</p>
+      </aside>
+    </section>
+
+<section class="slide" data-backup="1">
+      <h2>References (1/4)</h2>
+      <div class="body top">
+        <ul class="cap" style="color:#333;line-height:1.45">
+          <li>Bae, T. J., Qian, S., Miao, C., &amp; Fiet, J. O. (2014). Entrepreneurship Theory and Practice, 38(2).</li>
+          <li>Bandura, A. (1997). Self-efficacy: The exercise of control. Freeman.</li>
+          <li>Bastani, H., Bastani, O., Sungu, A., Ge, H., Kabakcı, Ö., &amp; Mariman, R. (2025). Generative AI without guardrails can harm learning: Evidence from high school mathematics. PNAS, 122, e2422633122.</li>
+          <li>Bowman, S. L. (2013). Social conflict in role-playing communities: An exploratory qualitative study. International Journal of Role-Playing, 4, 4–25.</li>
+          <li>Bowman, S. L. (2014). Educational live action role-playing games: A secondary literature review. In S. L. Bowman (Ed.), The Wyrd Con Companion Book 2014 (pp. 112–131). Wyrd Con.</li>
+          <li>Doshi, A. R., &amp; Hauser, O. P. (2024). Generative AI enhances individual creativity but reduces the collective diversity of novel content. Science Advances, 10(28), eadn5290.</li>
+          <li>Dowrick, P. W. (1999). A review of self modeling and related interventions. Applied and Preventive Psychology, 8, 23–39.</li>
+        </ul>
+      </div>
+      <aside class="notes">
+        <p>Reference list.</p>
+        <p>（訳）参考文献一覧です。</p>
+        <p>【メモ】Liñán &amp; Chen、McGee et al.、Pittaway &amp; Cope、Sarasvathy の巻号は一般的な書誌情報から補ったので、提出前に確認。Matsui et al. (2020) の英語誌名表記も要確認。</p>
+      </aside>
+    </section>
+
+    <section class="slide" data-backup="1">
+      <h2>References (2/4)</h2>
+      <div class="body top">
+        <ul class="cap" style="color:#333;line-height:1.45">
+          <li>Gielnik, M. M., Frese, M., Kahara-Kawuki, A., et al. (2015). Academy of Management Learning &amp; Education, 14(1), 69–94.</li>
+          <li>Gunderson, J. L., &amp; Cumming, T. M. (2022). Innovations in Education and Teaching International.</li>
+          <li>Hershfield, H. E., Goldstein, D. G., Sharpe, W. F., et al. (2011). Journal of Marketing Research, 48(SPL), S23–S37.</li>
+          <li>Ibarra, H. (1999). Provisional selves: Experimenting with image and identity in professional adaptation. Administrative Science Quarterly, 44(4), 764–791.</li>
+          <li>Liñán, F., &amp; Chen, Y.-W. (2009). Entrepreneurship Theory and Practice, 33(3).</li>
+          <li>Markus, H., &amp; Nurius, P. (1986). Possible selves. American Psychologist, 41(9), 954–969.</li>
+          <li>Matsui, K., Makino, E., Umada, T., et al. (2020). Venture Review (Japan Academic Society of Ventures and Entrepreneurs), 36, 29–43.</li>
+        </ul>
+      </div>
+      <aside class="notes">
+        <p>Reference list (continued).</p>
+        <p>（訳）参考文献一覧（続き）です。</p>
+      </aside>
+    </section>
+
+    <section class="slide" data-backup="1">
+      <h2>References (3/4)</h2>
+      <div class="body top">
+        <ul class="cap" style="color:#333;line-height:1.45">
+          <li>McGee, J. E., Peterson, M., Mueller, S. L., &amp; Sequeira, J. M. (2009). Entrepreneurship Theory and Practice, 33(4).</li>
+          <li>Montola, M. (2010). The positive negative experience in extreme role-playing. Proceedings of DiGRA Nordic 2010.</li>
+          <li>Nabi, G., Liñán, F., Fayolle, A., Krueger, N., &amp; Walmsley, A. (2017). Academy of Management Learning &amp; Education, 16(2), 277–299.</li>
+          <li>Newman, A., Obschonka, M., Schwarz, S., Cohen, M., &amp; Nielsen, I. (2019). Journal of Vocational Behavior, 110, 403–419.</li>
+          <li>Pataranutaporn, P., Winson, K., Yin, P., et al. (2024). Future You: A conversation with an AI-generated future self reduces anxiety, negative emotions, and increases future self-continuity. IEEE Frontiers in Education Conference (FIE 2024).</li>
+          <li>Pittaway, L., &amp; Cope, J. (2007). Management Learning, 38(2).</li>
+          <li>Sarasvathy, S. D. (2001). Academy of Management Review, 26(2).</li>
+        </ul>
+      </div>
+      <aside class="notes">
+        <p>Reference list (continued).</p>
+        <p>（訳）参考文献一覧（続き）です。</p>
+      </aside>
+    </section>
+
+    <section class="slide" data-backup="1">
+      <h2>References (4/4)</h2>
+      <div class="body top">
+        <ul class="cap" style="color:#333;line-height:1.45">
+          <li>Taji, N., Fujimura, M., &amp; Tamai, Y. (2023). Organizational Science, 56(4), 81–94.</li>
+          <li>Winkler, C., Hammoda, B., Noyes, E., &amp; van Gelderen, M. (2023). Entrepreneurship Education and Pedagogy, 6(4), 579–589.</li>
+          <li>Xie, Y., &amp; Wang, S. (2025). Scientific Reports, 15, 24079.</li>
+          <li>Zhao, H., Seibert, S. E., &amp; Hills, G. E. (2005). Journal of Applied Psychology, 90(6), 1265–1272.</li>
+        </ul>
+      </div>
+      <aside class="notes">
+        <p>Reference list (continued).</p>
+        <p>（訳）参考文献一覧（続き）です。</p>
+      </aside>
+    </section>
+
+  </div>
+
+  <script src="deck/deck.js"></script>
+</body>
+
+</html>
