@@ -360,6 +360,79 @@
     "authors": [
       {
         "name": {
+          "en": "Hino, Rei",
+          "ja": "日野, 玲"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Takaki, Ken",
+          "ja": "高木, 健"
+        }
+      },
+      {
+        "name": {
+          "en": "Suzuki, Misa",
+          "ja": "鈴木, 美彩"
+        }
+      },
+      {
+        "name": {
+          "en": "Ando, Asuka",
+          "ja": "安東, 明珠花"
+        }
+      },
+      {
+        "name": {
+          "en": "Tanaka, Tasuku",
+          "ja": "田中, 祐玖"
+        }
+      },
+      {
+        "name": {
+          "en": "Kuramoto, Daisuke",
+          "ja": "倉本, 大資"
+        }
+      },
+      {
+        "name": {
+          "en": "Kawahara, Yoshihiro",
+          "ja": "川原, 圭博"
+        }
+      },
+      {
+        "name": {
+          "en": "Naemura, Takeshi",
+          "ja": "苗村, 健"
+        }
+      }
+    ],
+    "title": {
+      "en": "SignWarriors: Gamifying Sign Language Practice with Hearing Parents",
+      "ja": "SignWarriors: Gamifying Sign Language Practice with Hearing Parents"
+    },
+    "booktitle": "ACM Symposium on User Interface Software and Technology (UIST '26), Poster",
+    "year": "2026",
+    "month": "11",
+    "links": [
+      {
+        "label": "Program",
+        "url": "https://programs.sigchi.org/uist/2026/program/session/278204"
+      }
+    ],
+    "lang": "en"
+  },
+  {
+    "category": "intl-reviewed",
+    "authors": [
+      {
+        "name": {
           "en": "Yahagi, Yuchi",
           "ja": "Yahagi, Yuchi"
         }
