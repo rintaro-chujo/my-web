@@ -356,6 +356,62 @@
     "lang": "en"
   },
   {
+    "category": "intl-full",
+    "authors": [
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Matsuo, Shuta",
+          "ja": "松尾, 周汰"
+        }
+      },
+      {
+        "name": {
+          "en": "Ng, Kuan Yi",
+          "ja": "ウン, クアンイー"
+        }
+      },
+      {
+        "name": {
+          "en": "Kawamoto, Kaede",
+          "ja": "Kawamoto, Kaede"
+        }
+      },
+      {
+        "name": {
+          "en": "Okubo, Fumiya",
+          "ja": "大久保, 文哉"
+        }
+      },
+      {
+        "name": {
+          "en": "Shimada, Atsushi",
+          "ja": "島田, 敬士"
+        }
+      }
+    ],
+    "title": {
+      "en": "Letting Learners Shape What to Reflect On: Design Principles for an LLM-Based Skill Analytics System",
+      "ja": "Letting Learners Shape What to Reflect On: Design Principles for an LLM-Based Skill Analytics System"
+    },
+    "booktitle": "The 34th International Conference on Computers in Education (ICCE 2026)",
+    "location": "Christchurch, New Zealand",
+    "paper_id": "#225F",
+    "year": "2026",
+    "month": "12",
+    "award": {
+      "en": "Nominated for Best Technical Design Paper Award",
+      "ja": "Best Technical Design Paper Award ノミネート"
+    },
+    "links": [],
+    "lang": "en"
+  },
+  {
     "category": "intl-reviewed",
     "authors": [
       {
@@ -989,6 +1045,106 @@
     "month": "7",
     "links": [],
     "lang": "en"
+  },
+  {
+    "category": "domestic",
+    "authors": [
+      {
+        "name": {
+          "en": "Ikeuchi, Akihito",
+          "ja": "池内, 耀仁"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Ryskeldiev, Bektur",
+          "ja": "リスケルデイエフ, ベクトウル"
+        }
+      },
+      {
+        "name": {
+          "en": "Kobori, Kuninari",
+          "ja": "小堀, 訓成"
+        }
+      },
+      {
+        "name": {
+          "en": "Hautasaari, Ari",
+          "ja": "ハウタサーリ, アリ"
+        }
+      },
+      {
+        "name": {
+          "en": "Naemura, Takeshi",
+          "ja": "苗村, 健"
+        }
+      }
+    ],
+    "title": {
+      "en": "A Method for Supporting Keep-or-Let-Go Decisions on Possessions by Combining Market Value and Subjective Value Estimation",
+      "ja": "所有物の市場価値と主観価値推定の併用による「残す・手放す」判断支援手法の提案"
+    },
+    "booktitle": {
+      "en": "HCG Symposium 2026",
+      "ja": "HCGシンポジウム2026"
+    },
+    "year": "2026",
+    "month": "12",
+    "links": [],
+    "lang": "ja"
+  },
+  {
+    "category": "domestic",
+    "authors": [
+      {
+        "name": {
+          "en": "Shen, Lan",
+          "ja": "沈, 瀾"
+        }
+      },
+      {
+        "name": {
+          "en": "Chujo, Rintaro",
+          "ja": "中條, 麟太郎"
+        }
+      },
+      {
+        "name": {
+          "en": "Hatada, Yuji",
+          "ja": "畑田, 裕二"
+        }
+      },
+      {
+        "name": {
+          "en": "Hautasaari, Ari",
+          "ja": "ハウタサーリ, アリ"
+        }
+      },
+      {
+        "name": {
+          "en": "Naemura, Takeshi",
+          "ja": "苗村, 健"
+        }
+      }
+    ],
+    "title": {
+      "en": "Effects of InsideMates, Multiple AI Agents Based on the Multivocality of the Self, on Daily Reflection",
+      "ja": "自己の多声性に基づくマルチAIエージェント「InsideMates」が日々の内省に与える影響"
+    },
+    "booktitle": {
+      "en": "HCG Symposium 2026",
+      "ja": "HCGシンポジウム2026"
+    },
+    "year": "2026",
+    "month": "12",
+    "links": [],
+    "lang": "ja"
   },
   {
     "category": "domestic",
